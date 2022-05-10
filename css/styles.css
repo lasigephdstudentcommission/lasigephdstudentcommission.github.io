@@ -267,12 +267,12 @@ sup {
 }
 
 a {
-    color: #ffc800;
+    color: black;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #cca000;
+    color: grey;
 }
 
 a:not([href]):not([class]),
@@ -3042,7 +3042,6 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-image: url('assets/img/navbar-logo.svg');
     border-color: darkgrey;
 }
 
@@ -8369,7 +8368,7 @@ fieldset:disabled .btn {
 
 .text-muted {
     --bs-text-opacity: 1;
-    color: lightgrey !important;
+    color: grey !important;
 }
 
 .text-black-50 {
@@ -11298,7 +11297,6 @@ header.masthead .masthead-heading {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255, 200, 0, 0.9);
     align-items: center;
     justify-content: center;
     opacity: 0;
@@ -11580,13 +11578,13 @@ header.masthead .masthead-heading {
 }
 
 .team-member img {
-    width: 14rem;
-    height: 14rem;
+    width: 7rem;
+    height: 7rem;
     border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 
-.team-member h4,
-.team-member .h4 {
+.team-member h5,
+.team-member .h5 {
     margin-top: 1.5rem;
     margin-bottom: 0;
 }
@@ -11596,10 +11594,10 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-    background-color: #212529;
     background-image: url("../assets/img/map-image.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 section#contact .section-heading {
@@ -11666,17 +11664,3 @@ section#contact form#contactForm :-ms-input-placeholder {
     font-size: 0.9rem;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-font-family: "Montserrat",
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol",
-"Noto Color Emoji";
-"Noto Color Emoji"
