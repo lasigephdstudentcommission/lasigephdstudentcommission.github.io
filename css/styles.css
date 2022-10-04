@@ -6055,6 +6055,7 @@
         padding: 1rem;
     }
     
+    
     .modal-footer {
         display: flex;
         flex-wrap: wrap;
@@ -11549,6 +11550,7 @@
     
     .portfolio-modal .modal-content img {
         margin-bottom: 2rem;
+        
     }
     
     .portfolio-modal .close-modal {
