@@ -75,7 +75,7 @@ function showSocialInfo(social = -1) {
         case 0:
             $("#social_title").text("Movie Night");
             $("#social_text").text("");
-            $("#social_img").attr("src", "assets/img/events/sports.jpg");
+            $("#social_img").attr("src", "assets/img/events/LMovie.png ");
             //$("#social_date").text("Thurdays at 6pm");
             //$("#social_location").text("Estádio Universitário de Lisboa");
             $("#social_more").attr("href", "https://discord.gg/Gg2azeNYD5");
@@ -85,7 +85,7 @@ function showSocialInfo(social = -1) {
         case 1:
             $("#social_title").text("Paintball");
             $("#social_text").text("");
-            $("#social_img").attr("src", "assets/img/events/running.jpg");
+            $("#social_img").attr("src", "assets/img/events/Paintball.png");
             //$("#social_date").text("");
             //$("#social_location").text("");
             $("#social_more").attr("href", "https://discord.gg/Gg2azeNYD5");
