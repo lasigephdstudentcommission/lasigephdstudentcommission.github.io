@@ -8354,7 +8354,12 @@
     
     .text-muted {
         --bs-text-opacity: 1;
-        color: White !important;
+        color: grey !important;
+    }
+
+    .text-muted-mail {
+        --bs-text-opacity: 1;
+        color: white !important;
     }
     
     .text-black-50 {
