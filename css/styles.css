@@ -11480,6 +11480,19 @@
         transition: .5s ease;
         backface-visibility: hidden;
     }
+
+    .img-fluid-discord {
+        opacity: 1;
+        display: block;
+        color: white;
+        margin-left: 47%;
+        margin-bottom: 5%;
+        width: 7%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
     .img-fluid-events {
         opacity: 1;
         display: block;
