@@ -1,10 +1,10 @@
 $(document).ready(function() {
     n_clubs = 3
     var club = Math.floor(Math.random() * n_clubs);
-    showClubInfo(club);
+    //showClubInfo(club);
     n_social = 3;
     var social = Math.floor(Math.random() * n_social);
-    showSocialInfo(social);
+    //showSocialInfo(social);
     n_forum = 2;
 
     showForumInfo(n_forum - 1);
@@ -24,7 +24,23 @@ club_date
 club_location
 club_form
  */
+$('#portfolioModalClubs').on('hidden.bs.modal', function() {
+    $("#club_img").addClass("d-none");
+    $("#club_title").text("");
+    $("#club_text").text("");
+});
+$('#portfolioModalSocial').on('hidden.bs.modal', function() {
+    $("#social_img").addClass("d-none");
+    $("#social_title").text("");
+    $("#social_text").text("");
+    $("#social_form_text").text("");
+
+});
+
 function showClubInfo(club = -1) {
+    $("#club_img").removeClass("d-none");
+
+
     switch (club) {
         case 0:
             $("#club_title").text("Futsal");
@@ -75,6 +91,7 @@ social_location
 social_form
  */
 function showSocialInfo(social = -1) {
+    $("#social_img").removeClass("d-none");
     switch (social) {
         case 0:
             $("#social_title").text("Movie Night");
