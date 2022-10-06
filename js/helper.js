@@ -2,16 +2,20 @@ $(document).ready(function() {
     n_clubs = 3
     var club = Math.floor(Math.random() * n_clubs);
     showClubInfo(club);
-    n_social = 2;
+    n_social = 3;
     var social = Math.floor(Math.random() * n_social);
     showSocialInfo(social);
+    n_forum = 2;
+
+    showForumInfo(n_forum - 1);
+    $("#lf_date").text("07/10/22");
 });
 
 /*
 club => the club name
-1 => football
-2 => running
-3 => tabletop
+0 => football
+1 => running
+2 => tabletop
 defines the following fields:
 club_title
 club_text
@@ -59,9 +63,9 @@ function showClubInfo(club = -1) {
 
 /*
 social => the social name
-1 => football
-2 => running
-3 => tabletop
+0 => movie night
+1 => paintball
+2 => karts
 defines the following fields:
 social_title
 social_text
@@ -79,7 +83,8 @@ function showSocialInfo(social = -1) {
             //$("#social_date").text("Thurdays at 6pm");
             //$("#social_location").text("Estádio Universitário de Lisboa");
             $("#social_more").attr("href", "https://discord.gg/Gg2azeNYD5");
-            //$("#social_form").text("teste");
+            $("#social_form_text").text("Past event");
+            $("#social_form").text("");
 
             break;
         case 1:
@@ -89,11 +94,63 @@ function showSocialInfo(social = -1) {
             //$("#social_date").text("");
             //$("#social_location").text("");
             $("#social_more").attr("href", "https://discord.gg/Gg2azeNYD5");
-
-
-            //("#social_form").text("");
+            $("#social_form_text").text("Past event");
+            $("#social_form").text("");
             break;
 
+        case 2:
+            $("#social_title").text("Karts");
+            $("#social_text").text("");
+            $("#social_img").attr("src", "assets/img/events/Karting.png");
+            //$("#social_date").text("");
+            //$("#social_location").text("");
+            $("#social_more").attr("href", "https://discord.gg/Gg2azeNYD5");
+            $("#social_form_text").text("More details TBA");
+            $("#social_form").text("");
+            break;
+
+
+        default:
+            break;
+    }
+
+}
+
+/*
+lasige forum => 
+1 => First Edition
+2 => Second Edition
+defines the following fields:
+forum_title
+forum_text
+forum_img
+forum_date
+forum_location
+forum_form
+ */
+function showForumInfo(forum = -1) {
+    switch (forum) {
+        case 0:
+            $("#forum_title").text("LASIGE Forum First Edition");
+            //$("#forum_text").text("");
+            $("#forum_img").attr("src", "assets/img/events/Forum.png ");
+            //$("#forum_date").text("Thurdays at 6pm");
+            //$("#forum_location").text("Estádio Universitário de Lisboa");
+            $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
+            $("#forum_form_text").text("Past event");
+            $("#forum_form").text("");
+
+            break;
+        case 1:
+            $("#forum_title").text("LASIGE Forum Second Edition");
+            // $("#forum_text").text("");
+            $("#forum_img").attr("src", "assets/img/events/2nd-Forum.png");
+            //$("#forum_date").text("");
+            //$("#forum_location").text("");
+            $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
+            // $("#forum_form_text").text("Past event");
+            $("#forum_form").text("");
+            break;
 
         default:
             break;
