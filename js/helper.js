@@ -8,7 +8,7 @@ $(document).ready(function() {
     n_forum = 2;
 
     showForumInfo(n_forum - 1);
-    $("#lf_date").text("07/10/22");
+    $("#lf_date").text("04/11/22");
 });
 
 /*
@@ -165,7 +165,7 @@ function showForumInfo(forum = -1) {
             //$("#forum_date").text("");
             //$("#forum_location").text("");
             $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
-            // $("#forum_form_text").text("Past event");
+            $("#forum_form_text").text("December 2022 - More details TBA");
             $("#forum_form").text("");
             break;
 
