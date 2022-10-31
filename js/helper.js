@@ -9,6 +9,12 @@ $(document).ready(function() {
 
     showForumInfo(n_forum - 1);
     $("#lf_date").text("04/11/22");
+
+    var url = window.location.href;
+    if (url.indexOf('?welcomeday2022') != -1) {
+        $("#portfolioModalWD").modal('show');
+    }
+
 });
 
 /*
