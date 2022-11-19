@@ -154,7 +154,8 @@ forum_form
 function showForumInfo(forum = -1) {
     switch (forum) {
         case 0:
-            $("#forum_title").text("LASIGE Forum First Edition");
+            $("#forum_title").text("LASIGE Forum");
+            $("#forum_subtitle").text("1st Edition");
             //$("#forum_text").text("");
             $("#forum_img").attr("src", "assets/img/events/Forum.png ");
             //$("#forum_date").text("Thurdays at 6pm");
@@ -165,13 +166,14 @@ function showForumInfo(forum = -1) {
 
             break;
         case 1:
-            $("#forum_title").text("LASIGE Forum Second Edition");
+            $("#forum_title").text("LASIGE Forum");
+            $("#forum_subtitle").text("2nd Edition");
             // $("#forum_text").text("");
             $("#forum_img").attr("src", "assets/img/events/2nd-Forum.png");
             //$("#forum_date").text("");
             //$("#forum_location").text("");
             $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
-            $("#forum_form_text").text("December 2022 - More details TBA");
+            $("#forum_form_text").text("16th December 2022 - More details TBA");
             $("#forum_form").text("");
             break;
 
