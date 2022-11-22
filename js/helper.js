@@ -161,7 +161,7 @@ function showForumInfo(forum = -1) {
             //$("#forum_date").text("Thurdays at 6pm");
             //$("#forum_location").text("Estádio Universitário de Lisboa");
             $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
-            $("#forum_form_text").text("Past event");
+            $("#more_form_text").text("Past event");
             $("#forum_form").text("");
 
             break;
@@ -169,12 +169,13 @@ function showForumInfo(forum = -1) {
             $("#forum_title").text("LASIGE Forum");
             $("#forum_subtitle").text("2nd Edition");
             // $("#forum_text").text("");
-            $("#forum_img").attr("src", "assets/img/events/2nd-Forum.png");
-            //$("#forum_date").text("");
-            //$("#forum_location").text("");
+            $("#forum_img").attr("src", "assets/img/events/2nd-Forum-01.png");
+            $("#forum_date").text("Date: December 16th 2022");
+            $("#forum_location").text("Location: C6.2.56");
             $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
-            $("#forum_form_text").text("16th December 2022 - More details TBA");
-            $("#forum_form").text("");
+            $("#more_form_text").text(" ");
+            $("#forum_form").text("Please register here");
+            $("#forum_form").attr("href", "https://forms.gle/SLf3RwKYspocRM3c9");
             break;
 
         default:
