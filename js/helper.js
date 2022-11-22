@@ -173,7 +173,7 @@ function showForumInfo(forum = -1) {
             $("#forum_date").text("Date: December 16th 2022");
             $("#forum_location").text("Location: C6.2.56");
             $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
-            $("#more_form_text").text(" ");
+            $("#more_form_text").text("Registration until December 9th 2022");
             $("#forum_form").text("Please register here");
             $("#forum_form").attr("href", "https://forms.gle/SLf3RwKYspocRM3c9");
             break;
