@@ -158,8 +158,8 @@ function showForumInfo(forum = -1) {
             $("#forum_subtitle").text("1st Edition");
             //$("#forum_text").text("");
             $("#forum_img").attr("src", "assets/img/events/Forum.png ");
-            //$("#forum_date").text("Thurdays at 6pm");
-            //$("#forum_location").text("Estádio Universitário de Lisboa");
+            $("#forum_date").text("");
+            $("#forum_location").text("");
             $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
             $("#more_form_text").text("Past event");
             $("#forum_form").text("");
