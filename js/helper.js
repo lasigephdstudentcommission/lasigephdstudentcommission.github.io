@@ -176,6 +176,9 @@ function showForumInfo(forum = -1) {
             $("#more_form_text").text("Registration until December 9th 2022");
             $("#forum_form").text("Please register here");
             $("#forum_form").attr("href", "https://forms.gle/SLf3RwKYspocRM3c9");
+            $("#forum_img_1").attr("src", "assets/img/events/Forum-keynote.png");
+            $("#forum_img_2").attr("src", "assets/img/events/Forum-panel.png");
+            $("#forum_img_3").attr("src", "assets/img/events/Forum-thesis.png");
             break;
 
         default:
