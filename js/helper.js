@@ -173,9 +173,9 @@ function showForumInfo(forum = -1) {
             $("#forum_date").text("Date: December 16th 2022");
             $("#forum_location").text("Location: C6.2.56");
             $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
-            $("#more_form_text").text("Registration until December 9th 2022");
-            $("#forum_form").text("Please register here");
-            $("#forum_form").attr("href", "https://forms.gle/SLf3RwKYspocRM3c9");
+            $("#more_form_text").text("Registrations Closed");
+            $("#forum_form").text(" ");
+            $("#forum_form").attr("href", " ");
             $("#forum_img_1").attr("src", "assets/img/events/Forum-keynote.png");
             $("#forum_img_2").attr("src", "assets/img/events/Forum-panel.png");
             $("#forum_img_3").attr("src", "assets/img/events/Forum-thesis.png");
