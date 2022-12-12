@@ -25,6 +25,11 @@ $(document).ready(function() {
         $("#portfolioModal1").modal('show');
     }
 
+    var url = window.location.href;
+    if (url.indexOf('?workshop') != -1) {
+        $("#portfolioModalWorkshop").modal('show');
+    }
+
 });
 
 /*
