@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     var url = window.location.href;
     if (url.indexOf('?forum') != -1) {
-        $("#portfolioModalWD").modal('show');
+        $("#portfolioModal1").modal('show');
     }
 
 });
