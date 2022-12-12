@@ -11,7 +11,17 @@ $(document).ready(function() {
     $("#lf_date").text("04/11/22");
 
     var url = window.location.href;
+    if (url.indexOf('?welcomeday') != -1) {
+        $("#portfolioModalWD").modal('show');
+    }
+
+    var url = window.location.href;
     if (url.indexOf('?welcomeday2022') != -1) {
+        $("#portfolioModalWD").modal('show');
+    }
+
+    var url = window.location.href;
+    if (url.indexOf('?forum') != -1) {
         $("#portfolioModalWD").modal('show');
     }
 
