@@ -29,6 +29,13 @@ $(document).ready(function() {
 
     }
 
+    var url = window.location.href;
+    if (url.indexOf('?forum1') != -1) {
+        $("#portfolioModal1").modal('show');
+        showWorkshopInfo(1)
+
+    }
+
     // WORKSHOP
     var url = window.location.href;
     if (url.indexOf('?workshop') != -1) {
