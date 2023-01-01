@@ -37,7 +37,7 @@ function showForumInfo(forum = -1) {
             $("#forum_subtitle").text("2nd Edition");
             // $("#forum_text").text("");
             $("#forum_img").attr("src", "assets/img/events/Forum2022/2nd-Forum-01.png");
-            $("#forum_date").text("Date: December 16th 2022");
+            $("#forum_date").text("Date: December 16th 2022 - Past Event");
             $("#forum_location").text("Location: C6.2.56");
             $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
             $("#more_form_text").text("Registrations Closed");
@@ -52,6 +52,7 @@ function showForumInfo(forum = -1) {
                                         <a href="" onclick="showForumImage(3); return false; "> Talks</a>
                                         <a href="" onclick="showForumImage(4); return false; "> Thesis Defense</a>
                                         <a href="" onclick="showForumImage(5); return false; "> Lunch</a>
+                                        <a href="" onclick="showForumImage(6); return false; "> Media</a>
                                 `);
 
              $("#forum_talks").html(``);
@@ -77,17 +78,22 @@ function showForumImage(forum = -1) {
             switch (forum) {
                 case 0:
                     $("#forum_talks").html(``);
-                    $("#forum_img").attr("src", "assets/img/events/Forum2022/2nd-Forum-01.png");
+                    $("#forum_media").html(``);
+                    $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/2nd-Forum-01.png" alt="... " />`);
                     break;
                 case 1:
                     $("#forum_talks").html(``);
-                    $("#forum_img").attr("src", "assets/img/events/Forum2022/Forum-keynote.png");
+                    $("#forum_media").html(``);
+                    $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/Forum-keynote.png" alt="... " />`);
                     break;
                 case 2:
                     $("#forum_talks").html(``);
-                    $("#forum_img").attr("src", "assets/img/events/Forum2022/Forum-panel.png");
+                    $("#forum_media").html(``);
+                    $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/Forum-panel.png" alt="... " />`);
+
                     break;
                 case 3:
+                    $("#forum_media").html(``);
                     $("#forum_talks").html(`
                     <a href="" onclick="showForumTalk(0); return false; "> Tiago Carvalho - 15:00</a>
                     <a href="" onclick="showForumTalk(1); return false; "> Duarte Saraiva - 15:15</a>
@@ -98,17 +104,31 @@ function showForumImage(forum = -1) {
         
                 case 4:
                     $("#forum_talks").html(``);
+                    $("#forum_media").html(``);
                     $("#forum_img").attr("src", "assets/img/events/Forum2022/Forum-thesis.png");
+                    $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/Forum-thesis.png" alt="... " />`);
                     break;
 
                 case 5:
                     $("#forum_talks").html(``);
-                    $("#forum_img").attr("src", "assets/img/events/Forum2022/Menu.png");
+                    $("#forum_media").html(``);
+                    $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/Menu.png" alt="... " />`);
+                    break;
+
+                case 6:
+
+                    // add full session <a href="" onclick="showForumVideos(0); return false; "> Full Session</a>
+
+                    $("#forum_talks").html(``);
+                    $("#forum_media").html(`
+                    <a href="https://drive.google.com/drive/folders/1In50QFE11WYkMQ3yZOfgQtqMMHWoJLOL?usp=sharing " target="_blank ">Photos</a>
+                    `);
                     break;
         
                 default:
                     $("#forum_talks").html(``);
-                    $("#forum_img").attr("src", "assets/img/events/Forum2022/2nd-Forum-01.png");
+                    $("#forum_media").html(``);
+                    $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/2nd-Forum-01.png" alt="... " />`);
                     break;
             }
 
@@ -129,20 +149,44 @@ function showForumTalk(forum = -1) {
 
             switch (forum) {
                 case 0:
-                    $("#forum_img").attr("src", "assets/img/events/Forum2022/Tiago.png");
+                    $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/Tiago.png" alt="... " />`);
                     break;
                 case 1:
-                    $("#forum_img").attr("src", "assets/img/events/Forum2022/Duarte.png");
+                    $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/Duarte.png" alt="... " />`);
                     break;
                 case 2:
-                    $("#forum_img").attr("src", "assets/img/events/Forum2022/Karina.png");
+                    $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/Karina.png" alt="... " />`);
                     break;
                 case 3:
-                    $("#forum_img").attr("src", "assets/img/events/Forum2022/Pedro.png");
+                    $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/Pedro.png" alt="... " />`);
                     break;
         
                 default:
-                    $("#forum_img").attr("src", "assets/img/events/Forum2022/Tiago.png");
+                    
+                    break;
+            }
+
+        break;
+
+    }
+
+}
+
+function showForumVideos(forum = -1) {
+
+    edition = sessionStorage.getItem("forum_edition");
+
+    switch (edition) {
+
+
+        case '2':
+
+            switch (forum) {
+                case 0:
+                    $("#forum_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+                    break
+                default:
+                    
                     break;
             }
 
