@@ -15,10 +15,10 @@ function showWorkshopInfo(workshop = -1) {
     switch (workshop) {
         case 2023:
             $("#workshop_title").text("LASIGE Workshop");
-            $("#workshop_subtitle").text("2023");
+            $("#workshop_subtitle").text("8th Edition - 2023");
             // $("#workshop_text").text("");
-            $("#workshop_date").text("Date: TBD");
-            $("#workshop_location").text("Location: TBD");
+            $("#workshop_date").text("Date: March 22nd");
+            $("#workshop_location").text("Location: 6.1.31");
             $("#more_form_text").text("Registrations Closed");
             $("#workshop_form").text(" ");
             $("#workshop_form").attr("href", " ");
