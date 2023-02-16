@@ -18,20 +18,19 @@ function showWorkshopInfo(workshop = -1) {
             $("#workshop_subtitle").text("8th Edition - 2023");
             // $("#workshop_text").text("");
             $("#workshop_date").text("Date: March 22nd");
-            $("#workshop_location").text("Location: 6.1.31");
-            $("#more_form_text").text("Registrations Closed");
-            $("#workshop_form").text(" ");
-            $("#workshop_form").attr("href", " ");
-            $("#workshop_main").html(`<img id="forum_img" class="img-fluid d-block mx-auto " src="assets/img/events/workshop23.png " alt="... "/>`);
+            $("#workshop_location").text("Location: 6.1.36");
+            $("#workshop_more_form_text").text("Registrations open until March 13th");
+            $("#workshop_form").text("Register here");
+            $("#workshop_form").attr("href", "https://forms.gle/x7DiqGHH7JnXKXqEA");
+            $("#workshop_main").html(`<img id="forum_img" class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Main.png " alt="... "/>`);
+            
 
+            $("#workshop_tabs").html(`
+                                        <a href="" onclick="showWorkshopMain(0); return false; "> Program</a>
+                                        <a href="" onclick="showWorkshopMain(1); return false; "> Lunch</a>
+                                `);
 
-            // $("#workshop_tabs").html(`
-            //                             <a href="" onclick="showWorkshopMain(0); return false; "> Program</a>
-            //                             <a href="" onclick="showWorkshopMain(1); return false; "> Media</a>
-            //                             <a href="https://forms.gle/z7MTnEr1oGv6t5us6 " target="_blank"> Feedback</a>
-            //                     `);
-
-            //  $("#workshop_media").html(``);
+             $("#workshop_media").html(``);
             break;
 
         default:
@@ -40,38 +39,45 @@ function showWorkshopInfo(workshop = -1) {
 
 }
 
-// function showWorkshopMain(workshop = -1) {
+function showWorkshopMain(workshop = -1) {
 
-//     edition = sessionStorage.getItem("workshop_edition");
+    edition = sessionStorage.getItem("workshop_edition");
 
-//     switch (edition) {
+    switch (edition) {
 
-//         case '2022':
+        case '2023':
 
-//             switch (workshop) {
-//                 case 0:
-//                     $("#workshop_media").html(``);
-//                     $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Workshop2022/Welcome Day.png" alt="... " />`);
-//                     break;
-//                 case 1:
-//                     $("#workshop_media").html(`
-//                     <a href="" onclick="showWorkshopMedia(0); return false; "> Aftermovie</a>
-//                     <a href="" onclick="showWorkshopMedia(1); return false; "> Testimony</a>
-//                     <a href="" onclick="showWorkshopMedia(2); return false; "> Group Photo</a>
-//                     `);
-//                     break;
+            switch (workshop) {
+                case 0:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Main.png" alt="... " />`);
+                    break;
+
+                case 1:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Manu.png" alt="... " />`);
+                    break
+
+
+                // case 1:
+                //     $("#workshop_media").html(`
+                //     <a href="" onclick="showWorkshopMedia(0); return false; "> Aftermovie</a>
+                //     <a href="" onclick="showWorkshopMedia(1); return false; "> Testimony</a>
+                //     <a href="" onclick="showWorkshopMedia(2); return false; "> Group Photo</a>
+                //     `);
+                //     break;
         
-//                 default:
-//                     $("#workshop_media").html(``);
-//                     $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Workshop2022/Welcome Day.png" alt="... " />`);
-//                     break;
-//             }
+                default:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Main.png" alt="... " />`);
+                    break;
+            }
 
-//         break;
+        break;
 
-//     }
+    }
 
-// }
+}
 
 // function showWorkshopMedia(workshop = -1) {
 
