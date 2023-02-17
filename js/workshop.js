@@ -27,7 +27,7 @@ function showWorkshopInfo(workshop = -1) {
 
             $("#workshop_tabs").html(`
                                         <a href="" onclick="showWorkshopMain(0); return false; "> Program</a>
-                                        <a href="" onclick="showWorkshopMain(1); return false; "> Lunch</a>
+                                        <a href="" onclick="showWorkshopMain(1); return false; "> Dinner</a>
                                 `);
 
              $("#workshop_media").html(``);
