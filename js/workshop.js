@@ -19,7 +19,7 @@ function showWorkshopInfo(workshop = -1) {
             // $("#workshop_text").text("");
             $("#workshop_date").text("Date: March 22nd");
             $("#workshop_location").text("Location: 6.1.36");
-            $("#workshop_more_form_text").text("Registrations open until March 13th");
+            $("#workshop_more_form_text").text("Registrations open until March 13th, poster submissions until march 15th");
             $("#workshop_form").text("Register here");
             $("#workshop_form").attr("href", "https://forms.gle/x7DiqGHH7JnXKXqEA");
             $("#workshop_main").html(`<img id="forum_img" class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Main.png " alt="... "/>`);
@@ -28,6 +28,7 @@ function showWorkshopInfo(workshop = -1) {
             $("#workshop_tabs").html(`
                                         <a href="" onclick="showWorkshopMain(0); return false; "> Program</a>
                                         <a href="" onclick="showWorkshopMain(1); return false; "> Dinner</a>
+                                        <a href="" onclick="showWorkshopMain(2); return false; "> Poster Guidelines</a>
                                 `);
 
              $("#workshop_media").html(``);
@@ -56,6 +57,40 @@ function showWorkshopMain(workshop = -1) {
                 case 1:
                     $("#workshop_media").html(``);
                     $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Manu.png" alt="... " />`);
+                    break
+
+                case 2:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`<p>&nbsp;</p>
+                    <h1 class="entry-title">Posters</h1>
+                    <div class="entry-content">
+                    <p><strong>Poster templates:</strong></p>
+                    <ul class=" list-inline ">
+                    <li>
+                    <a href="https://workshop2022.lasige.di.fc.ul.pt/wp-content/uploads/Accessibility-and-ageing.pptx">Accessibility and ageing</a>
+                    </li>
+                    <li>
+                    <a href="https://workshop2022.lasige.di.fc.ul.pt/wp-content/uploads/cyber-physical-systems.pptx">Cyber-physical systems</a>
+                    </li>
+                    <li>
+                    <a href="https://workshop2022.lasige.di.fc.ul.pt/wp-content/uploads/Data-and-systems-intelligence.pptx">Data and systems intelligence</a>
+                    </li>
+                    <li>
+                    <a href="https://workshop2022.lasige.di.fc.ul.pt/wp-content/uploads/health-and-biomedical-informatics.pptx">Health and biomedical informatics</a>
+                    </li>
+                    <li>
+                    <a href="https://workshop2022.lasige.di.fc.ul.pt/wp-content/uploads/reliable-software-systems.pptx">Reliable software systems</a>
+                    </li>
+                    <li>
+                    <a href="https://workshop2022.lasige.di.fc.ul.pt/wp-content/uploads/Resilient-distributed-and-networked-systems.pptx">Resilient distributed and networked system</a>
+                    </li>
+                    </ul>
+                    
+                    <p><strong>Submission guidelines:</strong></p>
+                    <p>The poster has to be submitted until the 15th of March in PDF format on the <a href="https://forms.gle/x7DiqGHH7JnXKXqEA">registration form</a> or sent to <a href="mailto:lasige-phd-commission@listas.di.ciencias.ulisboa.pt">lasige-phd-commission@listas.di.ciencias.ulisboa.pt</a></p>
+                    </div>
+                    <img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Posters.png" alt="... " />
+                    `);
                     break
 
 
