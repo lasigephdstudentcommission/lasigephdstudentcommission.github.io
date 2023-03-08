@@ -56,7 +56,26 @@ function showWorkshopMain(workshop = -1) {
 
                 case 1:
                     $("#workshop_media").html(``);
-                    $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Manu.png" alt="... " />`);
+                    $("#workshop_main").html(`
+                    <h1 class="entry-title">Dinner</h1>
+                    <div class="entry-content">
+                    <ul class=" list-inline ">
+                    <li>
+                    LASIGE members who do not hold a PhD degree (i.e., students): €5
+                    </li>
+                    <li>
+                    LASIGE members who hold a PhD: €20
+                    </li>
+                    </ul>
+
+                    <p> Payment for the dinner should be made in person to Alexandra or Carla (Room 6.3.30), preferably from 10:00-16:00, until March 13th. </p>
+
+                    <p> Please note that the restaurant has a limited number of seats available. Once this limit is reached, any participants who wish to attend the dinner will be placed on a waiting list. In the event that a seat becomes available due to non-payment or cancellation, we will offer it to participants on the waiting list. </p>
+
+                    <p><strong>We strongly advise all interested participants to secure their spot by making payment before the deadline.</strong></p>
+
+                    <img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Manu.png" alt="... " />
+                    `);
                     break
 
                 case 2:
