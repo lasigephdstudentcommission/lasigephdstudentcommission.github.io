@@ -31,6 +31,8 @@ function showWorkshopInfo(workshop = -1) {
                                         <a href="" onclick="showWorkshopMain(0); return false; "> Program</a>
                                         <a href="" onclick="showWorkshopMain(1); return false; "> Dinner</a>
                                         <a href="" onclick="showWorkshopMain(2); return false; "> Poster Guidelines</a>
+                                        <a href="" onclick="showWorkshopMain(3); return false; "> Poster Session</a>
+                                        <a href="" onclick="showWorkshopMain(4); return false; "> Peddypaper</a>
                                 `);
 
              $("#workshop_media").html(``);
@@ -113,6 +115,16 @@ function showWorkshopMain(workshop = -1) {
                     <img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Posters.png" alt="... " />
                     `);
                     break
+
+                case 3:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`<iframe style="width:50vw;height:100vh" src="https://online.fliphtml5.com/ijvpg/mppe/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>`);
+                    break;
+
+                case 4:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/tascas.jpg" alt="... " />`);
+                    break;
 
 
                 // case 1:
