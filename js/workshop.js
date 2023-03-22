@@ -19,9 +19,11 @@ function showWorkshopInfo(workshop = -1) {
             // $("#workshop_text").text("");
             $("#workshop_date").text("Date: March 22nd");
             $("#workshop_location").text("Location: 6.1.36");
-            $("#workshop_more_form_text").text("Registrations open until March 13th, poster submissions until march 15th");
-            $("#workshop_form").text("Register here");
-            $("#workshop_form").attr("href", "https://forms.gle/x7DiqGHH7JnXKXqEA");
+            // $("#workshop_more_form_text").text("Registrations open until March 13th, poster submissions until march 15th");
+            $("#workshop_more_form_text").text("Registrations Closed");
+            $("#workshop_form").text("");
+            // $("#workshop_form").text("Register here");
+            // $("#workshop_form").attr("href", "https://forms.gle/x7DiqGHH7JnXKXqEA");
             $("#workshop_main").html(`<img id="forum_img" class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Main.png " alt="... "/>`);
             
 
