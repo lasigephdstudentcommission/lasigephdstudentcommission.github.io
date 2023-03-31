@@ -24,7 +24,7 @@ function showWorkshopInfo(workshop = -1) {
             $("#workshop_form").text("");
             // $("#workshop_form").text("Register here");
             // $("#workshop_form").attr("href", "https://forms.gle/x7DiqGHH7JnXKXqEA");
-            $("#workshop_main").html(`<img id="forum_img" class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Main.png " alt="... "/>`);
+            $("#workshop_main").html(`<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqA5t8hi5sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
             
 
             $("#workshop_tabs").html(`
@@ -33,6 +33,7 @@ function showWorkshopInfo(workshop = -1) {
                                         <a href="" onclick="showWorkshopMain(2); return false; "> Poster Guidelines</a>
                                         <a href="" onclick="showWorkshopMain(3); return false; "> Poster Session</a>
                                         <a href="" onclick="showWorkshopMain(4); return false; "> Peddypaper</a>
+                                        <a href="" onclick="showWorkshopMain(5); return false; "> Aftermovie</a>
                                 `);
 
              $("#workshop_media").html(``);
@@ -126,6 +127,11 @@ function showWorkshopMain(workshop = -1) {
                     $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/tascas.jpg" alt="... " />`);
                     break;
 
+                case 5:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqA5t8hi5sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
+                    break;
+
 
                 // case 1:
                 //     $("#workshop_media").html(`
@@ -137,7 +143,7 @@ function showWorkshopMain(workshop = -1) {
         
                 default:
                     $("#workshop_media").html(``);
-                    $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/Main.png" alt="... " />`);
+                    $("#workshop_main").html(`<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqA5t8hi5sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
                     break;
             }
 
