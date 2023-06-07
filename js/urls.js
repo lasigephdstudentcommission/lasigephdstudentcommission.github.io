@@ -23,16 +23,23 @@ $(document).ready(function() {
     }
 
     var url = window.location.href;
+    if (url.indexOf('?forum3') != -1) {
+        $("#portfolioModal1").modal('show');
+        showForumInfo(3)
+
+    }
+
+    var url = window.location.href;
     if (url.indexOf('?forum2') != -1) {
         $("#portfolioModal1").modal('show');
-        showWorkshopInfo(2)
+        showForumInfo(2)
 
     }
 
     var url = window.location.href;
     if (url.indexOf('?forum1') != -1) {
         $("#portfolioModal1").modal('show');
-        showWorkshopInfo(1)
+        showForumInfo(1)
 
     }
 
