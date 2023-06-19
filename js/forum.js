@@ -62,7 +62,7 @@ function showForumInfo(forum = -1) {
             $("#forum_subtitle").text("3rd Edition");
             $("#forum_text").text("Join us in celebrating 25 Years of LASIGE! Expand your horizons with feedback from colleagues and experts beyond your field. Attend workshops on essential tools for your Ph.D. and seize the opportunity to present your work to both university and external audiences.");
             $("#forum_img").attr("src", "assets/img/events/Forum2023/25bday.png");
-            $("#forum_date").text("Date: Jully 5th 2023");
+            $("#forum_date").text("Date: July 5th 2023");
             $("#forum_location").text("Location: C6 Garden");
             $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
             $("#more_form_text2").text("Registrations Until June 28th 2023");
