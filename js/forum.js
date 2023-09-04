@@ -65,9 +65,9 @@ function showForumInfo(forum = -1) {
             $("#forum_date").text("Date: July 5th 2023");
             $("#forum_location").text("Location: C6 Garden");
             $("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
-            $("#more_form_text2").text("Registrations Until June 28th 2023");
-            $("#forum_form").text("Register Here");
-            $("#forum_form").attr("href", "https://forms.gle/8FJuCr2Ewr4RKTTb6");
+            $("#more_form_text2").text("Registrations Closed");
+            $("#forum_form").text("");
+            $("#forum_form").attr("f", "");
 
 
             $("#forum_tabs").html(`
