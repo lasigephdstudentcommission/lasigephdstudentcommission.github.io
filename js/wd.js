@@ -94,7 +94,7 @@ function showWDMain(wd = -1) {
             switch (wd) {
                 case 0:
                     $("#wd_media").html(``);
-                    $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/WelcomeDay.jpeg" alt="... " />`);
+                    $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/Welcome day 2023.jpg" alt="... " />`);
                     break;
                 case 1:
                     $("#wd_main").html(`
@@ -168,7 +168,7 @@ function showWDMain(wd = -1) {
 
                 default:
                     $("#wd_media").html(``);
-                    $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/WelcomeDay.jpeg" alt="... " />`);
+                    $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/Welcome day 2023.jpg" alt="... " />`);
                     break;
             }
 
