@@ -43,7 +43,7 @@ function showWDInfo(wd = -1) {
             // $("#more_form_text").text("Registrations Closed");
             $("#wd_form").text("Register here");
             $("#wd_form").attr("href", "https://forms.gle/j5Eqp9HreS2qTXvR9");
-            $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/WelcomeDay.jpeg" alt="... " />`);
+            $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/Welcome day 2023.jpg" alt="... " />`);
             //$("#wd_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
 
 
@@ -94,7 +94,7 @@ function showWDMain(wd = -1) {
             switch (wd) {
                 case 0:
                     $("#wd_media").html(``);
-                    $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/WelcomeDay.jpeg" alt="... " />`);
+                    $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/Welcome day 2023.jpg" alt="... " />`);
                     break;
                 case 1:
                     $("#wd_main").html(`
@@ -168,7 +168,7 @@ function showWDMain(wd = -1) {
 
                 default:
                     $("#wd_media").html(``);
-                    $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/WelcomeDay.jpeg" alt="... " />`);
+                    $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/Welcome day 2023.jpg" alt="... " />`);
                     break;
             }
 
