@@ -41,8 +41,8 @@ function showWDInfo(wd = -1) {
             $("#wd_date").text("Date: October 18th 2023");
             $("#wd_location").text("Location: C6.1.36");
             // $("#more_form_text").text("Registrations Closed");
-            $("#wd_form").text("Register here");
-            $("#wd_form").attr("href", "https://forms.gle/j5Eqp9HreS2qTXvR9");
+            $("#wd_form").text("Past Event");
+            // $("#wd_form").attr("href", "https://forms.gle/j5Eqp9HreS2qTXvR9");
             $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/Welcome day 2023.jpg" alt="... " />`);
             //$("#wd_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
 
