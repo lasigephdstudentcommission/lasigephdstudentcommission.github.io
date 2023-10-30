@@ -95,11 +95,10 @@ function showSocialInfo(social = -1) {
             $("#social_title").text("Paintball");
             $("#social_text").text("");
             $("#social_img").attr("src", "assets/img/events/Paintball.png");
-            //$("#social_date").text("");
-            //$("#social_location").text("");
+            $("#social_date").text("18th November 2023");
+            $("#social_location").text("Alcabideche");
             $("#social_more").attr("href", "https://discord.gg/Gg2azeNYD5");
-            $("#social_form_text").text("Past event");
-            $("#social_form").text("");
+            $("#social_form_text").html("<a href='https://forms.gle/Y17h5isgqWGKtUtn6'>Register here</a>")
             break;
 
         case 2:
