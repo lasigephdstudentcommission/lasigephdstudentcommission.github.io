@@ -16,6 +16,12 @@ $(document).ready(function() {
         showWDInfo(2022)
     }
 
+    var url = window.location.href;
+    if (url.indexOf('?welcomeday2023') != -1) {
+        $("#portfolioModalWD").modal('show');
+        showWDInfo(2023)
+    }
+
     // FORUM
     var url = window.location.href;
     if (url.indexOf('?forum') != -1) {
