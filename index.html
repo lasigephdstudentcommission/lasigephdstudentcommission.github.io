@@ -69,6 +69,19 @@
                     <div class="carousel-item" style="background-image: url(assets/img/header-bg-2.png);">
                         <div class="carousel-container">
                             <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">2024 LASIGE WORKSHOP</h2>
+                                <p class="animate__animated animate__fadeInUp"> The LASIGE Workshop is a chance to connect, learn, and recognize the incredible work happening in our lab. We've got exciting talks, the traditional poster session, a team-building activity, and a delicious dinner to wrap it all up. Mark your calendars and prepare your posters! Click below to know more!
+                                </p>
+                                <div>
+                                    <a data-bs-toggle='modal' href="#portfolioModalWorkshop" class="btn btn-primary btn-xl text-uppercase">2024 LASIGE Workshop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DEPRECATED
+                    <div class="carousel-item" style="background-image: url(assets/img/header-bg-2.png);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
                                 <h2 class="animate__animated animate__fadeInDown">2023 LASIGE WELCOME DAY</h2>
                                 <p class="animate__animated animate__fadeInUp"> Come enjoy the first of many LASIGE events. Marking the first gathering of the year, the Lasige Welcome Day is by now a staple in the lasige community. So come feel the LASIGE atmosphere! Know more about the event and registration
                                     on our webpage! Click on the bottom to know more!
@@ -79,7 +92,7 @@
                             </div>
                         </div>
                     </div>
-
+                    -->
 
 
                     <!-- Slide 3 -->
@@ -423,7 +436,7 @@
                         </a>
                         <p>Operational Team</p>
                         <p class="text-muted ">Cyber Physical Systems</p>
-                        <p class="text-muted ">Resilient Distributed and Networked Systems</p>
+                        <p class="text-muted ">Dependable and Secure Decentralized Systems</p>
 
                     </div>
                 </div>
@@ -436,7 +449,7 @@
                         </a>
                         <p>Operational Team</p>
 
-                         <p class="text-muted ">Resilient Distributed and Networked Systems</p>
+                         <p class="text-muted ">Dependable and Secure Decentralized Systems</p>
                     </div>
                 </div>
 
@@ -614,7 +627,7 @@
     </div>
 
     <!-- Portfolio Workshop modal popup-->
-    <div class="portfolio-modal modal fade " id="portfolioModalWorkshop" tabindex="-1 " role="dialog" aria-hidden="true ">
+    <div class="portfolio-modal modal fade " id="portfolioModalWorkshop" tabindex="-1 " role="dialog" aria-hidden="true ">  
         <div class="modal-dialog ">
             <div class="modal-content ">
                 <div class="close-modal " data-bs-dismiss="modal"><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
@@ -624,15 +637,18 @@
                             <div class="modal-body ">
                                 <!-- Project details-->
                                 <div class="navbar ">
+                                    <a href="" onclick="showWorkshopInfo(2024); return false; ">2024</a>
                                     <a href="" onclick="showWorkshopInfo(2023); return false; ">2023</a>
                                     <a href="https://workshop2022.lasige.di.fc.ul.pt/ " target="_blank ">2022</a>
                                     <a href="https://workshop2021.lasige.di.fc.ul.pt/ " target="_blank ">2021</a>
                                     <a href="https://workshop2020.lasige.di.fc.ul.pt/ " target="_blank ">2020</a>
                                     <a href="https://workshop2019.lasige.di.fc.ul.pt/ " target="_blank ">2019</a>
                                 </div>
+                                
                                 <h2 id="workshop_title" class="text-uppercase ">Welcome Day</h2>
                                 <h4 id="workshop_subtitle"> 2022 </h4>
                                 <p id="workshop_text" class="item-intro text-muted "></p>
+                                <div id="workshop_banner"></div>
 
                                 <br>
                                 <div id="workshop_more_text">
@@ -648,7 +664,7 @@
 
                                 <br>
                                 <p id="workshop_more_form_text"> </p>
-                                <a id="workshop_form" href="" target="_blank ">here</a>
+                                <!--<a id="workshop_form" href="" target="_blank ">here</a>-->
 
                                 <ul class=" list-inline ">
                                     <li>
