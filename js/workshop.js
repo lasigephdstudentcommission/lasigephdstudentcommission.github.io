@@ -46,7 +46,11 @@ function showWorkshopInfo(workshop = -1) {
                     <li>
                     <a href="poster_templates/poster_rss.pptx">Reliable software systems</a>
                     </li>
-                    <a href="poster_templates/poster_rdns.pptx">Dependable and Secure Decentralized Systems</a>
+                    <li>
+                    <a href="poster_templates/poster_dsds.pptx">Dependable and Secure Decentralized Systems</a>
+                    </li>
+                    <li>
+                    <a href="poster_templates/poster_tc.pptx">Theory of Computing</a>
                     </li>
                     </ul>
                     
