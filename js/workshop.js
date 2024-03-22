@@ -21,7 +21,7 @@ function showWorkshopInfo(workshop = -1) {
             //$("#workshop_text").text("");
             $("#workshop_date").text("Date: April 10th");
             $("#workshop_location").text("Location: FCUL Room To Be Announced (C6)");
-            $("#workshop_form").text("Register here");
+            $("#workshop_form").text("REGISTER HERE");
             $("#workshop_form").attr("href", "https://forms.gle/JeNaRjfsxjNmzT869");
             $("#workshop_more_form_text").text("Registration open until April 5th. Poster submissions until April 5th.");
             
@@ -125,6 +125,10 @@ function showWorkshopMain(workshop = -1) {
 
                     <img width="100%" margin="0" src="assets/img/events/workshop/24/dinner.png" alt="... " />
 
+                    <p>
+                    The dinner will be held at the restaurant <a href="https://www.riceme.pt" target="_blank">Rice Me</a>. You can find here the <a href="https://www.riceme.pt" target="_blank">restaurant location</a href="https://maps.app.goo.gl/Krtwedu5UhBRgn5U7" target="_blank">. The Dinner starts at 20h30 with the welcome drinks and starters.
+                    </p>
+
                     <p><strong>Price and payment:</strong></p>
                     <ul class=" list-left ">
                     <li>
@@ -227,22 +231,22 @@ function showWorkshopMain(workshop = -1) {
 
                     <ul class=" list-inline ">
                     <li>
-                    <a href="poster_templates/poster_ihci.pptx">Inclusive Human-Computer Interaction</a>
-                    </li>
-                    <li>
                     <a href="poster_templates/poster_cps.pptx">Cyber-physical systems</a>
                     </li>
                     <li>
                     <a href="poster_templates/poster_dsi.pptx">Data and systems intelligence</a>
                     </li>
                     <li>
+                    <a href="poster_templates/poster_dsds.pptx">Dependable and Secure Decentralized Systems</a>
+                    </li>
+                    <li>
                     <a href="poster_templates/poster_hbi.pptx">Health and biomedical informatics</a>
                     </li>
                     <li>
-                    <a href="poster_templates/poster_rss.pptx">Reliable software systems</a>
+                    <a href="poster_templates/poster_ihci.pptx">Inclusive Human-Computer Interaction</a>
                     </li>
                     <li>
-                    <a href="poster_templates/poster_dsds.pptx">Dependable and Secure Decentralized Systems</a>
+                    <a href="poster_templates/poster_rss.pptx">Reliable software systems</a>
                     </li>
                     <li>
                     <a href="poster_templates/poster_tc.pptx">Theory of Computing</a>
