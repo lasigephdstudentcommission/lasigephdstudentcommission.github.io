@@ -20,7 +20,7 @@ function showWorkshopInfo(workshop = -1) {
             $("#workshop_subtitle").text("");
             //$("#workshop_text").text("");
             $("#workshop_date").text("Date: April 10th");
-            $("#workshop_location").text("Location: FCUL Room To Be Announced (C6)");
+            $("#workshop_location").text("Location: Room 6.2.56 at FCUL");
             $("#workshop_form").text("REGISTER HERE");
             $("#workshop_form").attr("href", "https://forms.gle/JeNaRjfsxjNmzT869");
             $("#workshop_more_form_text").text("Registration open until April 5th. Poster submissions until April 5th.");
@@ -187,7 +187,7 @@ function showWorkshopMain(workshop = -1) {
 
                 case 2:
                     $("#workshop_media").html(``);
-                    $("#workshop_main").html(`<p>&nbsp;</p>
+                    $("#workshop_main").html(`
                     <h1 class="entry-title">Posters</h1>
                     <div class="entry-content">
                     <p>
