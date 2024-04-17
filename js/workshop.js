@@ -30,6 +30,7 @@ function showWorkshopInfo(workshop = -1) {
                                 <a href="" onclick="showWorkshopMain(0); return false; "> Program</a>
                                             <a href="" onclick="showWorkshopMain(1); return false; "> Dinner</a>
                                             <a href="" onclick="showWorkshopMain(2); return false; "> Poster Guidelines</a>
+                                            <a href="" onclick="showWorkshopMain(3); return false; "> Posters</a>
                                     `);
                                             /** <a href="" onclick="showWorkshopMain(3); return false; "> Poster Session</a>
                                             <a href="" onclick="showWorkshopMain(4); return false; "> Peddypaper</a>
@@ -255,6 +256,11 @@ function showWorkshopMain(workshop = -1) {
                     
                     </div>
                     `); 
+                    break;
+
+                case 3:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`<iframe style="width:100%;height:100vh" src="https://online.flippingbook.com/view/638831559/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>`);
                     break;
                 
                 /** 
