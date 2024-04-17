@@ -100,10 +100,11 @@ function showWorkshopMain(workshop = -1) {
                     <li><strong>14:00</strong>      Registration</li>
                     <li><strong>14:15</strong>      Welcome to LASIGE</li>
                     <li><strong>14:30</strong>      Keynote Talk - Nuno Neves</li>
-                    <li><strong>15:05</strong>      Keynote Talk - Márcia Barros</li>
+                    <li><strong>15:05</strong>      Keynote Talk - Carlos Duarte</li>
                     <li><strong>15:30</strong>      Poster Session and Coffee Break</li>
-                    <li><strong>16:30</strong>      Keynote Talk - Carlos Duarte</li>
-                    <li><strong>16:55</strong>      Keynote Talk - Bruno Loff</li>
+                    <li><strong>16:30</strong>      Keynote Talk - Bruno Loff</li>
+                    <li><strong>16:55</strong>      Keynote Talk - Márcia Barros</li>
+                    
                     <li><strong>17:20</strong>      Awards Ceremony</li>
                     <li><strong>18:30</strong>      Team Building</li>
                     <li><strong>20:30</strong>      Dinner at Rice Me</li>
