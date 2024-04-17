@@ -21,9 +21,9 @@ function showWorkshopInfo(workshop = -1) {
             //$("#workshop_text").text("");
             $("#workshop_date").text("Date: April 10th");
             $("#workshop_location").text("Location: Room 6.2.56 at FCUL");
-            $("#workshop_form").text("REGISTER HERE");
-            $("#workshop_form").attr("href", "https://forms.gle/JeNaRjfsxjNmzT869");
-            $("#workshop_more_form_text").text("Registration open until April 5th. Poster submissions until April 5th.");
+            $("#workshop_more_form_text").text("Registrations Closed");
+            //$("#workshop_form").text("REGISTER HERE");
+            //$("#workshop_form").attr("href", "https://forms.gle/JeNaRjfsxjNmzT869");
             
 
             $("#workshop_tabs").html(`
@@ -54,7 +54,8 @@ function showWorkshopInfo(workshop = -1) {
                 $("#workshop_location").text("Location: 6.1.36");
                 // $("#workshop_more_form_text").text("Registrations open until March 13th, poster submissions until march 15th");
                 $("#workshop_more_form_text").text("Registrations Closed");
-                $("#workshop_form").text("");
+                //$("#workshop_form").text("");
+                //$("#workshop_form").attr("");
                 // $("#workshop_form").text("Register here");
                 // $("#workshop_form").attr("href", "https://forms.gle/x7DiqGHH7JnXKXqEA");
                 $("#workshop_main").html(`<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqA5t8hi5sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
