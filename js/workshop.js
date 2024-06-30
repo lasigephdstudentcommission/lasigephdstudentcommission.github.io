@@ -262,7 +262,7 @@ function showWorkshopMain(workshop = -1) {
 
                 case 3:
                     $("#workshop_media").html(``);
-                    $("#workshop_main").html(`<iframe style="width:100%;height:100vh" src="https://online.flippingbook.com/view/638831559/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>`);
+                    $("#workshop_main").html(`<embed src="assets/img/events/workshop/24/posters.pdf" width="500" height="700" type="application/pdf">`);
                     break;
                 
                 /** 

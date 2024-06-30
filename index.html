@@ -70,6 +70,20 @@
                     <div class="carousel-item" style="background-image: url(assets/img/header-bg-2.png);">
                         <div class="carousel-container">
                             <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">2024 LASIGE FORUM</h2>
+                                <p class="animate__animated animate__fadeInUp"> Expand your horizons with feedback from colleagues and experts beyond your field. Attend workshops on essential tools for your Ph.D. and seize the opportunity to present your work to both university and external audiences.
+                                </p>
+                                <div>
+                                    <a data-bs-toggle='modal' href="#portfolioModalForum" class="btn btn-primary btn-xl text-uppercase">2024 LASIGE FORUM</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DEPRECATED
+                    <div class="carousel-item" style="background-image: url(assets/img/header-bg-2.png);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
                                 <h2 class="animate__animated animate__fadeInDown">2024 LASIGE WORKSHOP</h2>
                                 <p class="animate__animated animate__fadeInUp"> The LASIGE Workshop is a chance to connect, learn, and recognize the incredible work happening in our lab. We've got exciting talks, the traditional poster session, a team-building activity, and a delicious dinner to wrap it all up. Mark your calendars and prepare your posters! Click below to know more!
                                 </p>
@@ -79,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- DEPRECATED
+                    
                     <div class="carousel-item" style="background-image: url(assets/img/header-bg-2.png);">
                         <div class="carousel-container">
                             <div class="carousel-content">
@@ -188,7 +202,7 @@
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <!-- events item 1-->
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModalForum">
                             <div class="portfolio-hover-content">
 
                                 <img class="img-fluid-events" src="assets/img/Forum.png" width="100%" height="auto" alt=" ... " />
@@ -514,7 +528,7 @@
 
     <!-- Portfolio Modals-->
     <!-- Portfolio Forum modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1 " role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModalForum" tabindex="-1 " role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal " data-bs-dismiss="modal"><img src="assets/img/close-icon.svg " alt="Close modal " /></div>
@@ -527,19 +541,21 @@
                                     <a href="" onclick="showForumInfo(1); return false; "> 1st Edition</a>
                                     <a href="" onclick="showForumInfo(2); return false; "> 2nd Edition</a>
                                     <a href="" onclick="showForumInfo(3); return false; "> 3rd Edition</a>
+                                    <a href="" onclick="showForumInfo(4); return false; "> 4th Edition</a>
 
                                 </div>
-                                <h2 id="forum_title" class="text-uppercase ">LASIGE Forum</h2>
+                                <h2 id="forum_title" class="text-uppercase" style="margin-top:20px;">LASIGE Forum</h2>
                                 <h4 id="forum_subtitle"> </h4>
+                                <div id="forum_banner"></div>
                                 <p id="forum_text" class="item-intro text-muted ">Expand your horizons with feedback from colleagues and experts beyond your field. Join workshops on essential tools for your Ph.D. and present your work to both university and external audiences. Apply now to become a featured
                                     speaker!
 
                                 </p>
                                 <br>
                                 <p id="more_form_text2"> </p>
-                                <a id="forum_form" href="https://forms.gle/2ggQGXsJ81X4eDUy9 " target="_blank ">here</a>
+                                <a id="forum_form" href="" target="_blank ">REGISTER HERE</a>
 
-                                <ul class=" list-inline ">
+                                <ul class=" list-inline " style="margin-top:10px;">
                                     <li>
                                         <strong id="forum_date">Date:</strong>
                                     </li>

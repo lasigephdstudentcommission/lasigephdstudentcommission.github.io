@@ -11890,3 +11890,9 @@
         font-family: "Rubik Doodle Shadow", Arial, sans-serif;
         text-decoration: none;
     }
+
+    #forum_form {
+        padding: 5px 10px;
+        font-size: 30px;
+        text-decoration: none;
+    }
