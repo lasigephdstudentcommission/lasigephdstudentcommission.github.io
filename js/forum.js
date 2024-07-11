@@ -102,8 +102,8 @@ function showForumInfo(forum = -1) {
             $("#forum_title").text("LASIGE Forum");
             $("#forum_subtitle").text("4th Edition");
             $("#forum_text").text("Expand your horizons with feedback from colleagues and experts beyond your field. Attend workshops on essential tools for your Ph.D. and seize the opportunity to present your work to both university and external audiences.");
-            $("#forum_main").attr("style", "display: none;");
-            //$("#forum_img").attr("src", "assets/img/events/Forum2024/schedule.png");
+            //$("#forum_main").attr("style", "display: none;");
+            $("#forum_img").attr("src", "assets/img/events/Forum2024/schedule.png");
             $("#forum_date").text("Date: July 12th 2024");
             $("#forum_location").text("Location: 6.3.27");
             //$("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
@@ -151,7 +151,6 @@ function showForumImage(forum = -1) {
                     $("#forum_talks").html(``);
                     $("#forum_media").html(``);
                     $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/Forum-panel.png" alt="... " />`);
-
                     break;
                 case 3:
                     $("#forum_media").html(``);
