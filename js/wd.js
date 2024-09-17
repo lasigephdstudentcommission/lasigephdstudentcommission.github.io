@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     //showSocialInfo(social);
 
-    showWDInfo(2023);
+    showWDInfo(2024);
 
 });
 
@@ -54,8 +54,29 @@ function showWDInfo(wd = -1) {
 
             $("#wd_media").html(``);
             break;
-        default:
-            break;
+
+            case 2024:
+                $("#wd_banner").html(``);
+                $("#wd_title").text("Welcome Day");
+                $("#wd_subtitle").text("2024");
+                // $("#wd_text").text("");
+                $("#wd_date").text("Save the date! The event will happen on 9 October 2024.");
+                $("#wd_location").text("Location: FCUL (Room TBA)");
+                // $("#more_form_text").text("Registrations Closed");
+                $("#wd_form").text("");
+                // $("#wd_form").attr("href", "https://forms.gle/j5Eqp9HreS2qTXvR9");
+                $("#wd_main").html(`<img width="80%" margin="0" src="assets/img/events/WD2024/lasige_wd_2024.png" alt="... " />`);
+                //$("#wd_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+    
+    
+                $("#wd_tabs").html(`
+                                    `)
+    
+                $("#wd_media").html(``);
+                break;
+
+            default:
+                break;
     }
 
 }
@@ -82,7 +103,6 @@ function showWDMain(wd = -1) {
                     break;
 
                 default:
-                    $("#wd_media").html(``);
                     $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2022/Welcome Day.png" alt="... " />`);
                     break;
             }
@@ -172,6 +192,20 @@ function showWDMain(wd = -1) {
                     break;
             }
 
+            case '2024':
+
+            switch (wd) {
+                case 0:
+                    $("#wd_media").html(``);
+                    $("#wd_main").html(``);
+                    break;
+
+                default:
+                    $("#wd_media").html(``);
+                    $("#wd_main").html(``);
+                    break;
+            }
+
             break;
 
     }
@@ -219,6 +253,18 @@ function showWDMedia(wd = -1) {
 
                 default:
                     //$("#wd_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+                    break;
+            }
+
+            break;
+
+            case '2024':
+
+            switch (wd) {
+                case 0:
+                    break;
+
+                default:
                     break;
             }
 

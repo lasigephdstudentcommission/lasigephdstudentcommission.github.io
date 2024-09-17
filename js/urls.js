@@ -21,30 +21,42 @@ $(document).ready(function() {
         $("#portfolioModalWD").modal('show');
         showWDInfo(2023)
     }
+    
+    var url = window.location.href;
+    if (url.indexOf('?welcomeday2024') != -1) {
+        $("#portfolioModalWD").modal('show');
+    }
 
     // FORUM
     var url = window.location.href;
     if (url.indexOf('?forum') != -1) {
-        $("#portfolioModal1").modal('show');
+        $("#portfolioModalForum").modal('show');
+    }
+
+    var url = window.location.href;
+    if (url.indexOf('?forum4') != -1) {
+        $("#portfolioModalForum").modal('show');
+        showForumInfo(4)
+
     }
 
     var url = window.location.href;
     if (url.indexOf('?forum3') != -1) {
-        $("#portfolioModal1").modal('show');
+        $("#portfolioModalForum").modal('show');
         showForumInfo(3)
 
     }
 
     var url = window.location.href;
     if (url.indexOf('?forum2') != -1) {
-        $("#portfolioModal1").modal('show');
+        $("#portfolioModalForum").modal('show');
         showForumInfo(2)
 
     }
 
     var url = window.location.href;
     if (url.indexOf('?forum1') != -1) {
-        $("#portfolioModal1").modal('show');
+        $("#portfolioModalForum").modal('show');
         showForumInfo(1)
 
     }
@@ -56,9 +68,28 @@ $(document).ready(function() {
     }
 
     var url = window.location.href;
+    if (url.indexOf('?workshop2024') != -1) {
+        $("#portfolioModalWorkshop").modal('show');
+        showWorkshopInfo(2024)
+    }
+
+    var url = window.location.href;
     if (url.indexOf('?workshop2023') != -1) {
         $("#portfolioModalWorkshop").modal('show');
         showWorkshopInfo(2023)
     }
+
+    // COMMISSIONS
+    var url = window.location.href;
+    if (url.indexOf('?commissions') != -1) {
+        $("#portfolioModalCommissions").modal('show');
+    }
+
+    // RECRUIT
+    var url = window.location.href;
+    if (url.indexOf('?join') != -1) {
+        $("#portfolioModalRecruit").modal('show');
+    }
+
 
 });
