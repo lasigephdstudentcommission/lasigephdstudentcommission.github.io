@@ -130,6 +130,19 @@ function showCommissionsInfo(year = -1) {
 
                     </div>
                 </div>
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/susana_n.png" alt="... " />
+
+                        <a class="mx-2 " href="https://www.lasige.pt/member/susana-nunes " target="_blank" aria-label="Larry Parker Facebook Profile ">
+                            <h5>Susana Nunes</h5>
+                        </a>
+                        <p>Public Relations</p>
+                        <p class="text-muted ">Data and Systems Intelligence</p>
+                        <p class="text-muted ">Health and Biomedical Informatics</p>
+
+                    </div>
+                </div>
                 
                 <div class="col-lg-6 ">
                     <div class="team-member ">
@@ -156,20 +169,6 @@ function showCommissionsInfo(year = -1) {
 
                     </div>
                 </div>
-
-                <div class="col-lg-6 ">
-                    <div class="team-member ">
-                        <img class="mx-auto rounded-circle " src="assets/img/team/old/susana_n.png" alt="... " />
-
-                        <a class="mx-2 " href="https://www.lasige.pt/member/susana-nunes " target="_blank" aria-label="Larry Parker Facebook Profile ">
-                            <h5>Susana Nunes</h5>
-                        </a>
-                        <p>Public Relations</p>
-                        <p class="text-muted ">Data and Systems Intelligence</p>
-                        <p class="text-muted ">Health and Biomedical Informatics</p>
-
-                    </div>
-                </div>
                 <div class="col-lg-6 ">
                     <div class="team-member ">
                         <img class="mx-auto rounded-circle " src="assets/img/team/old/guilherme_e.png" alt="... " />
@@ -182,6 +181,19 @@ function showCommissionsInfo(year = -1) {
                     </div>
                 </div>
                 <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/patricia_e.png" alt="... " />
+
+                        <a class="mx-2 " href="https://www.lasige.pt/member/patricia-eugenio " target="_blank" aria-label="Larry Parker Facebook Profile ">
+                            <h5>Patrícia Eugénio</h5>
+                        </a>
+                        <p>Operational Team</p>
+
+                        <p class="text-muted ">Data and Systems Intelligence</p>
+                        <p class="text-muted ">Health and Biomedical Informatics</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 ">
                     <div class="team-member ">
                         <img class="mx-auto rounded-circle " src="assets/img/team/old/jessica_c.png " alt="Jéssica Catarino portrait." />
                         <a class="mx-2 " href="https://www.lasige.pt/member/jessica-catarino/ " target="_blank " aria-label="Diana Petersen Facebook Profile ">
@@ -281,17 +293,6 @@ function showCommissionsInfo(year = -1) {
                             <h5>Rohit Kumar</h5>
                         </a>
                         <p class="text-muted ">Cyber Physical Systems</p>
-                    </div>
-                </div>
-                <div class="col-lg-12 ">
-                    <div class="team-member ">
-                        <img class="mx-auto rounded-circle " src="assets/img/team/old/patricia_e.png" alt="... " />
-
-                        <a class="mx-2 " href="https://www.lasige.pt/member/patricia-eugenio " target="_blank" aria-label="Larry Parker Facebook Profile ">
-                            <h5>Patrícia Eugénio</h5>
-                        </a>
-                        <p class="text-muted ">Data and Systems Intelligence</p>
-                        <p class="text-muted ">Health and Biomedical Informatics</p>
                     </div>
                 </div>
                 </div>
