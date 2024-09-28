@@ -273,7 +273,7 @@ function showWDMain(wd = -1) {
                     <p style="text-align:left;margin:0;"><strong>Starters</strong></p>
                     <ul class="list-left">
                         <li>Assortment of miniatures of fresh and succulent snacks</li>
-                        <li>Cheese, chorizo and other ​​pâtés and other taste</li>
+                        <li>Cheese, chorizo ​​pâtés and other taste</li>
                         <li>Toasts, breadsticks and fresh bread rolls</li>
                         <li>Various seasonal fruits</li>
                         <li>“Welcome Drink” - Gula's berry lemonade</li>
