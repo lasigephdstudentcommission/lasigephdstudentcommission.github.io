@@ -11891,6 +11891,15 @@
         text-decoration: none;
     }
 
+    #wd_form {
+        width: 400px;
+        margin: auto;
+        padding: 5px 10px;
+        border: solid 1px black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+
     #forum_form {
         padding: 5px 10px;
         font-size: 30px;

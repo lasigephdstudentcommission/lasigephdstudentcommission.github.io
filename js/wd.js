@@ -15,14 +15,14 @@ function showWDInfo(wd = -1) {
 
     switch (wd) {
         case 2022:
+            $("#wd_banner").html(``);
             $("#wd_title").text("Welcome Day");
             $("#wd_subtitle").text("2022");
             // $("#wd_text").text("");
             $("#wd_date").text("Date: Past Event");
             $("#wd_location").text("Location: C6.1.36");
             $("#more_form_text").text("Registrations Closed");
-            $("#wd_form").text(" ");
-            $("#wd_form").attr("href", " ");
+            $("#wd_form").attr("style", "display:none");
             $("#wd_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
 
 
@@ -34,14 +34,16 @@ function showWDInfo(wd = -1) {
 
             $("#wd_media").html(``);
             break;
+
         case 2023:
+            $("#wd_banner").html(``);
             $("#wd_title").text("Welcome Day");
             $("#wd_subtitle").text("2023");
             // $("#wd_text").text("");
             $("#wd_date").text("Date: October 18th 2023");
             $("#wd_location").text("Location: C6.1.36");
             // $("#more_form_text").text("Registrations Closed");
-            $("#wd_form").text("Past Event");
+            $("#wd_form").attr("style", "display:none");
             // $("#wd_form").attr("href", "https://forms.gle/j5Eqp9HreS2qTXvR9");
             $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2023/Welcome day 2023.jpg" alt="... " />`);
             //$("#wd_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
@@ -56,21 +58,25 @@ function showWDInfo(wd = -1) {
             break;
 
             case 2024:
-                $("#wd_banner").html(``);
-                $("#wd_title").text("Welcome Day");
-                $("#wd_subtitle").text("2024");
+                $("#wd_banner").html(`<img width="70%" margin="0" src="assets/img/events/WD2024/lasige_wd_2024.png" alt="... " />`);
+                $("#wd_title").text("");
+                $("#wd_subtitle").text("");
                 // $("#wd_text").text("");
-                $("#wd_date").text("Save the date! The event will happen on 9 October 2024.");
-                $("#wd_location").text("Location: FCUL (Room TBA)");
+                $("#wd_date").text("Date: 9 October 2024");
+                $("#wd_location").text("Location: FCUL Room C6.2.52");
+                $("#wd_form").html(`<a href="https://forms.gle/a3SyrGxLcP5kzRDC6" target="_blank ">REGISTER HERE</a>`);
+                $("#wd_form").attr("style", "display:block");
                 // $("#more_form_text").text("Registrations Closed");
-                $("#wd_form").text("");
+                //$("#wd_form").text("REGISTER HERE");
                 // $("#wd_form").attr("href", "https://forms.gle/j5Eqp9HreS2qTXvR9");
-                $("#wd_main").html(`<img width="80%" margin="0" src="assets/img/events/WD2024/lasige_wd_2024.png" alt="... " />`);
+                $("#wd_main").html(``);
                 //$("#wd_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
     
     
                 $("#wd_tabs").html(`
-                                    `)
+                    <a href="" onclick="showWDMain(0); return false; "> Program</a>
+                    <a href="" onclick="showWDMain(1); return false; "> Dinner</a>
+            `)
     
                 $("#wd_media").html(``);
                 break;
@@ -192,21 +198,118 @@ function showWDMain(wd = -1) {
                     break;
             }
 
+            break;
+
             case '2024':
 
             switch (wd) {
                 case 0:
                     $("#wd_media").html(``);
-                    $("#wd_main").html(``);
+                    
+                    $("#wd_main").html(`
+                    <h1 class="entry-title">Program</h1>
+                    <div class="entry-content">
+
+                    <p>We have a day full of activities, come and join us!</p>
+
+                    <ul class="list-left ">
+                    <li><strong>15:30</strong>      Registration (Collect your badge!)</li>
+                    <li><strong>16:00</strong>      Welcome to LASIGE - Alysson Bessani</li>
+                    <li><strong>16:30</strong>      Into the Unknown: Journey from LASIGE to CMU and Silicon Valley Startups - Catarina Gamboa</li>
+                    <li><strong>16:45</strong>      From CMU to Big Tech Research: Finding  ≈ 1000 Bugs in 12 Weeks on Configuration Platforms - Paulo Canelas</li>
+                    <li><strong>17:00</strong>      Frozen Landscapes, Warm Collaborations: My Time in Sweden - Beatriz Nogueira</li>
+                    <li><strong>17:15</strong>      Q&A with Catarina, Paulo, and Beatriz</li>
+                    <li><strong>17:30</strong>      LASIGE Photo & Coffee Break</li>
+                    <li><strong>18:15</strong>      Hi! from the PhD Student Commission</li>
+                    <li><strong>18:30</strong>      What Does it Mean to be LASIGE & Closing Remarks - Tiago Guerreiro, Cátia Pesquita & Alcides Fonseca</li>
+                    <li><strong>18:55</strong>      Team Building</li>
+                    <li><strong>20:15</strong>      Dinner at <a href="https://maps.app.goo.gl/NuwkDt8Gpn9cSEgC7" target="_blank">Gula's for Kitchen Lovers</a></li>
+                    </ul>
+
+                    <img class="img-fluid d-block mx-auto " src="assets/img/events/WD2024/program.png" alt="... " />
+                    `);
                     break;
+                
+
+                case 1:
+                    $("#wd_media").html(``);
+                    $("#wd_main").html(`
+                    <h1 class="entry-title">Dinner</h1>
+
+                    
+
+                    <div class="entry-content">
+                    <br>
+
+                    <img width="100%" margin="0" src="assets/img/events/WD2024/dinner.png" alt="... " />
+
+                    <p>
+                    There will be a dinner at Gula's for <a href="https://www.aminhagula.pt" target="_blank">Kitchen Lovers</a> located at <a href="https://maps.app.goo.gl/NuwkDt8Gpn9cSEgC7" target="_blank">Street Dona Filipa de Vilhena 18A, Lisbon</a>. The dinner starts at 20h15 with the welcome drinks and starters.
+                    </p>
+
+                    <p><strong>Price and payment:</strong></p>
+                    <ul class=" list-left ">
+                    <li>
+                    LASIGE members who do not hold a PhD degree (i.e., students): 12€
+                    </li>
+                    <li>
+                    LASIGE members who hold a PhD: 30€
+                    </li>
+                    </ul>
+
+                    <br>
+                    <p><strong>To attend the dinner:</strong></p>
+
+                    <ul class="list-left">
+                        <li>All payments must be made to Alexandra or Carla in room 6.3.30 by October, 4th, 2024, preferably between 10:00 and 16:00.</li>
+                        <li>A maximum of 80 dinner reservations are available, as such there will be a waiting list for people that do not secure a reservation. In the event that a seat becomes available due to non-payment or cancellation, we will offer it to participants on the waiting list.</li>
+                        <li>Both for Dinner and waiting list, your registration is only valid upon payment.</li>
+                    </ul>
+
+                    <br>
+                    <p><strong>Menu:</strong></p>
+                    <p>The dinner includes starters, the main course (buffet), dessert (buffet), coffee and drinks. If none of the dishes on the list respects your dietary restrictions, please inform the PhD Commission.</p>
+
+                    <p style="text-align:left;margin:0;"><strong>Starters</strong></p>
+                    <ul class="list-left">
+                        <li>Assortment of miniatures of fresh and succulent snacks</li>
+                        <li>Cheese, chorizo and other ​​pâtés and other taste</li>
+                        <li>Toasts, breadsticks and fresh bread rolls</li>
+                        <li>Various seasonal fruits</li>
+                        <li>“Welcome Drink” - Gula's berry lemonade</li>
+                    </ul>
+
+                    <p style="text-align:left;margin:0;"><strong>Main Course</strong></p>
+                    <ul class="list-left">
+                        <li><strong>Fish Option:</strong> Cod au gratin with greens in a cornbread crust</li>
+                        <li><strong>Meat Option:</strong> Roast pork loin with honey and mustard</li>
+                        <li><strong>Vegan Option:</strong> Vegetable Curry</li>
+                        <li><span class="fst-italic">All options are accompanied by a mixture of lettuce and tomato seasoned with taste with extra virgin olive oil from Herdade da Mingorra and splashes of oregano leaves from Vila Real de Santo António.</span></li>
+                    </ul>
+
+                    <p style="text-align:left;margin:0;"><strong>Desserts</strong></p>
+                    <ul class="list-left">
+                        <li>Chocolate Gula</li>
+                        <li>Camel pie with almond praline</li>
+                        <li>Nut puff pastry with golden soft eggs</li>
+                    </ul>
+
+                    <p style="text-align:left;margin:0;"><strong>Drinks</strong></p>
+                    <ul class="list-left">
+                        <li>Water, Teas, Lemonade, Coke</li>
+                        <li>Red or White Wine - Herdade da Mingorra</li>
+                        <li>Coffee</li>
+                    </ul>
+                    `);
+                    break
 
                 default:
                     $("#wd_media").html(``);
-                    $("#wd_main").html(``);
+                    $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/wd/24/program.png" alt="... " />`);
                     break;
             }
 
-            break;
+        break;
 
     }
 
