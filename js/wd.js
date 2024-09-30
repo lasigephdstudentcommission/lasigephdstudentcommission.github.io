@@ -63,7 +63,7 @@ function showWDInfo(wd = -1) {
                 $("#wd_subtitle").text("");
                 // $("#wd_text").text("");
                 $("#wd_date").text("Date: 9 October 2024");
-                $("#wd_location").text("Location: FCUL Room C6.2.52");
+                $("#wd_location").text("Location: FCUL Room C6.2.56");
                 $("#wd_form").html(`<a href="https://forms.gle/a3SyrGxLcP5kzRDC6" target="_blank ">REGISTER HERE</a>`);
                 $("#wd_form").attr("style", "display:block");
                 // $("#more_form_text").text("Registrations Closed");
