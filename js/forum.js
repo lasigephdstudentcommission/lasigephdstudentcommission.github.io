@@ -109,9 +109,14 @@ function showForumInfo(forum = -1) {
             //$("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
             $("#more_form_text2").text("");
             $("#more_form_text2").attr("style", "display: none;");
-            $("#forum_form").text("REGISTER HERE");
-            $("#forum_form").attr("href", "https://forms.gle/9WKXDsWH5eBYGVx18");
-            $("#forum_form").attr("style", "border: solid 1px black;");
+
+            $("#forum_form").text("");
+            $("#forum_form").attr("f", "");
+            $("#forum_form").attr("style", "display: none");
+
+            //$("#forum_form").text("REGISTER HERE");
+            //$("#forum_form").attr("href", "https://forms.gle/9WKXDsWH5eBYGVx18");
+            //$("#forum_form").attr("style", "border: solid 1px black;");
     
             $("#forum_tabs").html(``);
             $("#forum_tabs").attr("style", "display: none;");

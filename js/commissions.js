@@ -6,7 +6,7 @@ $(document).ready(function() {
 function showCommissionsInfo(year = -1) {
     switch (year) {
         case 2024:
-            $("#commissions_year").text("2023–2024");
+            $("#commissions_year").text("2024");
             $("#commissions_members").html(`
                 <div class="row ">
                 <div class="col-lg-6 ">
@@ -86,7 +86,7 @@ function showCommissionsInfo(year = -1) {
                 `);
             break;
         case 2023:
-            $("#commissions_year").text("2022–2023");
+            $("#commissions_year").text("2023");
             $("#commissions_members").html(`
                 <div class="row ">
                 
