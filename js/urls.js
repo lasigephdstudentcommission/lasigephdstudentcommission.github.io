@@ -91,5 +91,23 @@ $(document).ready(function() {
         $("#portfolioModalRecruit").modal('show');
     }
 
+    // TALKS
+    var url = window.location.href;
+    if (url.indexOf('?talks') != -1) {
+        $("#portfolioModalTalks").modal('show');
+    }
+
+    // CLUBS
+    var url = window.location.href;
+    if (url.indexOf('?clubs') != -1) {
+        $("#portfolioModalClubs").modal('show');
+    }
+
+    // RESOURCES
+    var url = window.location.href;
+    if (url.indexOf('?resources') != -1) {
+        $("#portfolioModalTemplates").modal('show');
+    }
+
 
 });
