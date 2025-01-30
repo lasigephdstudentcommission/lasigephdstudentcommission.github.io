@@ -4,7 +4,7 @@ Templates Functions
 
 $(document).ready(function() {
 
-    n_templates = 2;
+    n_templates = 3;
     showTemplatesInfo(n_templates);
 
 });
@@ -14,7 +14,34 @@ function showTemplatesInfo(templates = -1) {
     sessionStorage.setItem("template", templates);
 
     switch (templates) {
-        case 1: // Presentation Template
+        case 1: // Calendars
+            $("#templates_title").text("Templates & Resources");
+            $("#templates_subtitle").text("Calendars");
+            $("#templates_text").html(`
+
+                <br>
+
+                <p style="text-align: left;">
+                <br><a href="https://tinyurl.com/lasige-social-calendar">LASIGE Social Events</a> (Google Calendar & Android)
+                <br><a href="https://calendar.google.com/calendar/ical/2b16f68172054cf2fb8c96d44e455409936f2b03d3a0b1c715135a50ddbc79b8%40group.calendar.google.com/public/basic.ics">LASIGE Social Events</a> (iCloud Calendar)
+                <br><br><a href="https://tinyurl.com/lasige-scientific-calendar">LASIGE Talks</a> (Google Calendar & Android)
+                <br><a href="https://calendar.google.com/calendar/ical/011de1ad7bd9aa8fb685ffec96f89343d93775a2bf9d907e5cf9f1c937ca1eca%40group.calendar.google.com/public/basic.ics">LASIGE Talks</a> (iCloud Calendar)
+                </p>
+
+                <br>
+
+                <p style="text-align: left;"><strong>Instructions for iOS:</strong>
+                <ul style="text-align: left;">
+                    <li>Click Calendars from the calendar app</li>
+                    <li>Add calendar > Add subscription calendar</li>
+                    <li>Paste the ICS URL, Subscribe and Add</li>
+                    <li>Remember that event notification configuration will be taken from your phone's global settings. Check it on Configuration > Calendar > Default notifications.</p></li>
+                </ul>
+                </p>
+                `); 
+            break;
+
+        case 2: // Presentation Template
             $("#templates_title").text("Templates & Resources");
             $("#templates_subtitle").text("Presentation Template");
             $("#templates_text").html(`
@@ -29,7 +56,7 @@ function showTemplatesInfo(templates = -1) {
                 `); 
             break;
 
-        case 2: // Posters Templates
+        case 3: // Posters Templates
             $("#templates_title").text("Templates & Resources");
             $("#templates_subtitle").text("Posters Templates");
             $("#templates_text").html(`
