@@ -4,7 +4,7 @@ Templates Functions
 
 $(document).ready(function() {
 
-    n_templates = 3;
+    n_templates = 4;
     showTemplatesInfo(n_templates);
 
 });
@@ -97,6 +97,19 @@ function showTemplatesInfo(templates = -1) {
                     <li>No images or patterns can overlap the header.</li>
                     <li>The colour under the references and logos is required to be white.</li>
                     </ul>
+
+                `); 
+            break;
+
+            case 4: // Feedback form
+            $("#templates_title").text("Templates & Resources");
+            $("#templates_subtitle").text("Feedback Channel");
+            $("#templates_text").html(`
+
+                <br>
+
+                <p><strong>File:</strong> <a href="https://forms.gle/scUPUmYwxeR6Q8fp7">Feedback Form</a>
+                </li></p> 
 
                 `); 
             break;
