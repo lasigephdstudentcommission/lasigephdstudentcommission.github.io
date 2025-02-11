@@ -39,6 +39,7 @@ function showTemplatesInfo(templates = -1) {
                 </ul>
                 </p>
                 `); 
+                $("#templates_picture").html(`<img width="70%" margin="0" src="assets/img/templates/calendar.png" alt="... " />`);
             break;
 
         case 2: // Presentation Template
@@ -54,6 +55,7 @@ function showTemplatesInfo(templates = -1) {
                 </li></p> 
 
                 `); 
+                $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/templates/presentation_template.png" alt="... " />`);
             break;
 
         case 3: // Posters Templates
@@ -99,6 +101,7 @@ function showTemplatesInfo(templates = -1) {
                     </ul>
 
                 `); 
+                $("#templates_picture").html(`<img width="70%" margin="0" src="assets/img/templates/poster_templates.png" alt="... " />`);
             break;
 
             case 4: // Feedback form
@@ -108,10 +111,11 @@ function showTemplatesInfo(templates = -1) {
 
                 <br>
 
-                <p><strong>File:</strong> <a href="https://forms.gle/scUPUmYwxeR6Q8fp7">Feedback Form</a>
+                <p><strong>Link:</strong> <a href="https://forms.gle/scUPUmYwxeR6Q8fp7">Feedback Form</a>
                 </li></p> 
 
                 `); 
+            $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/templates/feedback_form.png" alt="... " />`);
             break;
 
         default:

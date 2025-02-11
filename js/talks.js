@@ -46,12 +46,12 @@ function showTalksInfo(talks = -1) {
             $("#talks_form").attr("href", "");
             break;
 
-            case 4:
-                $("#talks_title").text("LASIGE Talks");
-                $("#talks_subtitle").text("5th Edition");
-                $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_5.png" alt="... " />`);
-                $("#talks_form").text("");
-                $("#talks_form").attr("href", "");
+        case 5:
+            $("#talks_title").text("LASIGE Talks");
+            $("#talks_subtitle").text("5th Edition");
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_5.png" alt="... " />`);
+            $("#talks_form").text("");
+            $("#talks_form").attr("href", "");
                 break;
 
         default:
