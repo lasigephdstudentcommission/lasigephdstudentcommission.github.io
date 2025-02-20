@@ -4,7 +4,7 @@ Templates Functions
 
 $(document).ready(function() {
 
-    n_templates = 4;
+    n_templates = 5;
     showTemplatesInfo(n_templates);
 
 });
@@ -51,7 +51,7 @@ function showTemplatesInfo(templates = -1) {
 
                 <p style="text-align: left;">The presentation template is available as a Google Slides file, which can be easily converted to PPT. To use it, first make a copy or export the file, as the original cannot be edited directly. Using this template is optional—it simply offers a suggested graphical style for LASIGE presentations.</p>
 
-                <p><strong>File:</strong> <a href="https://docs.google.com/presentation/d/1IzLCI0TKFgk_DvITqZntePUTjcBiZhAWUJZgCD7RE0U/edit?usp=sharing">LASIGE Presentation Template</a>
+                <p><strong>File:</strong> <a href="https://docs.google.com/presentation/d/1IzLCI0TKFgk_DvITqZntePUTjcBiZhAWUJZgCD7RE0U/edit?usp=sharing" target="_blank">LASIGE Presentation Template</a>
                 </li></p> 
 
                 `); 
@@ -111,11 +111,27 @@ function showTemplatesInfo(templates = -1) {
 
                 <br>
 
-                <p><strong>Link:</strong> <a href="https://forms.gle/scUPUmYwxeR6Q8fp7">Feedback Form</a>
+                <p><strong>Link:</strong> <a href="https://forms.gle/scUPUmYwxeR6Q8fp7" target="_blank>Feedback Form</a>
                 </li></p> 
 
                 `); 
             $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/templates/feedback_form.png" alt="... " />`);
+            break;
+
+            case 5: // Welcome to LASIGE
+            $("#templates_title").text("Templates & Resources");
+            $("#templates_subtitle").text("Welcome to LASIGE");
+            $("#templates_text").html(`
+
+                <br>
+
+                <p>The "Welcome to LASIGE" document provides information to help you integrate smoothly into our team. It is a living resource that evolves with new information over time. If you notice any missing details or would like to contribute, please contact us at <a href="mailto:lasige-phd-commission@listas.di.ciencias.ulisboa.pt" target="_blank">	lasige-phd-commission@listas.di.ciencias.ulisboa.pt</a> or reach out to any team member. At <a href="https://www.lasige.pt/about-lasige/" target="_blank">LASIGE</a>’s website, you can learn more about our research lines, the members, and recent news.</p> 
+
+                <p><strong>Link:</strong> <a href="https://tinyurl.com/welcome-to-lasige" target="_blank">Welcome to LASIGE document</a>
+                </li></p> 
+
+                `); 
+            $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/welcome-to-lasige.png" alt="... " />`);
             break;
 
         default:
