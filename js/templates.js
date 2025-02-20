@@ -111,7 +111,7 @@ function showTemplatesInfo(templates = -1) {
 
                 <br>
 
-                <p><strong>Link:</strong> <a href="https://forms.gle/scUPUmYwxeR6Q8fp7" target="_blank>Feedback Form</a>
+                <p><strong>Link:</strong> <a href="https://forms.gle/scUPUmYwxeR6Q8fp7" target="_blank">Feedback Form</a>
                 </li></p> 
 
                 `); 
