@@ -20,21 +20,18 @@ function showWorkshopInfo(workshop = -1) {
             $("#workshop_subtitle").text("");
             //$("#workshop_text").text("");
             $("#workshop_date").text("Date: May 21st");
-            $("#workshop_location").text("Location: FCUL (Room TBD)");
-            $("#workshop_more_form_text").text("Registrations will open soon");
-            //$("#workshop_form").text("REGISTER HERE");
-            //$("#workshop_form").attr("href", "https://forms.gle/JeNaRjfsxjNmzT869");
+            $("#workshop_location").text("Location: Room TBD at FCUL");
+            $("#workshop_more_form_text").text("");
+            $("#workshop_form").text("REGISTER HERE");
+            $("#workshop_form").attr("href", "https://forms.gle/zDFxguciHq8XcovYA");
+            $("#workshop_form").attr("style", "display:block");
             
 
-            $("#workshop_tabs").html(``);/**
+            $("#workshop_tabs").html(`
                                 <a href="" onclick="showWorkshopMain(0); return false; "> Program</a>
                                             <a href="" onclick="showWorkshopMain(1); return false; "> Dinner</a>
                                             <a href="" onclick="showWorkshopMain(2); return false; "> Poster Guidelines</a>
-                                            <a href="" onclick="showWorkshopMain(3); return false; "> Posters</a>
-                                    
-                                             <a href="" onclick="showWorkshopMain(3); return false; "> Poster Session</a>
-                                            <a href="" onclick="showWorkshopMain(4); return false; "> Peddypaper</a>
-                                            <a href="" onclick="showWorkshopMain(5); return false; "> Aftermovie</a> */ 
+                                `);
                                        
                                 
             $("#workshop_media").html(``);
@@ -54,7 +51,8 @@ function showWorkshopInfo(workshop = -1) {
             $("#workshop_date").text("Date: April 10th");
             $("#workshop_location").text("Location: Room 6.2.56 at FCUL");
             $("#workshop_more_form_text").text("Registrations Closed");
-            //$("#workshop_form").text("REGISTER HERE");
+            $("#workshop_form").text("");
+            $("#workshop_form").attr("style", "display:none");
             //$("#workshop_form").attr("href", "https://forms.gle/JeNaRjfsxjNmzT869");
             
 
@@ -86,8 +84,8 @@ function showWorkshopInfo(workshop = -1) {
                 $("#workshop_location").text("Location: 6.1.36");
                 // $("#workshop_more_form_text").text("Registrations open until March 13th, poster submissions until march 15th");
                 $("#workshop_more_form_text").text("Registrations Closed");
-                //$("#workshop_form").text("");
-                //$("#workshop_form").attr("");
+                $("#workshop_form").text("");
+                $("#workshop_form").attr("style", "display:none");
                 // $("#workshop_form").text("Register here");
                 // $("#workshop_form").attr("href", "https://forms.gle/x7DiqGHH7JnXKXqEA");
                 $("#workshop_main").html(`<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqA5t8hi5sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
@@ -130,20 +128,26 @@ function showWorkshopMain(workshop = -1) {
                     <p>We have a day full of activities, come and join us!</p>
 
                     <ul class="list-left ">
-                    <li><strong>14:00</strong>      Registration</li>
-                    <li><strong>14:15</strong>      Welcome to LASIGE</li>
-                    <li><strong>14:30</strong>      Keynote Talk - Nuno Neves</li>
-                    <li><strong>15:05</strong>      Keynote Talk - Carlos Duarte</li>
+                    <li><strong>13:45</strong>      Registration</li>
+                    <li><strong>14:00</strong>      Welcome to LASIGE</li>
+                    <li><strong>14:10</strong>      "Contextual Intelligence in Biomedical Text Processing: Untangling the Hidden Layers of Knowledge" | Keynote talk by Francisco Couto</li>
+                    <li><strong>14:50</strong>      "10 years of Research" | Keynote talk by André Rodrigues</li>
                     <li><strong>15:30</strong>      Poster Session and Coffee Break</li>
-                    <li><strong>16:30</strong>      Keynote Talk - Bruno Loff</li>
-                    <li><strong>16:55</strong>      Keynote Talk - Márcia Barros</li>
-                    
-                    <li><strong>17:20</strong>      Awards Ceremony</li>
+                    <li><strong>16:30</strong>      Panel on Research and Industry</li>                    
+                    <li><strong>17:15</strong>      Awards Ceremony</li>
                     <li><strong>18:30</strong>      Team Building</li>
-                    <li><strong>20:30</strong>      Dinner at Rice Me</li>
+                    <li><strong>20:30</strong>      Dinner at Gula</li>
                     </ul>
 
-                    <img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/24/program.png" alt="... " />
+                    <h3 style="margin-top:50px;">"Contextual Intelligence in Biomedical Text Processing: Untangling the Hidden Layers of Knowledge"</h3>
+                    <p><strong>Speaker:</strong> Francisco Couto</p>
+                    <p><strong>Brief description:</strong> In today’s fast-paced biomedical research landscape, interpreting massive textual data is more important than ever. But what happens when the real story lies beyond the words, in subtle contextual clues that are easy to miss? When missed, these nuances can ripple outward, affecting everything from research breakthroughs to patient care. This presentation showcases how LASIGE is tackling the critical yet elusive role of context in biomedical text processing. Through their work in international challenges, LASIGE is aiming at shifting from ever growing need for unsustainable computational power to smarter, more contextual intelligence.</p>
+
+                    <h3>"10 years of Research"</h3>
+                    <p><strong>Speaker:</strong> André Rodrigues</p>
+                    <p><strong>Brief description:</strong> This talk offers a personal account of my last ten years of research at LASIGE. I will reflect on publications/funding attempts and results, discuss changes in research goals alongside shifts in roles and career stage. I will discuss how collaborations evolve, the unseen benefits of service work, and the benefits (and privileges) of being a part of a larger research group. I will also share personal insights into ongoing negotiation of work-life balance and reflect on the interplay between luck, privilege and merit that influence research outcomes.</p>
+
+                    <img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/25/program.png" alt="... " />
                     `);
                     break;
                 
@@ -158,10 +162,10 @@ function showWorkshopMain(workshop = -1) {
                     <div class="entry-content">
                     <br>
 
-                    <img width="100%" margin="0" src="assets/img/events/workshop/24/dinner.png" alt="... " />
+                    <img width="100%" margin="0" src="assets/img/events/WD2024/dinner.png" alt="... " />
 
                     <p>
-                    The dinner will be held at the restaurant <a href="https://www.riceme.pt" target="_blank">Rice Me</a>. You can find here the <a href="https://www.riceme.pt" target="_blank">restaurant location</a href="https://maps.app.goo.gl/Krtwedu5UhBRgn5U7" target="_blank">. The Dinner starts at 20h30 with the welcome drinks and starters.
+                    There will be a dinner at <a href="https://www.aminhagula.pt" target="_blank">Gula's for Kitchen Lovers</a> located at <a href="https://maps.app.goo.gl/NuwkDt8Gpn9cSEgC7" target="_blank">Street Dona Filipa de Vilhena 18A, Lisbon</a>. The dinner starts at 20h15 with the welcome drinks and starters.
                     </p>
 
                     <p><strong>Price and payment:</strong></p>
@@ -170,7 +174,7 @@ function showWorkshopMain(workshop = -1) {
                     LASIGE members who do not hold a PhD degree (i.e., students): 10€
                     </li>
                     <li>
-                    LASIGE members who hold a PhD: 25€
+                    LASIGE members who hold a PhD: 20€
                     </li>
                     </ul>
 
@@ -178,44 +182,20 @@ function showWorkshopMain(workshop = -1) {
                     <p><strong>To attend the dinner:</strong></p>
 
                     <ul class="list-left">
-                        <li>All payments must be made to Carla or Alexandra in room 6.3.30, preferably from 10:00-16:00, until March 28th, 2024.</li>
-                        <li>A maximum of 100 dinner reservations are available, as such there will be a waiting list for people that do not secure a reservation. In the event that a seat becomes available due to non-payment or cancellation, we will offer it to participants on the waiting list.</li>
-                        <li>Both for dinner and waiting list, your registration is only valid upon payment.</li>
+                        <li>All payments must be made to Alexandra or Carla in room 6.3.30 by May 16th, preferably between 10:00 and 16:00.</li>
+                        <li>A maximum of 85 dinner reservations are available, as such there will be a waiting list for people that do not secure a reservation. In the event that a seat becomes available due to non-payment or cancellation, we will offer it to participants on the waiting list.</li>
+                        <li>Both for Dinner and waiting list, your registration is only valid upon payment.</li>
                     </ul>
 
                     <br>
                     <p><strong>Menu:</strong></p>
-                    <p>The dinner includes starters, the main course, dessert, coffee, and drinks.</p>
-
-                    <p style="text-align:left;margin:0;"><strong>Starters</strong></p>
-                    <ul class="list-left">
-                        <li>Platter of Cured Sausages and Cheese</li>
-                        <li>Rice Flour Bread with Olive Oil (vegan)</li>
-                        <li>Olives (vegan)</li>
-                        <li>Welcome Drinks: Wine, Bellinis, Beer, Juices, Water</li>
-                    </ul>
+                    <p>The dinner includes starters, the main course (buffet), dessert (buffet), coffee and drinks. If none of the dishes on the list respects your dietary restrictions, please inform the PhD Commission.</p>
 
                     <p style="text-align:left;margin:0;"><strong>Main Course</strong></p>
                     <ul class="list-left">
-                        <li><strong>Fish Option:</strong> Spiritual Codfish (shredded codfish cooked with onions, garlic and carrot, layered in bread crumbs and béchamel sauce)</li>
-                        <li><strong>Meat Option:</strong> Duck Rice (flavourful and hearty rice dish with tender duck meat, with rice cooked in duck broth, leek, orange and chorizo)</li>
-                        <li><strong>Vegan Option:</strong> Lentil Moussaka (layers of eggplant with minced lentils covered with a creamy béchamel sauce made out of vegatable cream)</li>
-                    </ul>
-
-                    <p style="text-align:left;margin:0;"><strong>Desserts</strong></p>
-                    <ul class="list-left">
-                        <li>Chocolate mousse (gluten-free, lactose-free)</li>
-                        <li>Sweet rice (gluten-free)</li>
-                        <li>Lime mousse (gluten-free, vegan)</li>
-                        <li>Fruit salad (gluten-free, vegan)</li>
-                    </ul>
-
-                    <p style="text-align:left;margin:0;"><strong>Drinks</strong></p>
-                    <ul class="list-left">
-                        <li><strong>Natural Juices:</strong> Lemonade with Ginger and Mint; Orange Juice</li>
-                        <li><strong>Soft Drinks:</strong> Pepsi; Pepsi Max; Guaraná; 7Up</li>
-                        <li><strong>Red or White Wine:</strong> Quinta de Carvalhais, Dão</li>
-                        <li>Coffee</li>
+                        <li><strong>Fish Option:</strong> Codfish gratin with fragrant coriander and mozzarella cheese topping</li>
+                        <li><strong>Meat Option:</strong> Pork loin roasted in mustard and honey, accompanied by rosemary-roasted potatoes with sauces and/or roasted sweet potato fry (lactose-free)</li>
+                        <li><strong>Vegan Option:</strong> Vegetable curry with grain (lactose-free)</li>
                     </ul>
                     `);
                     break
@@ -231,12 +211,12 @@ function showWorkshopMain(workshop = -1) {
                     
                     <p><strong>Submission guidelines:</strong></p>
                     <p>
-                    Please submit your poster as a PDF file, formatted as A0, on the <a href="https://forms.gle/JeNaRjfsxjNmzT869">registration form</a> or sent to <a href="mailto:lasige-phd-commission@listas.di.ciencias.ulisboa.pt">lasige-phd-commission@listas.di.ciencias.ulisboa.pt</a> until the 5th of April 2024 with the email title "LASIGE Workshop - Poster Submission" and with the following information:
+                    Please submit your poster as a PDF file, formatted as A0, by sending it to <a href="mailto:lasige-phd-commission@listas.di.ciencias.ulisboa.pt">lasige-phd-commission@listas.di.ciencias.ulisboa.pt</a> until May 9th @ 23h59 with the email title "LASIGE Workshop - Poster Submission" and with the following information:
                     </p>
 
                     <ul class="list-left">
                         <li>Author Name</li>
-                        <li>Research Line(s)</li>
+                        <li>Research Line</li>
                         <li>Title</li>
                         <li>PDF</li>
                     </ul>
@@ -258,7 +238,6 @@ function showWorkshopMain(workshop = -1) {
                     <ul class="list-left">
                         <li>Each participant registered in the workshop must vote in a maximum of 3 posters.</li>
                         <li>In the event of a tie, a new poll between the posters tied will take place during the LASIGE Awards slot.</li>
-                        <li>The best poster is awarded 350€ and the best runner-up poster is awarded 150€.</li>
                     </ul>
 
                     <br>
@@ -292,12 +271,14 @@ function showWorkshopMain(workshop = -1) {
                     `); 
                     break;
 
+                /** 
+
                 case 3:
                     $("#workshop_media").html(``);
                     $("#workshop_main").html(`<embed src="assets/img/events/workshop/24/posters.pdf" width="500" height="700" type="application/pdf">`);
                     break;
                 
-                /** 
+                
 
                 case 3:
                     $("#workshop_media").html(``);
