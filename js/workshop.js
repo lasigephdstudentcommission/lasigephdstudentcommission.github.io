@@ -20,11 +20,10 @@ function showWorkshopInfo(workshop = -1) {
             $("#workshop_subtitle").text("");
             //$("#workshop_text").text("");
             $("#workshop_date").text("Date: May 21st");
-            $("#workshop_location").text("Location: Room TBD at FCUL");
+            $("#workshop_location").text("Location: 6.1.36");
             $("#workshop_more_form_text").text("");
-            $("#workshop_form").text("REGISTER HERE");
-            $("#workshop_form").attr("href", "https://forms.gle/zDFxguciHq8XcovYA");
-            $("#workshop_form").attr("style", "display:block");
+            $("#workshop_form").text("");
+            $("#workshop_form").attr("style", "display:none");
             
 
             $("#workshop_tabs").html(`
@@ -128,24 +127,23 @@ function showWorkshopMain(workshop = -1) {
                     <p>We have a day full of activities, come and join us!</p>
 
                     <ul class="list-left ">
-                    <li><strong>13:45</strong>      Registration</li>
-                    <li><strong>14:00</strong>      Welcome to LASIGE</li>
-                    <li><strong>14:10</strong>      "Contextual Intelligence in Biomedical Text Processing: Untangling the Hidden Layers of Knowledge" | Keynote talk by Francisco Couto</li>
-                    <li><strong>14:50</strong>      "10 years of Research" | Keynote talk by André Rodrigues</li>
-                    <li><strong>15:30</strong>      Poster Session and Coffee Break</li>
-                    <li><strong>16:30</strong>      Panel on Research and Industry</li>                    
-                    <li><strong>17:15</strong>      Awards Ceremony</li>
-                    <li><strong>18:30</strong>      Team Building</li>
+                    <li><strong>14:30</strong>      Registration</li>
+                    <li><strong>14:45</strong>      Welcome to LASIGE</li>
+                    <li><strong>15:00</strong>      "10 years of Research" | Keynote talk by André Rodrigues</li>
+                    <li><strong>15:40</strong>      Poster Session and Coffee Break</li>
+                    <li><strong>17:00</strong>      "Contextual Intelligence in Biomedical Text Processing: Untangling the Hidden Layers of Knowledge" | Keynote talk by Francisco Couto</li>                   
+                    <li><strong>17:40</strong>      Awards Ceremony</li>
+                    <li><strong>18:40</strong>      Team Building</li>
                     <li><strong>20:30</strong>      Dinner at Gula</li>
                     </ul>
-
-                    <h3 style="margin-top:50px;">"Contextual Intelligence in Biomedical Text Processing: Untangling the Hidden Layers of Knowledge"</h3>
-                    <p><strong>Speaker:</strong> Francisco Couto</p>
-                    <p><strong>Brief description:</strong> In today’s fast-paced biomedical research landscape, interpreting massive textual data is more important than ever. But what happens when the real story lies beyond the words, in subtle contextual clues that are easy to miss? When missed, these nuances can ripple outward, affecting everything from research breakthroughs to patient care. This presentation showcases how LASIGE is tackling the critical yet elusive role of context in biomedical text processing. Through their work in international challenges, LASIGE is aiming at shifting from ever growing need for unsustainable computational power to smarter, more contextual intelligence.</p>
 
                     <h3>"10 years of Research"</h3>
                     <p><strong>Speaker:</strong> André Rodrigues</p>
                     <p><strong>Brief description:</strong> This talk offers a personal account of my last ten years of research at LASIGE. I will reflect on publications/funding attempts and results, discuss changes in research goals alongside shifts in roles and career stage. I will discuss how collaborations evolve, the unseen benefits of service work, and the benefits (and privileges) of being a part of a larger research group. I will also share personal insights into ongoing negotiation of work-life balance and reflect on the interplay between luck, privilege and merit that influence research outcomes.</p>
+
+                    <h3 style="margin-top:50px;">"Contextual Intelligence in Biomedical Text Processing: Untangling the Hidden Layers of Knowledge"</h3>
+                    <p><strong>Speaker:</strong> Francisco Couto</p>
+                    <p><strong>Brief description:</strong> In today’s fast-paced biomedical research landscape, interpreting massive textual data is more important than ever. But what happens when the real story lies beyond the words, in subtle contextual clues that are easy to miss? When missed, these nuances can ripple outward, affecting everything from research breakthroughs to patient care. This presentation showcases how LASIGE is tackling the critical yet elusive role of context in biomedical text processing. Through their work in international challenges, LASIGE is aiming at shifting from ever growing need for unsustainable computational power to smarter, more contextual intelligence.</p>
 
                     <img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/25/program.png" alt="... " />
                     `);
