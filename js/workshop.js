@@ -30,6 +30,7 @@ function showWorkshopInfo(workshop = -1) {
                                 <a href="" onclick="showWorkshopMain(0); return false; "> Program</a>
                                             <a href="" onclick="showWorkshopMain(1); return false; "> Dinner</a>
                                             <a href="" onclick="showWorkshopMain(2); return false; "> Poster Guidelines</a>
+                                            <a href="" onclick="showWorkshopMain(3); return false; "> Posters</a>
                                 `);
                                        
                                 
@@ -269,19 +270,12 @@ function showWorkshopMain(workshop = -1) {
                     `); 
                     break;
 
+                case 3:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`<embed src="assets/img/events/workshop/25/posters.pdf" width="500" height="700" type="application/pdf">`);
+                    break;
+
                 /** 
-
-                case 3:
-                    $("#workshop_media").html(``);
-                    $("#workshop_main").html(`<embed src="assets/img/events/workshop/24/posters.pdf" width="500" height="700" type="application/pdf">`);
-                    break;
-                
-                
-
-                case 3:
-                    $("#workshop_media").html(``);
-                    $("#workshop_main").html(`<iframe style="width:50vw;height:100vh" src="https://online.fliphtml5.com/ijvpg/mppe/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>`);
-                    break;
 
                 case 4:
                     $("#workshop_media").html(``);
