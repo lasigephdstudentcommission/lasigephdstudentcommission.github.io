@@ -68,6 +68,18 @@ $(document).ready(function() {
     }
 
     var url = window.location.href;
+    if (url.indexOf('?workshop2025posters') != -1) {
+        $("#portfolioModalWorkshop").modal('show');
+        showWorkshopInfo(2025); showWorkshopMain(3)
+    }
+
+    var url = window.location.href;
+    if (url.indexOf('?workshop2025') != -1) {
+        $("#portfolioModalWorkshop").modal('show');
+        showWorkshopInfo(2025)
+    }
+
+    var url = window.location.href;
     if (url.indexOf('?workshop2024') != -1) {
         $("#portfolioModalWorkshop").modal('show');
         showWorkshopInfo(2024)
