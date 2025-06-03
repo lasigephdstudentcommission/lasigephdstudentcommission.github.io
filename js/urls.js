@@ -5,10 +5,6 @@ $(document).ready(function() {
     */
     
     // WELCOME DAY
-    var url = window.location.href;
-    if (url.indexOf('?welcomeday') != -1) {
-        $("#portfolioModalWD").modal('show');
-    }
 
     var url = window.location.href;
     if (url.indexOf('?welcomeday2022') != -1) {
@@ -21,7 +17,12 @@ $(document).ready(function() {
         $("#portfolioModalWD").modal('show');
         showWDInfo(2023)
     }
-    
+
+    var url = window.location.href;
+    if (url.indexOf('?welcomeday') != -1) {
+        $("#portfolioModalWD").modal('show');
+    }
+
     var url = window.location.href;
     if (url.indexOf('?welcomeday2024') != -1) {
         $("#portfolioModalWD").modal('show');
