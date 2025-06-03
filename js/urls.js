@@ -1,127 +1,35 @@
-$(document).ready(function() {
+$(document).ready(function () {
+    const url = window.location.href;
 
-    /*
-    URLs
-    */
-    
-    // WELCOME DAY
+    const modalMappings = [
+        { query: '?welcomeday', modal: '#portfolioModalWD' },
+        { query: '?welcomeday2022', modal: '#portfolioModalWD', handler: () => showWDInfo(2022) },
+        { query: '?welcomeday2023', modal: '#portfolioModalWD', handler: () => showWDInfo(2023) },
+        { query: '?welcomeday2024', modal: '#portfolioModalWD' },
 
-    var url = window.location.href;
-    if (url.indexOf('?welcomeday2022') != -1) {
-        $("#portfolioModalWD").modal('show');
-        showWDInfo(2022)
-    }
+        { query: '?forum', modal: '#portfolioModalForum' },
+        { query: '?forum1', modal: '#portfolioModalForum', handler: () => showForumInfo(1) },
+        { query: '?forum2', modal: '#portfolioModalForum', handler: () => showForumInfo(2) },
+        { query: '?forum3', modal: '#portfolioModalForum', handler: () => showForumInfo(3) },
+        { query: '?forum4', modal: '#portfolioModalForum', handler: () => showForumInfo(4) },
 
-    var url = window.location.href;
-    if (url.indexOf('?welcomeday2023') != -1) {
-        $("#portfolioModalWD").modal('show');
-        showWDInfo(2023)
-    }
+        { query: '?workshop', modal: '#portfolioModalWorkshop' },
+        { query: '?workshop2023', modal: '#portfolioModalWorkshop', handler: () => showWorkshopInfo(2023) },
+        { query: '?workshop2024', modal: '#portfolioModalWorkshop', handler: () => showWorkshopInfo(2024) },
+        { query: '?workshop2025', modal: '#portfolioModalWorkshop', handler: () => showWorkshopInfo(2025) },
+        { query: '?workshop2025posters', modal: '#portfolioModalWorkshop', handler: () => { showWorkshopInfo(2025); showWorkshopMain(2); } },
 
-    var url = window.location.href;
-    if (url.indexOf('?welcomeday') != -1) {
-        $("#portfolioModalWD").modal('show');
-    }
+        { query: '?commissions', modal: '#portfolioModalCommissions' },
+        { query: '?join', modal: '#portfolioModalRecruit' },
+        { query: '?talks', modal: '#portfolioModalTalks' },
+        { query: '?clubs', modal: '#portfolioModalClubs' },
+        { query: '?resources', modal: '#portfolioModalTemplates' },
+    ];
 
-    var url = window.location.href;
-    if (url.indexOf('?welcomeday2024') != -1) {
-        $("#portfolioModalWD").modal('show');
-    }
-
-    // FORUM
-    var url = window.location.href;
-    if (url.indexOf('?forum') != -1) {
-        $("#portfolioModalForum").modal('show');
-    }
-
-    var url = window.location.href;
-    if (url.indexOf('?forum4') != -1) {
-        $("#portfolioModalForum").modal('show');
-        showForumInfo(4)
-
-    }
-
-    var url = window.location.href;
-    if (url.indexOf('?forum3') != -1) {
-        $("#portfolioModalForum").modal('show');
-        showForumInfo(3)
-
-    }
-
-    var url = window.location.href;
-    if (url.indexOf('?forum2') != -1) {
-        $("#portfolioModalForum").modal('show');
-        showForumInfo(2)
-
-    }
-
-    var url = window.location.href;
-    if (url.indexOf('?forum1') != -1) {
-        $("#portfolioModalForum").modal('show');
-        showForumInfo(1)
-
-    }
-
-    // WORKSHOP
-    var url = window.location.href;
-    if (url.indexOf('?workshop') != -1) {
-        $("#portfolioModalWorkshop").modal('show');
-    }
-
-    var url = window.location.href;
-    if (url.indexOf('?workshop2025posters') != -1) {
-        $("#portfolioModalWorkshop").modal('show');
-        showWorkshopInfo(2025);
-        showWorkshopMain(2)
-    }
-
-    var url = window.location.href;
-    if (url.indexOf('?workshop2025') != -1) {
-        $("#portfolioModalWorkshop").modal('show');
-        showWorkshopInfo(2025)
-    }
-
-    var url = window.location.href;
-    if (url.indexOf('?workshop2024') != -1) {
-        $("#portfolioModalWorkshop").modal('show');
-        showWorkshopInfo(2024)
-    }
-
-    var url = window.location.href;
-    if (url.indexOf('?workshop2023') != -1) {
-        $("#portfolioModalWorkshop").modal('show');
-        showWorkshopInfo(2023)
-    }
-
-    // COMMISSIONS
-    var url = window.location.href;
-    if (url.indexOf('?commissions') != -1) {
-        $("#portfolioModalCommissions").modal('show');
-    }
-
-    // RECRUIT
-    var url = window.location.href;
-    if (url.indexOf('?join') != -1) {
-        $("#portfolioModalRecruit").modal('show');
-    }
-
-    // TALKS
-    var url = window.location.href;
-    if (url.indexOf('?talks') != -1) {
-        $("#portfolioModalTalks").modal('show');
-    }
-
-    // CLUBS
-    var url = window.location.href;
-    if (url.indexOf('?clubs') != -1) {
-        $("#portfolioModalClubs").modal('show');
-    }
-
-    // RESOURCES
-    var url = window.location.href;
-    if (url.indexOf('?resources') != -1) {
-        $("#portfolioModalTemplates").modal('show');
-    }
-
-
+    modalMappings.forEach(({ query, modal, handler }) => {
+        if (url.indexOf(query) !== -1) {
+            $(modal).modal('show');
+            if (handler) handler();
+        }
+    });
 });
