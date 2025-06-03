@@ -4,7 +4,7 @@ Workshop Functions
 
 $(document).ready(function() {
 
-    showWorkshopInfo(2025);
+    //showWorkshopInfo(2025);
 
 });
 
