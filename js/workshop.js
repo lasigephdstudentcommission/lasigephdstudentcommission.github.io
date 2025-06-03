@@ -10,8 +10,11 @@ $(document).ready(function() {
         showWorkshopInfo(2025); // default to 2025 only if no edition is set
     } else {
         showWorkshopInfo(parseInt(storedEdition)); // restore previously selected edition
+        console.log(storedMain)
         if (storedMain != null) {
-            showForumImage(storedMain); // restore selected main
+            showWorkshopMain(storedMain); // restore selected main
+        } else {
+            showWorkshopMain(0); // restore selected main
         }
     }
 });

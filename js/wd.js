@@ -12,7 +12,9 @@ $(document).ready(function() {
     } else {
         showWDInfo(parseInt(storedEdition)); // restore previously selected edition
         if (storedMain != null) {
-            showForumImage(storedMain); // restore selected main
+            showWDMain(storedMain); // restore selected main
+        } else {
+            showWDMain(0); // restore selected main
         }
     }
 

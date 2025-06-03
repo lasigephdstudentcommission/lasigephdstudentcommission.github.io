@@ -13,6 +13,8 @@ $(document).ready(function() {
         showForumInfo(parseInt(storedEdition)); // restore previously selected edition
         if (storedMain != null) {
             showForumImage(storedMain); // restore selected main
+        } else {
+            showForumImage(0); // restore selected main
         }
     }
 
