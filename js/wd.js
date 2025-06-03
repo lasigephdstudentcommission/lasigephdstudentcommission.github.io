@@ -4,9 +4,13 @@ Welcome Day Functions
 
 $(document).ready(function() {
 
-    //showSocialInfo(social);
+    const storedEdition = sessionStorage.getItem("wd_edition");
 
-    //showWDInfo(2024);
+    if (storedEdition == null) {
+        showWDInfo(2024); // default to 2024 only if no edition is set
+    } else {
+        showWDInfo(parseInt(storedEdition)); // restore previously selected edition
+    }
 
 });
 

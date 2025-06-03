@@ -5,11 +5,11 @@ Workshop Functions
 $(document).ready(function() {
     const storedEdition = sessionStorage.getItem("workshop_edition");
 
-    console.log("text");
-
-    if (!storedEdition) {
+    if (storedEdition == null) {
         showWorkshopInfo(2025); // default to 2025 only if no edition is set
-    } 
+    } else {
+        showWorkshopInfo(parseInt(storedEdition)); // restore previously selected edition
+    }
 });
 
 function showWorkshopInfo(workshop = -1) {

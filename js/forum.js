@@ -4,9 +4,13 @@ Forum Functions
 
 $(document).ready(function() {
 
-    //showSocialInfo(social);
-    //n_forum = 4;
-    //showForumInfo(n_forum);
+    const storedEdition = sessionStorage.getItem("forum_edition");
+
+    if (storedEdition == null) {
+        showForumInfo(4); // default to 4 only if no edition is set
+    } else {
+        showForumInfo(parseInt(storedEdition)); // restore previously selected edition
+    }
 
 });
 
