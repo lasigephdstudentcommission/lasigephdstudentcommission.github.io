@@ -5,11 +5,15 @@ Forum Functions
 $(document).ready(function() {
 
     const storedEdition = sessionStorage.getItem("forum_edition");
+    const storedMain = sessionStorage.getItem("forum_main")
 
     if (storedEdition == null) {
         showForumInfo(4); // default to 4 only if no edition is set
     } else {
         showForumInfo(parseInt(storedEdition)); // restore previously selected edition
+        if (storedMain != null) {
+            showForumImage(storedMain); // restore selected main
+        }
     }
 
 });
@@ -137,6 +141,8 @@ function showForumInfo(forum = -1) {
 function showForumImage(forum = -1) {
 
     edition = sessionStorage.getItem("forum_edition");
+
+    sessionStorage.setItem("forum_main", forum);
 
     switch (edition) {
         case '1':

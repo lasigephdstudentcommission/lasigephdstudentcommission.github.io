@@ -4,11 +4,15 @@ Workshop Functions
 
 $(document).ready(function() {
     const storedEdition = sessionStorage.getItem("workshop_edition");
+    const storedMain = sessionStorage.getItem("workshop_main")
 
     if (storedEdition == null) {
         showWorkshopInfo(2025); // default to 2025 only if no edition is set
     } else {
         showWorkshopInfo(parseInt(storedEdition)); // restore previously selected edition
+        if (storedMain != null) {
+            showForumImage(storedMain); // restore selected main
+        }
     }
 });
 
@@ -116,6 +120,8 @@ function showWorkshopInfo(workshop = -1) {
 function showWorkshopMain(workshop = -1) {
 
     edition = sessionStorage.getItem("workshop_edition");
+
+    sessionStorage.setItem("workshop_main", workshop);
 
     switch (edition) {
 

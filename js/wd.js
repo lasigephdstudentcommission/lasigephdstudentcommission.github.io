@@ -5,11 +5,15 @@ Welcome Day Functions
 $(document).ready(function() {
 
     const storedEdition = sessionStorage.getItem("wd_edition");
+    const storedMain = sessionStorage.getItem("wd_main")
 
     if (storedEdition == null) {
         showWDInfo(2024); // default to 2024 only if no edition is set
     } else {
         showWDInfo(parseInt(storedEdition)); // restore previously selected edition
+        if (storedMain != null) {
+            showForumImage(storedMain); // restore selected main
+        }
     }
 
 });
@@ -94,6 +98,8 @@ function showWDInfo(wd = -1) {
 function showWDMain(wd = -1) {
 
     edition = sessionStorage.getItem("wd_edition");
+
+    sessionStorage.setItem("wd_main", wd);
 
     switch (edition) {
 
