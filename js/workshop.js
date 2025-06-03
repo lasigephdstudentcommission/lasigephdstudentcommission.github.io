@@ -3,9 +3,11 @@ Workshop Functions
  */
 
 $(document).ready(function() {
+    const storedEdition = sessionStorage.getItem("workshop_edition");
 
-    //showWorkshopInfo(2025);
-
+    if (!storedEdition) {
+        showWorkshopInfo(2025); // default to 2025 only if no edition is set
+    } 
 });
 
 function showWorkshopInfo(workshop = -1) {
