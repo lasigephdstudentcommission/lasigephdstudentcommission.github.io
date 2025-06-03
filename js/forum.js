@@ -5,8 +5,8 @@ Forum Functions
 $(document).ready(function() {
 
     //showSocialInfo(social);
-    n_forum = 4;
-    showForumInfo(n_forum);
+    //n_forum = 4;
+    //showForumInfo(n_forum);
 
 });
 

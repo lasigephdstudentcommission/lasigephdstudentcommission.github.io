@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     //showSocialInfo(social);
 
-    showWDInfo(2024);
+    //showWDInfo(2024);
 
 });
 
