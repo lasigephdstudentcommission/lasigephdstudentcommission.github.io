@@ -70,7 +70,8 @@ $(document).ready(function() {
     var url = window.location.href;
     if (url.indexOf('?workshop2025posters') != -1) {
         $("#portfolioModalWorkshop").modal('show');
-        showWorkshopInfo(2025); showWorkshopMain(3); return false;
+        showWorkshopInfo(2025);
+        showWorkshopMain(2)
     }
 
     var url = window.location.href;
