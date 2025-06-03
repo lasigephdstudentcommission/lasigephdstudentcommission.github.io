@@ -5,6 +5,8 @@ Workshop Functions
 $(document).ready(function() {
     const storedEdition = sessionStorage.getItem("workshop_edition");
 
+    console.log("text");
+
     if (!storedEdition) {
         showWorkshopInfo(2025); // default to 2025 only if no edition is set
     } 
