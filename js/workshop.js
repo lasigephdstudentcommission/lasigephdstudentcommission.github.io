@@ -11,7 +11,7 @@ $(document).ready(function() {
     } else {
         showWorkshopInfo(parseInt(storedEdition)); // restore previously selected edition
         console.log(storedMain)
-        if (storedMain != null) {
+        if (storedMain > 0) {
             showWorkshopMain(storedMain); // restore selected main
         } else {
             showWorkshopMain(0); // restore selected main
