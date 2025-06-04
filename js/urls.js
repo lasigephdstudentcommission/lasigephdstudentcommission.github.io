@@ -15,11 +15,8 @@ $(document).ready(function () {
 
         { query: '?workshop', modal: '#portfolioModalWorkshop', handler: () => showWorkshopInfo(2025) },
         { query: '?workshop2023', modal: '#portfolioModalWorkshop', handler: () => showWorkshopInfo(2023) },
-        { query: '?workshop2023posters', modal: '#portfolioModalWorkshop', handler: () => { showWorkshopInfo(2023); showWorkshopMain(3); } },
         { query: '?workshop2024', modal: '#portfolioModalWorkshop', handler: () => showWorkshopInfo(2024) },
-        { query: '?workshop2024posters', modal: '#portfolioModalWorkshop', handler: () => { showWorkshopInfo(2024); showWorkshopMain(3); } },
         { query: '?workshop2025', modal: '#portfolioModalWorkshop', handler: () => showWorkshopInfo(2025) },
-        { query: '?workshop2025posters', modal: '#portfolioModalWorkshop', handler: () => { showWorkshopInfo(2025); showWorkshopMain(3); } },
 
         { query: '?commissions', modal: '#portfolioModalCommissions' },
         { query: '?join', modal: '#portfolioModalRecruit' },

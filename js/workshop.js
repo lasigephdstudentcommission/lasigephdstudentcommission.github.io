@@ -4,18 +4,11 @@ Workshop Functions
 
 $(document).ready(function() {
     const storedEdition = sessionStorage.getItem("workshop_edition");
-    const storedMain = sessionStorage.getItem("workshop_main")
 
     if (storedEdition == null) {
         showWorkshopInfo(2025); // default to 2025 only if no edition is set
     } else {
         showWorkshopInfo(parseInt(storedEdition)); // restore previously selected edition
-        console.log(storedMain)
-        if (storedMain > 0) {
-            showWorkshopMain(storedMain); // restore selected main
-        } else {
-            showWorkshopMain(0); // restore selected main
-        }
     }
 });
 
@@ -47,6 +40,8 @@ function showWorkshopInfo(workshop = -1) {
                                 
             $("#workshop_media").html(``);
             $("#workshop_main").html(``);
+
+            showWorkshopMain(3)
 
             //$("#workshop_form").text("");
             //$("#workshop_main").html(`<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqA5t8hi5sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
@@ -80,6 +75,8 @@ function showWorkshopInfo(workshop = -1) {
             $("#workshop_media").html(``);
             $("#workshop_main").html(``);
 
+            showWorkshopMain(3)
+
             //$("#workshop_form").text("");
             //$("#workshop_main").html(`<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqA5t8hi5sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
             
@@ -111,7 +108,9 @@ function showWorkshopInfo(workshop = -1) {
                     <a href="" onclick="showWorkshopMain(5); return false; "> Aftermovie</a>
                 `);
     
-                 $("#workshop_media").html(``);
+                $("#workshop_media").html(``);
+
+                showWorkshopMain(3)
                 break;
 
         default:
