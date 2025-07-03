@@ -8,7 +8,7 @@ $(document).ready(function() {
     const storedMain = sessionStorage.getItem("forum_main")
 
     if (storedEdition == null) {
-        showForumInfo(4); // default to 4 only if no edition is set
+        showForumInfo(5); // default to 4 only if no edition is set
     } else {
         showForumInfo(parseInt(storedEdition)); // restore previously selected edition
         if (storedMain != null) {
@@ -116,6 +116,33 @@ function showForumInfo(forum = -1) {
             $("#forum_img").attr("src", "assets/img/events/Forum2024/schedule.png");
             $("#forum_date").text("Date: July 12th 2024");
             $("#forum_location").text("Location: 6.3.27");
+            //$("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
+            $("#more_form_text2").text("");
+            $("#more_form_text2").attr("style", "display: none;");
+
+            $("#forum_form").text("");
+            $("#forum_form").attr("f", "");
+            $("#forum_form").attr("style", "display: none");
+
+            //$("#forum_form").text("REGISTER HERE");
+            //$("#forum_form").attr("href", "https://forms.gle/9WKXDsWH5eBYGVx18");
+            //$("#forum_form").attr("style", "border: solid 1px black;");
+    
+            $("#forum_tabs").html(``);
+            $("#forum_tabs").attr("style", "display: none;");
+            $("#forum_talks").html(``);
+            $("#forum_talks").attr("style", "display: none;");
+            break;
+
+        case 5:
+            $("#forum_banner").html(`<img width="100%" margin="0" src="assets/img/events/Forum2025/banner.png" alt="... " />`);
+            $("#forum_title").text("LASIGE Forum");
+            $("#forum_subtitle").text("5th Edition");
+            $("#forum_text").text("Expand your horizons with feedback from colleagues and experts beyond your field. Seize the opportunity to present your work to both university and external audiences.");
+            //$("#forum_main").attr("style", "display: none;");
+            $("#forum_img").attr("src", "assets/img/events/Forum2025/schedule.png");
+            $("#forum_date").text("Date: July 10th 2025");
+            $("#forum_location").text("Location: 6.2.53");
             //$("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
             $("#more_form_text2").text("");
             $("#more_form_text2").attr("style", "display: none;");
