@@ -8,7 +8,7 @@ $(document).ready(function() {
     const storedMain = sessionStorage.getItem("wd_main")
 
     if (storedEdition == null) {
-        showWDInfo(2024); // default to 2024 only if no edition is set
+        showWDInfo(2025); // default to 2025 only if no edition is set
     } else {
         showWDInfo(parseInt(storedEdition)); // restore previously selected edition
         if (storedMain != null) {
@@ -86,8 +86,31 @@ function showWDInfo(wd = -1) {
                 $("#wd_tabs").html(`
                     <a href="" onclick="showWDMain(0); return false; "> Program</a>
                     <a href="" onclick="showWDMain(1); return false; "> Dinner</a>
-            `)
+            `   )
     
+                $("#wd_media").html(``);
+                break;
+
+            case 2025:
+                $("#wd_banner").html(`<img width="65%" margin="0" src="assets/img/events/WD2025/WelcomeDay25_banner.png" alt="... " />`);
+                $("#wd_title").text("");
+                $("#wd_subtitle").text("");
+                // $("#wd_text").text("");
+                $("#wd_date").text("Date: October 15th 2025");
+                $("#wd_location").text("Location: TBA");
+                $("#wd_form").attr("style", "display:none");
+                // $("#more_form_text").text("Registrations Closed");
+                //$("#wd_form").text("REGISTER HERE");
+                // $("#wd_form").attr("href", "...");
+                //$("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2025/WelcomeDay25_banner.png" alt="... " />`);
+                //$("#wd_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+
+
+                $("#wd_tabs").html(`
+                                            <a href="" onclick="showWDMain(0); return false; "> Program</a>
+                                            <a href="" onclick="showWDMain(1); return false; "> Dinner Menu</a>
+                                    `)
+
                 $("#wd_media").html(``);
                 break;
 
