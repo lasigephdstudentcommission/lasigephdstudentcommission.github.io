@@ -20,6 +20,7 @@ $(document).ready(function() {
 
 });
 
+
 function showWDInfo(wd = -1) {
     sessionStorage.setItem("wd_edition", wd);
 
@@ -60,62 +61,59 @@ function showWDInfo(wd = -1) {
 
 
             $("#wd_tabs").html(`
-                                        <a href="" onclick="showWDMain(0); return false; "> Program</a>
-                                        <a href="" onclick="showWDMain(1); return false; "> Dinner Menu</a>
+                                <a href="" onclick="showWDMain(0); return false; "> Program</a>
+                                <a href="" onclick="showWDMain(1); return false; "> Dinner Menu</a>
                                 `)
 
             $("#wd_media").html(``);
             break;
 
-            case 2024:
-                $("#wd_banner").html(`<img width="70%" margin="0" src="assets/img/events/WD2024/lasige_wd_2024.png" alt="... " />`);
-                $("#wd_title").text("");
-                $("#wd_subtitle").text("");
-                // $("#wd_text").text("");
-                $("#wd_date").text("Date: 9 October 2024");
-                $("#wd_location").text("Location: FCUL Room C6.2.56");
-                $("#wd_form").html(`<a href="https://forms.gle/a3SyrGxLcP5kzRDC6" target="_blank ">REGISTER HERE</a>`);
-                $("#wd_form").attr("style", "display:none");
-                // $("#more_form_text").text("Registrations Closed");
-                //$("#wd_form").text("REGISTER HERE");
-                // $("#wd_form").attr("href", "https://forms.gle/j5Eqp9HreS2qTXvR9");
-                $("#wd_main").html(``);
-                //$("#wd_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+        case 2024:
+            $("#wd_banner").html(`<img width="70%" margin="0" src="assets/img/events/WD2024/lasige_wd_2024.png" alt="... " />`);
+            $("#wd_title").text("");
+            $("#wd_subtitle").text("");
+            // $("#wd_text").text("");
+            $("#wd_date").text("Date: 9 October 2024");
+            $("#wd_location").text("Location: FCUL Room C6.2.56");
+            $("#wd_form").html(`<a href="https://forms.gle/a3SyrGxLcP5kzRDC6" target="_blank ">REGISTER HERE</a>`);
+            $("#wd_form").attr("style", "display:none");
+            // $("#more_form_text").text("Registrations Closed");
+            //$("#wd_form").text("REGISTER HERE");
+            // $("#wd_form").attr("href", "https://forms.gle/j5Eqp9HreS2qTXvR9");
+            $("#wd_main").html(``);
+            //$("#wd_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
     
     
-                $("#wd_tabs").html(`
-                    <a href="" onclick="showWDMain(0); return false; "> Program</a>
-                    <a href="" onclick="showWDMain(1); return false; "> Dinner</a>
-            `   )
+            $("#wd_tabs").html(`
+                                <a href="" onclick="showWDMain(0); return false; "> Program</a>
+                                <a href="" onclick="showWDMain(1); return false; "> Dinner</a>
+                                `)
     
-                $("#wd_media").html(``);
-                break;
+            $("#wd_media").html(``);
+            break;
 
-            case 2025:
-                $("#wd_banner").html(`<img width="65%" margin="0" src="assets/img/events/WD2025/WelcomeDay25_banner.png" alt="... " />`);
-                $("#wd_title").text("");
-                $("#wd_subtitle").text("");
-                // $("#wd_text").text("");
-                $("#wd_date").text("Date: October 15th 2025");
-                $("#wd_location").text("Location: TBA");
-                $("#wd_form").attr("style", "display:none");
-                // $("#more_form_text").text("Registrations Closed");
-                //$("#wd_form").text("REGISTER HERE");
-                // $("#wd_form").attr("href", "...");
-                //$("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2025/WelcomeDay25_banner.png" alt="... " />`);
-                //$("#wd_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
+        case 2025:
+            $("#wd_banner").html(`<img width="65%" margin="0" src="assets/img/events/WD2025/WelcomeDay25_banner.png" alt="... " />`);
+            $("#wd_title").text("");
+            $("#wd_subtitle").text("");
+            // $("#wd_text").text("");
+            $("#wd_date").text("Date: October 15th 2025");
+            $("#wd_location").text("Location: FCUL Room C6.1.36");
+            $("#wd_form").html(`<a href="https://forms.gle/a3SyrGxLcP5kzRDC6" target="_blank ">REGISTER HERE</a>`);
+            // $("#more_form_text").text("Registrations Closed");
+            $("#wd_form").attr("style", "display:none");
 
 
-                $("#wd_tabs").html(`
-                                            <a href="" onclick="showWDMain(0); return false; "> Program</a>
-                                            <a href="" onclick="showWDMain(1); return false; "> Dinner Menu</a>
-                                    `)
+            $("#wd_tabs").html(`
+                                <a href="" onclick="showWDMain(0); return false; "> Program</a>
+                                <a href="" onclick="showWDMain(1); return false; "> Dinner Menu</a>
+                                `)
 
-                $("#wd_media").html(``);
-                break;
+            $("#wd_media").html(``);
+            break;
 
-            default:
-                break;
+        default:
+            break;
     }
 
 }
@@ -235,7 +233,7 @@ function showWDMain(wd = -1) {
 
             break;
 
-            case '2024':
+        case '2024':
 
             switch (wd) {
                 case 0:
@@ -336,13 +334,120 @@ function showWDMain(wd = -1) {
                         <li>Coffee</li>
                     </ul>
                     `);
-                    break
+                    break;
 
                 default:
                     $("#wd_media").html(``);
                     $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/wd/24/program.png" alt="... " />`);
                     break;
             }
+
+        case '2025':
+
+            switch (wd) {
+                case 0:
+                    $("#wd_media").html(``);
+                    
+                    $("#wd_main").html(`
+                    <h1 class="entry-title">Program</h1>
+                    <div class="entry-content">
+
+                    <p>We have a day full of activities, come and join us!</p>
+
+                    <ul class="list-left ">
+                    <li><strong>15:00</strong>      Registration (Collect your badge!)</li>
+                    <li><strong>15:15</strong>      Welcome to LASIGE - Alysson, Cátia and Tiago</li>
+                    <li><strong>15:45</strong>      Keynote by Paulo Veríssimo</li>
+                    <li><strong>16:30</strong>      LASIGE Photo</li>
+                    <li><strong>16:45</strong>      Coffe Break and Poster Session (LASIGE Summer of Research)</li>
+                    <li><strong>17:45</strong>      Hi! from the PhD Student Commission</li>
+                    <li><strong>18:00</strong>      Keynote by Miguel Garcia</li>
+                    <li><strong>18:40</strong>      Closing and Team Building</li>
+                    <li><strong>20:15</strong>      Dinner at <a href="https://maps.app.goo.gl/NuwkDt8Gpn9cSEgC7" target="_blank">Gula's for Kitchen Lovers</a></li>
+                    </ul>
+
+                    <img class="img-fluid d-block mx-auto " src="assets/img/events/WD2025/WelcomeDay25_poster.png" alt="... " />
+                    `);
+                    break;
+                
+
+                case 1:
+                    $("#wd_media").html(``);
+                    $("#wd_main").html(`
+                    <h1 class="entry-title">Dinner</h1>
+
+                    
+
+                    <div class="entry-content">
+                    <br>
+
+                    <img width="100%" margin="0" src="assets/img/events/WD2025/dinner.png" alt="... " />
+
+                    <p>
+                    There will be a dinner at Gula's for <a href="https://www.aminhagula.pt" target="_blank">Kitchen Lovers</a> located at <a href="https://maps.app.goo.gl/NuwkDt8Gpn9cSEgC7" target="_blank">Street Dona Filipa de Vilhena 18A, Lisbon</a>. The dinner starts at 20h15 with the welcome drinks and starters.
+                    </p>
+
+                    <p><strong>Price and payment:</strong></p>
+                    <ul class=" list-left ">
+                    <li>
+                    LASIGE members who do not hold a PhD degree (i.e., students): 12€
+                    </li>
+                    <li>
+                    LASIGE members who hold a PhD: 30€
+                    </li>
+                    </ul>
+
+                    <br>
+                    <p><strong>To attend the dinner:</strong></p>
+
+                    <ul class="list-left">
+                        <li>All payments must be made to Alexandra or Carla in room 6.3.30 by October, 10th, 2025, preferably between 10:00 and 16:00.</li>
+                        <li>A maximum of 80 dinner reservations are available, as such there will be a waiting list for people that do not secure a reservation. In the event that a seat becomes available due to non-payment or cancellation, we will offer it to participants on the waiting list.</li>
+                        <li>Both for Dinner and waiting list, your registration is only valid upon payment.</li>
+                    </ul>
+
+                    <br>
+                    <p><strong>Menu:</strong></p>
+                    <p>The dinner includes starters, the main course (buffet), dessert (buffet), coffee and drinks. If none of the dishes on the list respects your dietary restrictions, please inform the PhD Commission.</p>
+
+                    <p style="text-align:left;margin:0;"><strong>Starters</strong></p>
+                    <ul class="list-left">
+                        <li>Assortment of miniatures of fresh and succulent snacks</li>
+                        <li>Cheese, chorizo ​​pâtés and other taste</li>
+                        <li>Toasts, breadsticks and fresh bread rolls</li>
+                        <li>Various seasonal fruits</li>
+                        <li>“Welcome Drink” - Gula's berry lemonade</li>
+                    </ul>
+
+                    <p style="text-align:left;margin:0;"><strong>Main Course</strong></p>
+                    <ul class="list-left">
+                        <li><strong>Fish Option:</strong> Cod au gratin with carrots and mozzarella cheese topping</li>
+                        <li><strong>Meat Option:</strong> Portuguese pork tenderloin with a sprinkle of various pickles, served with rice and dried fruits sautéed with a sprinkle of fresh chives and/or fried roasted sweet potatoes</li>
+                        <li><strong>Vegan Option:</strong> Vegetable curry with sweet potato</li>
+                        <li><span class="fst-italic">All options are accompanied by a mixture of lettuce and tomato seasoned with taste with extra virgin olive oil from Herdade da Mingorra and splashes of oregano leaves from Vila Real de Santo António.</span></li>
+                    </ul>
+                    Accompanied by a mix of lettuce and tomato seasoned to taste with Herdade da Mingorra extra virgin olive oil and vinegar, and tomato hash with oregano and red onion.
+
+                    <p style="text-align:left;margin:0;"><strong>Desserts</strong></p>
+                    <ul class="list-left">
+                        <li>Chocolate Gula</li>
+                        <li>Camel pie with almond praline</li>
+                        <li>Lemon pie with fresh mint</li>
+                    </ul>
+
+                    <p style="text-align:left;margin:0;"><strong>Drinks</strong></p>
+                    <ul class="list-left">
+                        <li>Water, Teas, Lemonade, Coke</li>
+                        <li>Alcoholic beverages are NOT included and therefore will have to be paid individually directly to the restaurant.</li>
+                    </ul>
+                    `);
+                    break
+
+                default:
+                    $("#wd_media").html(``);
+                    $("#wd_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/WD2025/WelcomeDay25_poster.png" alt="... " />`);
+                    break;
+        }
 
         break;
 
@@ -396,8 +501,7 @@ function showWDMedia(wd = -1) {
 
             break;
 
-            case '2024':
-
+        case '2024':
             switch (wd) {
                 case 0:
                     break;
@@ -405,9 +509,7 @@ function showWDMedia(wd = -1) {
                 default:
                     break;
             }
-
             break;
-
-    }
+        }
 
 }
