@@ -2,7 +2,7 @@ $(document).ready(function () {
     const url = window.location.href;
 
     const modalMappings = [
-        { query: '?welcomeday', modal: '#portfolioModalWD', handler: () => showWDInfo(2024) },
+        { query: '?welcomeday', modal: '#portfolioModalWD', handler: () => showWDInfo(2025) },
         { query: '?welcomeday2022', modal: '#portfolioModalWD', handler: () => showWDInfo(2022) },
         { query: '?welcomeday2023', modal: '#portfolioModalWD', handler: () => showWDInfo(2023) },
         { query: '?welcomeday2024', modal: '#portfolioModalWD', handler: () => showWDInfo(2024) },
