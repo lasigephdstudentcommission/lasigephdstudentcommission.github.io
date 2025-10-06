@@ -77,6 +77,7 @@ function showTalksInfo(talks = -1) {
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
             break;
+
         case 9:
             $("#talks_title").text("LASIGE Talks");
             $("#talks_subtitle").text("9th Edition");
@@ -84,20 +85,47 @@ function showTalksInfo(talks = -1) {
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
             break;
+
         case 10:
             $("#talks_title").text("LASIGE Talks");
             $("#talks_subtitle").text("10th Edition");
             $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_10.png" alt="... " />`);
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
-            break;  
+            break; 
+            
         case 11:
             $("#talks_title").text("LASIGE Talks");
             $("#talks_subtitle").text("11th Edition");
             $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_11.png" alt="... " />`);
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
-            break;       
+            break;
+        case 12:
+            $("#talks_title").text("LASIGE Talks");
+            $("#talks_subtitle").text("12th Edition");
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_12.png" alt="... " />`);
+            $("#talks_form").text("");
+            $("#talks_form").attr("href", "");
+            break;
+
+        case 13:
+            $("#talks_title").text("LASIGE Talks");
+            $("#talks_subtitle").text("13th Edition");
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_13.png" alt="... " />`);
+            $("#talks_form").text("");
+            $("#talks_form").attr("href", "");
+            break;
+
+        case 14:
+            $("#talks_title").text("LASIGE Talks");
+            $("#talks_subtitle").text("14th Edition");
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_14.png" alt="... " />`);
+            $("#talks_form").text("");
+            $("#talks_form").attr("href", "");
+            break;
+
+
         default:
             break;
     }
