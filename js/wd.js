@@ -390,10 +390,10 @@ function showWDMain(wd = -1) {
                     <p><strong>Price and payment:</strong></p>
                     <ul class=" list-left ">
                     <li>
-                    LASIGE members who do not hold a PhD degree (i.e., students): 12€
+                    LASIGE members who do not hold a PhD degree (i.e., students): 10€
                     </li>
                     <li>
-                    LASIGE members who hold a PhD: 30€
+                    LASIGE members who hold a PhD: 20€
                     </li>
                     </ul>
 
