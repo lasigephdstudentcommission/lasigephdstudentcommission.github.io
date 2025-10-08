@@ -358,6 +358,12 @@ function showWDMain(wd = -1) {
                     <li><strong>15:00</strong>      Registration (Collect your badge!)</li>
                     <li><strong>15:15</strong>      Welcome to LASIGE - Alysson, Cátia and Tiago</li>
                     <li><strong>15:45</strong>      Keynote by Paulo Veríssimo</li>
+                        <details>
+                            <summary>Speaker</summary>
+                            <div style="text-align: center;">
+                                <img style="width: 200px; height: auto;" src="assets/img/events/WD2025/paulo_verissimo.png" alt="Paulo Verissimo's image"/>
+                            </div>
+                        </details>
                     <li><strong>16:30</strong>      LASIGE Photo</li>
                     <li><strong>16:45</strong>      Coffe Break and Poster Session (LASIGE Summer of Research)</li>
                     <li><strong>17:45</strong>      Hi! from the PhD Student Commission</li>
@@ -373,7 +379,6 @@ function showWDMain(wd = -1) {
                                 <img style="width: 200px; height: auto;" src="assets/img/events/WD2025/miguel_garcia.png" alt="Miguel Garcia's image"/>
                             </div>
                             <p>Miguel Garcia is a Senior Backend Software Engineer at Sensei, a company pioneering checkout-free retail through computer vision, weight sensors, and proprietary AI. Sensei’s technology powers autonomous stores across Europe and South America, transforming how customers shop and how retailers operate. Before joining Sensei, he taught courses in Software Engineering, Security, and Distributed Computing at a small faculty within the Universidade Lusófona group. He holds a PhD in Informatics from the Faculdade de Ciências, Universidade de Lisboa, where his research focused on diversity management in Byzantine fault-tolerant systems.</p>
-                            
                         </details> 
                     <li><strong>18:40</strong>      Closing and Team Building</li>
                     <li><strong>20:15</strong>      Dinner at <a href="https://maps.app.goo.gl/NuwkDt8Gpn9cSEgC7" target="_blank">Gula's for Kitchen Lovers</a></li>
