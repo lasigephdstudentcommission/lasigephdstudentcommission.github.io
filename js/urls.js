@@ -6,7 +6,6 @@ $(document).ready(function () {
         { query: '?welcomeday2022', modal: '#portfolioModalWD', handler: () => showWDInfo(2022) },
         { query: '?welcomeday2023', modal: '#portfolioModalWD', handler: () => showWDInfo(2023) },
         { query: '?welcomeday2024', modal: '#portfolioModalWD', handler: () => showWDInfo(2024) },
-        { query: '?welcomeday2025', modal: '#portfolioModalWD', handler: () => showWDInfo(2025) },
 
         { query: '?forum', modal: '#portfolioModalForum', handler: () => showForumInfo(4) },
         { query: '?forum1', modal: '#portfolioModalForum', handler: () => showForumInfo(1) },
