@@ -357,12 +357,31 @@ function showWDMain(wd = -1) {
                     <ul class="list-left ">
                     <li><strong>15:00</strong>      Registration (Collect your badge!)</li>
                     <li><strong>15:15</strong>      Welcome to LASIGE - Alysson, Cátia and Tiago</li>
-                    <li><strong>15:45</strong>      Keynote by Paulo Veríssimo</li>
+                    <li><strong>15:45</strong>      Keynote by Paulo Veríssimo - What is a research strategy and why it can take you very far</li>
+                        <details>
+                                <summary>Abstract</summary>
+                                <p>In this talk, I will digress about the several takes on having a ‘research strategy’. I will try to convince you that, far from being “constraining” and curtailing your “freedom”, having the right research strategy can take you to plateaux of achievement which, when you analyse them in retrospect, would be unconceivable within the time span and with the resources you had available when you started. In fact, that’s what I felt looking back at the results of these past ten years of research at the head of two labs, in two universities abroad. Interestingly, the strategy designed sought Cyber Resilience, a then emerging field and as such highly risky, which in time fulfilled its promise, yielding high gain as the indispensable complement to classic Cyber Security. I will review that saga, the goals, the objectives, the achievements, and the setbacks.
+                        </details>
                         <details>
                             <summary>Speaker</summary>
                             <div style="text-align: center;">
                                 <img style="width: 200px; height: auto;" src="assets/img/events/WD2025/paulo_verissimo.png" alt="Paulo Verissimo's image"/>
                             </div>
+                            <p>
+                              Paulo Esteves-Verissimo is a research fellow at the Universities of Lisboa (PT) at LASIGE, and Luxembourg (LU) at SnT. 
+                              He has been professor at KAUST University (2020–24, SA) and founding director of its 
+                              <a href="https://crisys.kaust.edu.sa/" target="_blank" rel="noopener noreferrer">RC3 Center</a>. 
+                              Formerly, a full professor and FNR PEARL Chair at the University of Luxembourg (2014–20, LU), where he was founding head of the 
+                              <a href="https://www.uni.lu/snt-en/research-groups/CRITIX/" target="_blank" rel="noopener noreferrer">CritiX laboratory</a> 
+                              at the SnT center. Previously, he was a full professor of Computer Science at the Faculty of Sciences of the University of Lisbon and Director of LASIGE. 
+                              He is Fellow of IEEE and Fellow of ACM, and a recipient of the IEEE SMC TCHS Outstanding Leadership Award. 
+                              He was author of over 220 peer-refereed publications and co-author of 5 books. 
+                              He is currently interested in cyber resilience, in areas like: autonomous vehicles; distributed control systems; digital health and genomics; or blockchain and cryptocurrencies. 
+                              Check his works on: 
+                              <a href="http://scholar.google.com/citations?user=aMHx8aUAAAAJ" target="_blank" rel="noopener noreferrer">
+                                Google Scholar
+                              </a>.
+                            </p>
                         </details>
                     <li><strong>16:30</strong>      LASIGE Photo</li>
                     <li><strong>16:45</strong>      Coffe Break and Poster Session (LASIGE Summer of Research)</li>
