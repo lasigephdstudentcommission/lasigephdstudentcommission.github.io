@@ -51,11 +51,11 @@ function showTemplatesInfo(templates = -1) {
 
                 <p style="text-align: left;">The presentation template is available as a Google Slides file, which can be easily converted to PPT. To use it, first make a copy or export the file, as the original cannot be edited directly. Using this template is optional—it simply offers a suggested graphical style for LASIGE presentations.</p>
 
-                <p><strong>File:</strong> <a href="https://docs.google.com/presentation/d/1IzLCI0TKFgk_DvITqZntePUTjcBiZhAWUJZgCD7RE0U/edit?usp=sharing" target="_blank">LASIGE Presentation Template</a>
+                <p><strong>File:</strong> <a href="https://cloud.lasige.di.fc.ul.pt/s/opEHTGM9cN9baWJ/download/LASIGE%20Presentation%20Template.pptx" target="_blank">LASIGE Presentation Template</a>
                 </li></p> 
 
                 `); 
-                $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/templates/presentation_template.png" alt="... " />`);
+                $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/templates/Presentation_Template_25.png" alt="... " />`);
             break;
 
         case 3: // Posters Templates
