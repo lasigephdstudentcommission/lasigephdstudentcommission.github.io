@@ -136,7 +136,7 @@ function showTalksInfo(talks = -1) {
         case 16:
             $("#talks_title").text("LASIGE Talks");
             $("#talks_subtitle").text("16th Edition");
-            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talk_16_banner.png" alt="... " />`);
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_16.png" alt="... " />`);
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
             break;
