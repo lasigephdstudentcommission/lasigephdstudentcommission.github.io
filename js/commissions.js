@@ -1,17 +1,98 @@
 
 $(document).ready(function() {
-    showCommissionsInfo(2024);
+    showCommissionsInfo(2025);
 });
 
 function showCommissionsInfo(year = -1) {
     switch (year) {
+        case 2025:
+            $("#commissions_year").text("2025");
+            $("#commissions_members").html(`
+            <div class="row ">
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/david_g.png" alt="David Gonçalves portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/david-goncalves" target="_blank" aria-label="Larry Parker Facebook Profile ">
+                            <h5>David Gonçalves</h5>
+                        </a>
+                        <p>Commission Chair and Graphics Head</p>
+
+                        <p class="text-muted ">Inclusive Human-Computer Interaction</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/daniel_r.png " alt="Daniel Reis portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/Daniel-Reis" target="_blank " aria-label="Diana Petersen Facebook Profile ">
+                            <h5>Daniel Reis</h5>
+                        </a>
+                        <p>Budget Head</p>
+
+                        <p class="text-muted ">Inclusive Human-Computer Interaction</p>
+                    </div>
+                </div>
+
+                
+                
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/laura_b.png " alt="Laura Balbi portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/Laura-Balbi" target="_blank " aria-label="Diana Petersen Facebook Profile ">
+                            <h5>Laura Balbi</h5>
+                        </a>
+                        <p>PR Head</p>
+
+                        <p class="text-muted ">Data and Systems Intelligence</p>
+                        <p class="text-muted ">Health and Biomedical Informatics</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/joel_s.png " alt="Joel Samper portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/Joel-Samper" target="_blank " aria-label="Diana Petersen Facebook Profile ">
+                            <h5>Joel Samper (Sam)</h5>
+                        </a>
+                        <p>Operational Team</p>
+
+                         <p class="text-muted ">Dependable and Secure Decentralized Systems</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/maryam_l.png" alt="Maryam Lotfi portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/Maryam-Lotfi" target="_blank" aria-label="Larry Parker Facebook Profile ">
+                            <h5>Maryam Lotfi</h5>
+                        </a>
+                        <p>Operational Team</p>
+
+                        <p class="text-muted ">Health and Biomedical Informatics</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/bakary_b.png " alt="Bakary Badjie portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/Bakary-Badjie" target="_blank " aria-label="Diana Petersen Facebook Profile ">
+                            <h5>Bakary Badjie</h5>
+                        </a>
+                        <p>Operational Team</p>
+
+                        <p class="text-muted ">Cyber Physical Systems</p>
+                    </div>
+                </div>
+                `);
+            break;
+
         case 2024:
             $("#commissions_year").text("2024");
             $("#commissions_members").html(`
                 <div class="row ">
                 <div class="col-lg-6 ">
                     <div class="team-member ">
-                        <img class="mx-auto rounded-circle " src="assets/img/team/filipa_r.png" alt="Filipa Rocha portrait." />
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/filipa_r.png" alt="Filipa Rocha portrait." />
 
                         <a class="mx-2 " href="https://www.lasige.pt/member/filipa-rocha " target="_blank" aria-label="Larry Parker Facebook Profile ">
                             <h5>Filipa Rocha</h5>
@@ -23,7 +104,7 @@ function showCommissionsInfo(year = -1) {
                 </div>
                 <div class="col-lg-6 ">
                     <div class="team-member ">
-                        <img class="mx-auto rounded-circle " src="assets/img/team/miguel_s.png " alt="Miguel Silva portrait." />
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/miguel_s.png " alt="Miguel Silva portrait." />
                         <a class="mx-2 " href="https://www.lasige.pt/member/miguel-silva " target="_blank " aria-label="Diana Petersen Facebook Profile ">
                             <h5>Miguel Silva</h5>
                         </a>
@@ -35,9 +116,9 @@ function showCommissionsInfo(year = -1) {
 
                 <div class="col-lg-6 ">
                     <div class="team-member ">
-                        <img class="mx-auto rounded-circle " src="assets/img/team/ines_g.png " alt="Inês Gonçalves portrait." />
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/ines_g.png " alt="Inês Gonçalves portrait." />
                         <a class="mx-2 " href="https://www.lasige.pt/member/ines-goncalves " target="_blank " aria-label="Diana Petersen Facebook Profile ">
-                            <h5>Ines Gonçalves</h5>
+                            <h5>Inês Gonçalves</h5>
                         </a>
                         <p>Operational Head</p>
 
@@ -47,7 +128,7 @@ function showCommissionsInfo(year = -1) {
 
                 <div class="col-lg-6 ">
                     <div class="team-member ">
-                        <img class="mx-auto rounded-circle " src="assets/img/team/david_g.png" alt="David Gonçalves portrait." />
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/david_g.png" alt="David Gonçalves portrait." />
 
                         <a class="mx-2 " href="https://www.lasige.pt/member/david-goncalves " target="_blank" aria-label="Larry Parker Facebook Profile ">
                             <h5>David Gonçalves</h5>
@@ -60,7 +141,7 @@ function showCommissionsInfo(year = -1) {
 
                 <div class="col-lg-6 ">
                     <div class="team-member ">
-                        <img class="mx-auto rounded-circle " src="assets/img/team/allan_e.png " alt="Allan Espindola portrait." />
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/allan_e.png " alt="Allan Espindola portrait." />
                         <a class="mx-2 " href="https://www.lasige.pt/member/allan-espindola " target="_blank " aria-label="Diana Petersen Facebook Profile ">
                             <h5>Allan Espindola</h5>
                         </a>
@@ -73,7 +154,7 @@ function showCommissionsInfo(year = -1) {
 
                 <div class="col-lg-6 ">
                     <div class="team-member ">
-                        <img class="mx-auto rounded-circle " src="assets/img/team/joel_s.png " alt="Joel Samper portrait." />
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/joel_s.png " alt="Joel Samper portrait." />
                         <a class="mx-2 " href="https://www.lasige.pt/member/Joel-Samper " target="_blank " aria-label="Diana Petersen Facebook Profile ">
                             <h5>Joel Samper (Sam)</h5>
                         </a>
