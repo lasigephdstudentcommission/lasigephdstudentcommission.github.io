@@ -51,7 +51,7 @@ function showTemplatesInfo(templates = -1) {
 
                 <p style="text-align: left;">The presentation template is available as a Google Slides file, which can be easily converted to PPT. To use it, first make a copy or export the file, as the original cannot be edited directly. Using this template is optional—it simply offers a suggested graphical style for LASIGE presentations.</p>
 
-                <p><strong>File:</strong> <a href="https://cloud.lasige.di.fc.ul.pt/s/opEHTGM9cN9baWJ/download/LASIGE%20Presentation%20Template.pptx" target="_blank">LASIGE Presentation Template</a>
+                <p><strong>File:</strong> <a href="https://cloud.lasige.di.fc.ul.pt/s/N5Detj5BdDjNSjY" target="_blank">LASIGE Presentation Template</a>
                 </li></p> 
 
                 `); 
