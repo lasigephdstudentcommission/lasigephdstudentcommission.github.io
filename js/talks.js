@@ -4,7 +4,7 @@ Talks Functions
 
 $(document).ready(function() {
 
-    n_talks = 20;
+    n_talks = 21;
     showTalksInfo(n_talks);
 
 });
@@ -172,6 +172,15 @@ function showTalksInfo(talks = -1) {
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
             break;
+
+        case 21:
+            $("#talks_title").text("LASIGE Talks");
+            $("#talks_subtitle").text("21st Edition");
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_21_banner.png" alt="... " />`);
+            $("#talks_form").text("");
+            $("#talks_form").attr("href", "");
+            break;
+
 
         default:
             break;
