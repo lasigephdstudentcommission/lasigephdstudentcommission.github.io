@@ -4,7 +4,7 @@ Templates Functions
 
 $(document).ready(function() {
 
-    n_templates = 5;
+    n_templates = 4;
     showTemplatesInfo(n_templates);
 
 });
@@ -14,35 +14,7 @@ function showTemplatesInfo(templates = -1) {
     sessionStorage.setItem("template", templates);
 
     switch (templates) {
-        case 1: // Calendars
-            $("#templates_title").text("Templates & Resources");
-            $("#templates_subtitle").text("Calendars");
-            $("#templates_text").html(`
-
-                <br>
-
-                <p style="text-align: left;">
-                <br><a href="https://tinyurl.com/lasige-social-calendar">LASIGE Social Events</a> (Google Calendar & Android)
-                <br><a href="https://calendar.google.com/calendar/ical/2b16f68172054cf2fb8c96d44e455409936f2b03d3a0b1c715135a50ddbc79b8%40group.calendar.google.com/public/basic.ics">LASIGE Social Events</a> (iCloud Calendar)
-                <br><br><a href="https://tinyurl.com/lasige-scientific-calendar">LASIGE Talks</a> (Google Calendar & Android)
-                <br><a href="https://calendar.google.com/calendar/ical/011de1ad7bd9aa8fb685ffec96f89343d93775a2bf9d907e5cf9f1c937ca1eca%40group.calendar.google.com/public/basic.ics">LASIGE Talks</a> (iCloud Calendar)
-                </p>
-
-                <br>
-
-                <p style="text-align: left;"><strong>Instructions for iOS:</strong>
-                <ul style="text-align: left;">
-                    <li>Click Calendars from the calendar app</li>
-                    <li>Add calendar > Add subscription calendar</li>
-                    <li>Paste the ICS URL, Subscribe and Add</li>
-                    <li>Remember that event notification configuration will be taken from your phone's global settings. Check it on Configuration > Calendar > Default notifications.</p></li>
-                </ul>
-                </p>
-                `); 
-                $("#templates_picture").html(`<img width="70%" margin="0" src="assets/img/templates/calendar.png" alt="... " />`);
-            break;
-
-        case 2: // Presentation Template
+        case 1: // Presentation Template
             $("#templates_title").text("Templates & Resources");
             $("#templates_subtitle").text("Presentation Template");
             $("#templates_text").html(`
@@ -58,7 +30,7 @@ function showTemplatesInfo(templates = -1) {
                 $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/templates/Presentation_Template_25.png" alt="... " />`);
             break;
 
-        case 3: // Posters Templates
+        case 2: // Posters Templates
             $("#templates_title").text("Templates & Resources");
             $("#templates_subtitle").text("Posters Templates");
             $("#templates_text").html(`
@@ -104,7 +76,7 @@ function showTemplatesInfo(templates = -1) {
                 $("#templates_picture").html(`<img width="70%" margin="0" src="assets/img/templates/poster_templates.png" alt="... " />`);
             break;
 
-            case 4: // Feedback form
+            case 3: // Feedback form
             $("#templates_title").text("Templates & Resources");
             $("#templates_subtitle").text("Feedback Channel");
             $("#templates_text").html(`
@@ -118,7 +90,7 @@ function showTemplatesInfo(templates = -1) {
             $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/templates/feedback_form.png" alt="... " />`);
             break;
 
-            case 5: // Welcome to LASIGE
+            case 4: // Welcome to LASIGE
             $("#templates_title").text("Templates & Resources");
             $("#templates_subtitle").text("Welcome to LASIGE");
             $("#templates_text").html(`
