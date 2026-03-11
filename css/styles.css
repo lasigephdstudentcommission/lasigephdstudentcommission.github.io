@@ -4869,6 +4869,32 @@
     .navbar-dark .navbar-text a:focus {
         color: #fff;
     }
+
+/* Short vertical line before Calendar link */
+.nav-separator {
+    position: relative;          /* required for pseudo-element */
+    padding-left: 15px;          /* space between line and text */
+}
+
+.nav-separator::before {
+    content: "";
+    position: absolute;
+    left: 0;                     /* line at left edge of link */
+    top: 20%;                     /* adjust to vertically center */
+    height: 60%;                  /* shorter line */
+    width: 1px;                   /* line thickness */
+    background-color: #fff;       /* line color */
+}
+
+/* Hide line in collapsed vertical menu */
+@media (max-width: 991px) {
+    .nav-separator::before {
+        display: none;
+    }
+    .nav-separator {
+        padding-left: 0;          /* reset padding */
+    }
+}
     
     .card {
         position: relative;
