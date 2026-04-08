@@ -309,8 +309,7 @@ function showCommissionsInfo(year = -1) {
                         <a class="mx-2 " href="https://www.lasige.pt/member/hugo-simao " target="_blank" aria-label="Hugo Simão LASIGE Profile ">
                             <h5>Hugo Simão</h5>
                         </a>
-                        <p class="text-muted ">Data and Systems Intelligence</p>
-                        <p class="text-muted ">Reliable Software Systems</p>
+                        <p class="text-muted ">Inclusive Human-Computer Interaction</p>
 
                     </div>
                 </div>
