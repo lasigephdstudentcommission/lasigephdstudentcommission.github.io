@@ -6,7 +6,7 @@ $(document).ready(function() {
     const storedEdition = sessionStorage.getItem("workshop_edition");
 
     if (storedEdition == null) {
-        showWorkshopInfo(2025); // default to 2025 only if no edition is set
+        showWorkshopInfo(2026); // default to 2026 only if no edition is set
     } else {
         showWorkshopInfo(parseInt(storedEdition)); // restore previously selected edition
     }
@@ -17,6 +17,36 @@ function showWorkshopInfo(workshop = -1) {
     sessionStorage.setItem("workshop_edition", workshop);
 
     switch (workshop) {
+        case 2026:
+            $("#workshop_banner").html(`<img width="100%" src="assets/img/events/workshop/26/banner.png" alt="... " />`);
+            $("#workshop_title").text("");
+            $("#workshop_subtitle").text("");
+            //$("#workshop_text").text("");
+            $("#workshop_date").text("Date: May 13th");
+            $("#workshop_location").text("Location: 6.1.36");
+            $("#workshop_more_form_text").text("");
+            $("#workshop_form").text("");
+            $("#workshop_form").attr("style", "display:none");
+
+
+            $("#workshop_tabs").html(`
+                                <a href="" onclick="showWorkshopMain(0); return false; "> Program</a>
+                                <a href="" onclick="showWorkshopMain(1); return false; "> Dinner</a>
+                                <a href="" onclick="showWorkshopMain(2); return false; "> Poster Guidelines</a>
+                                <a href="" onclick="showWorkshopMain(3); return false; "> Posters</a>
+                                `);
+
+
+            $("#workshop_media").html(``);
+
+            showWorkshopMain(0)
+
+            //$("#workshop_form").text("");
+            //$("#workshop_main").html(`<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqA5t8hi5sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
+
+
+            break;
+
         case 2025:
             $("#workshop_banner").html(`<img width="100%" margin="0" src="assets/img/events/workshop/25/workshop_2025.gif" alt="... " />`);
             //$("#workshop_main").html(`<img width="100%" src="assets\img\events\workshop\23\24\banner.png" alt="... " /`);
@@ -48,6 +78,7 @@ function showWorkshopInfo(workshop = -1) {
             
 
             break;
+
         case 2024:
             $("#workshop_banner").html(`<img width="100%" margin="0" src="assets/img/events/workshop/24/banner.png" alt="... " />`);
             //$("#workshop_main").html(`<img width="100%" src="assets\img\events\workshop\23\24\banner.png" alt="... " /`);
@@ -83,35 +114,35 @@ function showWorkshopInfo(workshop = -1) {
 
             break;
 
-            case 2023:
-                $("#workshop_banner").html(``);
-                $("#workshop_title").text("LASIGE Workshop");
-                $("#workshop_subtitle").text("8th Edition - 2023");
-                // $("#workshop_text").text("");
-                $("#workshop_date").text("Date: March 22nd");
-                $("#workshop_location").text("Location: 6.1.36");
-                // $("#workshop_more_form_text").text("Registrations open until March 13th, poster submissions until march 15th");
-                $("#workshop_more_form_text").text("Registrations Closed");
-                $("#workshop_form").text("");
-                $("#workshop_form").attr("style", "display:none");
-                // $("#workshop_form").text("Register here");
-                // $("#workshop_form").attr("href", "https://forms.gle/x7DiqGHH7JnXKXqEA");
-                $("#workshop_main").html(`<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqA5t8hi5sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
-                
-    
-                $("#workshop_tabs").html(`
-                    <a href="" onclick="showWorkshopMain(2); return false; "> Poster Guidelines</a>
-                    <a href="" onclick="showWorkshopMain(0); return false; "> Program</a>
-                    <a href="" onclick="showWorkshopMain(1); return false; "> Dinner</a>
-                    <a href="" onclick="showWorkshopMain(3); return false; "> Poster Session</a>
-                    <a href="" onclick="showWorkshopMain(4); return false; "> Peddypaper</a>
-                    <a href="" onclick="showWorkshopMain(5); return false; "> Aftermovie</a>
-                `);
-    
-                $("#workshop_media").html(``);
+        case 2023:
+            $("#workshop_banner").html(``);
+            $("#workshop_title").text("LASIGE Workshop");
+            $("#workshop_subtitle").text("8th Edition - 2023");
+            // $("#workshop_text").text("");
+            $("#workshop_date").text("Date: March 22nd");
+            $("#workshop_location").text("Location: 6.1.36");
+            // $("#workshop_more_form_text").text("Registrations open until March 13th, poster submissions until march 15th");
+            $("#workshop_more_form_text").text("Registrations Closed");
+            $("#workshop_form").text("");
+            $("#workshop_form").attr("style", "display:none");
+            // $("#workshop_form").text("Register here");
+            // $("#workshop_form").attr("href", "https://forms.gle/x7DiqGHH7JnXKXqEA");
+            $("#workshop_main").html(`<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqA5t8hi5sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
+            
 
-                showWorkshopMain(3)
-                break;
+            $("#workshop_tabs").html(`
+                <a href="" onclick="showWorkshopMain(2); return false; "> Poster Guidelines</a>
+                <a href="" onclick="showWorkshopMain(0); return false; "> Program</a>
+                <a href="" onclick="showWorkshopMain(1); return false; "> Dinner</a>
+                <a href="" onclick="showWorkshopMain(3); return false; "> Poster Session</a>
+                <a href="" onclick="showWorkshopMain(4); return false; "> Peddypaper</a>
+                <a href="" onclick="showWorkshopMain(5); return false; "> Aftermovie</a>
+            `);
+
+            $("#workshop_media").html(``);
+
+            showWorkshopMain(3)
+            break;
 
         default:
             break;
@@ -126,6 +157,182 @@ function showWorkshopMain(workshop = -1) {
     sessionStorage.setItem("workshop_main", workshop);
 
     switch (edition) {
+
+        case '2026':
+
+            switch (workshop) {
+                case 0:
+                    $("#workshop_media").html(``);
+
+                    $("#workshop_main").html(`
+                    <h1 class="entry-title">Program</h1>
+                    <div class="entry-content">
+
+                    <p>We have a day full of activities, come and join us!</p>
+
+                    <ul class="list-left ">
+                    <li><strong>14:30</strong>      Registration</li>
+                    <li><strong>14:45</strong>      Welcoming Session by the Executive Commission</li>
+                    <li><strong>15:00</strong>      Keynote talk by Helena Aidos</li>
+                    <li><strong>15:40</strong>      Poster Session</li>
+                    <li><strong>16:10</strong>      Coffee Break</li>
+                    <li><strong>16:50</strong>      Keynote talk by João Guerreiro</li>                   
+                    <li><strong>17:30</strong>      Awards Ceremony</li>
+                    <li><strong>18:30</strong>      Team Building</li>
+                    <li><strong>20:00</strong>      Dinner at Gula's for Kitchen Lovers</li>
+                    </ul>
+
+                    <br>
+                    
+                    <h3>"Keynote talk by Helena Aidos"</h3>
+                    <p><strong>Speaker:</strong> Helena Aidos</p>
+                    <!--
+                    <p><strong>Brief description:</strong> This talk offers a personal account of my last ten years of research at LASIGE. I will reflect on publications/funding attempts and results, discuss changes in research goals alongside shifts in roles and career stage. I will discuss how collaborations evolve, the unseen benefits of service work, and the benefits (and privileges) of being a part of a larger research group. I will also share personal insights into ongoing negotiation of work-life balance and reflect on the interplay between luck, privilege and merit that influence research outcomes.</p>
+                    -->
+
+                    <h3 style="margin-top:50px;">"Keynote talk by João Guerreiro"</h3>
+                    <p><strong>Speaker:</strong> João Guerreiro</p>
+                    <!--
+                    <p><strong>Brief description:</strong> In today’s fast-paced biomedical research landscape, interpreting massive textual data is more important than ever. But what happens when the real story lies beyond the words, in subtle contextual clues that are easy to miss? When missed, these nuances can ripple outward, affecting everything from research breakthroughs to patient care. This presentation showcases how LASIGE is tackling the critical yet elusive role of context in biomedical text processing. Through their work in international challenges, LASIGE is aiming at shifting from ever growing need for unsustainable computational power to smarter, more contextual intelligence.</p>
+                    -->
+
+                    <img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/26/program.png" alt="... " />
+                    `);
+                break;
+
+                case 1:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`
+                    <h1 class="entry-title">Dinner</h1>
+
+                    
+
+                    <div class="entry-content">
+                    <br>
+
+                    <img width="30%" margin="0" src="assets/img/events/workshop/26/workshop26_teambuilding.png" alt="Workshop 2026 dinner and team building" />
+
+                    <p>
+                    After the workshop program, participants are invited to join a team-building evening and social dinner at <a href="https://www.aminhagula.pt" target="_blank">Gula's for Kitchen Lovers</a> located at <a href="https://maps.app.goo.gl/NuwkDt8Gpn9cSEgC7" target="_blank">Street Dona Filipa de Vilhena 18A, Lisbon</a>. The dinner starts at 20h with the welcome drinks and starters.
+                    </p>
+
+                    <p><strong>Price and payment:</strong></p>
+                    <ul class=" list-left ">
+                    <li>
+                    LASIGE members who do not hold a PhD degree (i.e., students): 10€
+                    </li>
+                    <li>
+                    LASIGE members who hold a PhD: 20€
+                    </li>
+                    </ul>
+
+                    <br>
+                    <p><strong>To attend the dinner:</strong></p>
+
+                    <ul class="list-left">
+                        <li>All payments must be made to Carla or Alexandra in cash at room 6.3.30 before May 6th.</li>
+                        <li>A maximum of 85 dinner reservations are available. There will be a waiting list for people that do not secure a reservation, who will be contacted in case of a dropout.</li>
+                        <li>Your dinner reservation is only valid upon payment. Make sure you pay in advance to secure your spot.</li>
+                    </ul>
+
+                    <br>
+                    <p><strong>Menu:</strong></p>
+                    <p>The dinner includes starters, the main course (buffet), dessert (buffet), coffee and drinks. If you want to, we can make any dish lactose-free or accommodate to your dietary restrictions / preferences, just let the PhD Commission know @ <a href="mailto:lasige-phd-commission@listas.di.ciencias.ulisboa.pt">lasige-phd-commission@listas.di.ciencias.ulisboa.pt</a>.</p>
+
+                    <p style="text-align:left;margin:0;"><strong>Main Course</strong></p>
+                    <ul class="list-left">
+                        <li><strong>Fish Option:</strong> Cod gratin with carrot and mozzarella cheese topping and/or an aromatic farinheira crust</li>
+                        <li><strong>Meat Option:</strong> Roast pork loin with mustard seeds and rosemary honey, served with sautéed rice with dried fruits and fresh chive sprinkles and/or a roast sweet potato fritter</li>
+                        <li><strong>Vegan Option (lactose-free):</strong> Vegetable curry with sweet potato and grain</li>
+                    </ul>
+
+                    `);
+                break;
+
+                case 2:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`
+                    <h1 class="entry-title">Poster Guidelines</h1>
+                    <div class="entry-content">
+                    <p>
+                    Posters will be voted by all LASIGE members during the workshop. The two most voted posters will be presented to the audience in an informal session (no slides are required), and receive a prize.
+                    </p>
+                    
+                    <p><strong>Submission guidelines:</strong></p>
+                    <p>
+                    Please submit your poster as a PDF file, formatted as A0, by sending it to <a href="mailto:lasige-phd-commission@listas.di.ciencias.ulisboa.pt">lasige-phd-commission@listas.di.ciencias.ulisboa.pt</a> until April 30th @ 23h59 with the email title "LASIGE Workshop - Poster Submission" and with the following information:
+                    </p>
+
+                    <ul class="list-left">
+                        <li>Author Name</li>
+                        <li>Research Line</li>
+                        <li>Title</li>
+                        <li>PDF</li>
+                    </ul>
+
+                    <br>
+                    <p><strong>Please respect the following norms:</strong></p>
+
+                    <ul class="list-left">
+                    <li>The posters are required to be vertical.</li>
+                    <li>It is mandatory the presence of the logos and the LASIGE reference present in the template poster. The acknowledgements should be updated and the template references removed, if not needed.</li>
+                    <li>The color gradient of the header cannot be changed.</li>
+                    <li>No images or patterns can overlap the header.</li>
+                    <li>The colour under the references and logos is required to be white.</li>
+                    </ul>
+
+                    <br>
+                    <p><strong>Rules for the election:</strong></p>
+
+                    <ul class="list-left">
+                        <li>Each participant registered in the workshop must vote in a maximum of 3 posters.</li>
+                        <li>In the event of a tie, a new poll between the posters tied will take place during the LASIGE Awards slot.</li>
+                    </ul>
+
+                    <br>
+                    <p><strong>Poster templates:</strong></p>
+
+                    <ul class=" list-inline ">
+                    <li>
+                    <a href="poster_templates/poster_cps.pptx">Cyber-physical systems</a>
+                    </li>
+                    <li>
+                    <a href="poster_templates/poster_dsi.pptx">Data and systems intelligence</a>
+                    </li>
+                    <li>
+                    <a href="poster_templates/poster_dsds.pptx">Dependable and Secure Decentralized Systems</a>
+                    </li>
+                    <li>
+                    <a href="poster_templates/poster_hbi.pptx">Health and biomedical informatics</a>
+                    </li>
+                    <li>
+                    <a href="poster_templates/poster_ihci.pptx">Inclusive Human-Computer Interaction</a>
+                    </li>
+                    <li>
+                    <a href="poster_templates/poster_rss.pptx">Reliable software systems</a>
+                    </li>
+                    <li>
+                    <a href="poster_templates/poster_tc.pptx">Theory of Computing</a>
+                    </li>
+                    </ul>   
+                    
+                    </div>
+                    `);
+                    break;
+
+                case 3:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`<embed src="assets/img/events/workshop/26/posters.pdf" width="500" height="700" type="application/pdf">`);
+                    break;
+
+                default:
+                    $("#workshop_media").html(``);
+                    $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/26/program.png" alt="... " />`);
+                    break;
+            }
+
+        break;
+                
 
         case '2025':
 
@@ -160,7 +367,7 @@ function showWorkshopMain(workshop = -1) {
 
                     <img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/25/program.png" alt="... " />
                     `);
-                    break;
+                break;
                 
 
                 case 1:
@@ -176,7 +383,7 @@ function showWorkshopMain(workshop = -1) {
                     <img width="100%" margin="0" src="assets/img/events/WD2024/dinner.png" alt="... " />
 
                     <p>
-                    There will be a dinner at <a href="https://www.aminhagula.pt" target="_blank">Gula's for Kitchen Lovers</a> located at <a href="https://maps.app.goo.gl/NuwkDt8Gpn9cSEgC7" target="_blank">Street Dona Filipa de Vilhena 18A, Lisbon</a>. The dinner starts at 20h15 with the welcome drinks and starters.
+                    There will be a dinner at <a href="https://www.aminhagula.pt" target="_blank">Gula's for Kitchen Lovers</a> located at <a href="https://maps.app.goo.gl/NuwkDt8Gpn9cSEgC7" target="_blank">Street Dona Filipa de Vilhena 18A, Lisbon</a>. The dinner starts at 20h with the welcome drinks and starters.
                     </p>
 
                     <p><strong>Price and payment:</strong></p>
@@ -288,7 +495,7 @@ function showWorkshopMain(workshop = -1) {
                     break;
 
                 /** 
-
+                 * 
                 case 4:
                     $("#workshop_media").html(``);
                     $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/23/tascas.jpg" alt="... " />`);
@@ -303,7 +510,7 @@ function showWorkshopMain(workshop = -1) {
         
                 default:
                     $("#workshop_media").html(``);
-                    $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/24/program.png" alt="... " />`);
+                    $("#workshop_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/25/program.png" alt="... " />`);
                     break;
             }
 
