@@ -186,15 +186,9 @@ function showWorkshopMain(workshop = -1) {
                     
                     <h3>"Keynote talk by Helena Aidos"</h3>
                     <p><strong>Speaker:</strong> Helena Aidos</p>
-                    <!--
-                    <p><strong>Brief description:</strong> This talk offers a personal account of my last ten years of research at LASIGE. I will reflect on publications/funding attempts and results, discuss changes in research goals alongside shifts in roles and career stage. I will discuss how collaborations evolve, the unseen benefits of service work, and the benefits (and privileges) of being a part of a larger research group. I will also share personal insights into ongoing negotiation of work-life balance and reflect on the interplay between luck, privilege and merit that influence research outcomes.</p>
-                    -->
 
-                    <h3 style="margin-top:50px;">"Keynote talk by João Guerreiro"</h3>
+                    <h3 style="margin-top:50px;">"The Breadth and Depth of (My Research on) Blind Accessibility"</h3>
                     <p><strong>Speaker:</strong> João Guerreiro</p>
-                    <!--
-                    <p><strong>Brief description:</strong> In today’s fast-paced biomedical research landscape, interpreting massive textual data is more important than ever. But what happens when the real story lies beyond the words, in subtle contextual clues that are easy to miss? When missed, these nuances can ripple outward, affecting everything from research breakthroughs to patient care. This presentation showcases how LASIGE is tackling the critical yet elusive role of context in biomedical text processing. Through their work in international challenges, LASIGE is aiming at shifting from ever growing need for unsustainable computational power to smarter, more contextual intelligence.</p>
-                    -->
 
                     <img class="img-fluid d-block mx-auto " src="assets/img/events/workshop/26/program.png" alt="... " />
                     `);
