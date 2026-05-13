@@ -184,7 +184,7 @@ function showWorkshopMain(workshop = -1) {
 
                     <br>
                     
-                    <h3>"Keynote talk by Helena Aidos"</h3>
+                    <h3>"The Challenge of Temporal Phenotyping"</h3>
                     <p><strong>Speaker:</strong> Helena Aidos</p>
 
                     <h3 style="margin-top:50px;">"The Breadth and Depth of (My Research on) Blind Accessibility"</h3>
