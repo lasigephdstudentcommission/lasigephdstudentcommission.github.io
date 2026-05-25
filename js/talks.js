@@ -2,9 +2,9 @@
 Talks Functions
  */
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    n_talks = 25;
+    n_talks = 26;
     showTalksInfo(n_talks);
 
 });
@@ -53,7 +53,7 @@ function showTalksInfo(talks = -1) {
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
             break;
-        
+
         case 6:
             $("#talks_title").text("LASIGE Talks");
             $("#talks_subtitle").text("6th Edition");
@@ -65,11 +65,11 @@ function showTalksInfo(talks = -1) {
         case 7:
             $("#talks_title").text("LASIGE Talks");
             $("#talks_subtitle").text("7th Edition");
-             $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_7.png" alt="... " />`);
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_7.png" alt="... " />`);
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
             break;
-            
+
         case 8:
             $("#talks_title").text("LASIGE Talks");
             $("#talks_subtitle").text("8th Edition");
@@ -92,8 +92,8 @@ function showTalksInfo(talks = -1) {
             $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_10.png" alt="... " />`);
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
-            break; 
-            
+            break;
+
         case 11:
             $("#talks_title").text("LASIGE Talks");
             $("#talks_subtitle").text("11th Edition");
@@ -213,9 +213,17 @@ function showTalksInfo(talks = -1) {
             $("#talks_form").attr("href", "");
             break;
 
+        case 26:
+            $("#talks_title").text("LASIGE Talks");
+            $("#talks_subtitle").text("26th Edition");
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_26.png" alt="... " />`);
+            $("#talks_form").text("");
+            $("#talks_form").attr("href", "");
+            break;
+
         default:
             break;
-        
+
     }
 
 }
