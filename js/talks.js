@@ -4,7 +4,7 @@ Talks Functions
 
 $(document).ready(function () {
 
-    n_talks = 26;
+    n_talks = 27;
     showTalksInfo(n_talks);
 
 });
@@ -120,7 +120,7 @@ function showTalksInfo(talks = -1) {
         case 14:
             $("#talks_title").text("LASIGE Talks");
             $("#talks_subtitle").text("14th Edition");
-            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_14.png" alt="... " />`);
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_14.png" alt="... " />`); // TODO: fix poster
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
             break;
@@ -216,7 +216,15 @@ function showTalksInfo(talks = -1) {
         case 26:
             $("#talks_title").text("LASIGE Talks");
             $("#talks_subtitle").text("26th Edition");
-            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_26.png" alt="... " />`);
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_26.png" alt="... " />`); // TODO: fix poster
+            $("#talks_form").text("");
+            $("#talks_form").attr("href", "");
+            break;
+
+        case 27:
+            $("#talks_title").text("LASIGE Talks");
+            $("#talks_subtitle").text("27th Edition");
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_27.png" alt="... " />`);
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
             break;
