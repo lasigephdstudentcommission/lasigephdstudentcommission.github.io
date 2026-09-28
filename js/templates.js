@@ -23,7 +23,7 @@ function showTemplatesInfo(templates = -1) {
 
                 <p style="text-align: left;">Using this template is optional—it simply offers a suggested graphical style for LASIGE presentations.</p>
 
-                <p><strong>File:</strong> <a href="https://cloud.lasige.di.fc.ul.pt/s/qiBdkgXcLBxjXZ6" target="_blank">LASIGE Presentation Template</a>
+                <p><strong>File:</strong> <a href="https://cloud.lasige.di.fc.ul.pt/index.php/s/pN3F6SZNPCatDDm" target="_blank">LASIGE Presentation Template</a>
                 </li></p> 
 
                 `); 
