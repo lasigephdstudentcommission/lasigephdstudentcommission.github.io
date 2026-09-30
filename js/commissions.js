@@ -1,10 +1,139 @@
 
-$(document).ready(function() {
-    showCommissionsInfo(2025);
+$(document).ready(function () {
+    showCommissionsInfo(2026);
 });
 
 function showCommissionsInfo(year = -1) {
     switch (year) {
+        case 2026:
+            $("#commissions_year").text("2026");
+            $("#commissions_members").html(`
+            <div class="row ">
+                
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/laura_b.png "
+                            alt="Laura Balbi portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/Laura-Balbi" target="_blank "
+                            aria-label="Laura Balbi LASIGE Profile ">
+                            <h5>Laura Balbi</h5>
+                        </a>
+                        <p>Commission Chair</p>
+
+                        <p class="text-muted ">Data and Systems Intelligence</p>
+                        <p class="text-muted ">Health and Biomedical Informatics</p>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/daniel_r.png "
+                            alt="Daniel Reis portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/Daniel-Reis" target="_blank "
+                            aria-label="Daniel Reis LASIGE Profile ">
+                            <h5>Daniel Reis</h5>
+                        </a>
+                        <p>Budget Head</p>
+
+                        <p class="text-muted ">Inclusive Human-Computer Interaction</p>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/pedro_t.png "
+                            alt="Pedro Trindade portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/pedro-trindade " target="_blank "
+                            aria-label="Pedro Trindade LASIGE Profile ">
+                            <h5>Pedro Trindade</h5>
+                        </a>
+                        <p>Graphics Head</p>
+
+                        <p class="text-muted">Inclusive Human-Computer Interaction</p>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/lucas_f.png "
+                            alt="Lucas Ferraz portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/joao-ferraz" target="_blank "
+                            aria-label="Lucas Ferraz LASIGE Profile ">
+                            <h5>Lucas Ferraz</h5>
+                        </a>
+                        <p>PR Head</p>
+
+                        <p class="text-muted ">Data and Systems Intelligence</p>
+                        <p class="text-muted ">Health and Biomedical Informatics</p>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/hugo_f.png "
+                            alt="Hugo Figueiras portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/hugo-figueiras" target="_blank "
+                            aria-label="Hugo Figueiras LASIGE Profile ">
+                            <h5>Hugo Figueiras</h5>
+                        </a>
+                        <p>PR Team</p>
+
+                        <p class="text-muted ">Data and Systems Intelligence</p>
+                        <p class="text-muted ">Health and Biomedical Informatics</p>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/old/jorge_g.png "
+                            alt="Jorge Guerreiro portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/jorge-guerreiro" target="_blank "
+                            aria-label="Jorge Guerreiro LASIGE Profile ">
+                            <h5>Jorge Guerreiro</h5>
+                        </a>
+                        <p>Operational Team</p>
+
+                        <p class="text-muted ">Dependable and Secure Decentralized Systems</p>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/mariana_g.png "
+                            alt="Mariana Gouveia portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/mariana-gouveia" target="_blank "
+                            aria-label="Mariana Gouveia LASIGE Profile ">
+                            <h5>Mariana Gouveia</h5>
+                        </a>
+                        <p>Operational Team</p>
+
+                        <p class="text-muted ">Health and Biomedical Informatics</p>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6 ">
+                    <div class="team-member ">
+                        <img class="mx-auto rounded-circle " src="assets/img/team/beatriz_g.png "
+                            alt="Beatriz Guerreiro portrait." />
+                        <a class="mx-2 " href="https://www.lasige.pt/member/maria-beatriz-guerreiro" target="_blank "
+                            aria-label="Beatriz Guerreiro LASIGE Profile ">
+                            <h5>Beatriz Guerreiro</h5>
+                        </a>
+                        <p>Operational Team</p>
+
+                        <p class="text-muted ">Inclusive Human-Computer Interaction</p>
+                    </div>
+                </div>
+                `);
+            break;
+
         case 2025:
             $("#commissions_year").text("2025");
             $("#commissions_members").html(`

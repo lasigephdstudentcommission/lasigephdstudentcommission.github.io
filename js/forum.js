@@ -2,13 +2,13 @@
 Forum Functions
  */
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     const storedEdition = sessionStorage.getItem("forum_edition");
     const storedMain = sessionStorage.getItem("forum_main")
 
     if (storedEdition == null) {
-        showForumInfo(5); // default to 4 only if no edition is set
+        showForumInfo(6); // default to latest edition
     } else {
         showForumInfo(parseInt(storedEdition)); // restore previously selected edition
         if (storedMain != null) {
@@ -41,9 +41,9 @@ function showForumInfo(forum = -1) {
             $("#forum_tabs").html(``);
             $("#forum_talks").html(``);
             $("#forum_main").attr("style", "display: block;");
-             $("#more_form_text2").attr("style", "display: block;");
-             $("#forum_tabs").attr("style", "display: none;");
-             $("#forum_talks").attr("style", "display: none;");
+            $("#more_form_text2").attr("style", "display: block;");
+            $("#forum_tabs").attr("style", "display: none;");
+            $("#forum_talks").attr("style", "display: none;");
             break;
 
         case 2:
@@ -71,11 +71,11 @@ function showForumInfo(forum = -1) {
                                         <a href="" onclick="showForumImage(6); return false; "> Media</a>
                                 `);
 
-             $("#forum_talks").html(``);
-             $("#forum_main").attr("style", "display: block;");
-             $("#more_form_text2").attr("style", "display: block;");
-             $("#forum_tabs").attr("style", "display: none;");
-             $("#forum_talks").attr("style", "display: none;");
+            $("#forum_talks").html(``);
+            $("#forum_main").attr("style", "display: block;");
+            $("#more_form_text2").attr("style", "display: block;");
+            $("#forum_tabs").attr("style", "display: none;");
+            $("#forum_talks").attr("style", "display: none;");
             break;
 
         case 3:
@@ -100,13 +100,13 @@ function showForumInfo(forum = -1) {
                                         <a href="" onclick="showForumImage(3); return false; "> PhD Talks</a>
                                 `);
 
-             $("#forum_talks").html(``);
-             $("#forum_main").attr("style", "display: block;");
-             $("#more_form_text2").attr("style", "display: block;");
-             $("#forum_tabs").attr("style", "display: flex;");
-             $("#forum_talks").attr("style", "display: flex;");
+            $("#forum_talks").html(``);
+            $("#forum_main").attr("style", "display: block;");
+            $("#more_form_text2").attr("style", "display: block;");
+            $("#forum_tabs").attr("style", "display: flex;");
+            $("#forum_talks").attr("style", "display: flex;");
             break;
-        
+
         case 4:
             $("#forum_banner").html(`<img width="100%" margin="0" src="assets/img/events/Forum2024/banner.png" alt="... " />`);
             $("#forum_title").text("LASIGE Forum");
@@ -127,7 +127,7 @@ function showForumInfo(forum = -1) {
             //$("#forum_form").text("REGISTER HERE");
             //$("#forum_form").attr("href", "https://forms.gle/9WKXDsWH5eBYGVx18");
             //$("#forum_form").attr("style", "border: solid 1px black;");
-    
+
             $("#forum_tabs").html(``);
             $("#forum_tabs").attr("style", "display: none;");
             $("#forum_talks").html(``);
@@ -139,11 +139,11 @@ function showForumInfo(forum = -1) {
             $("#forum_title").text("LASIGE Forum");
             $("#forum_subtitle").text("5th Edition");
             $("#forum_text").text("Expand your horizons with feedback from colleagues and experts beyond your field. Seize the opportunity to present your work to both university and external audiences.");
-            //$("#forum_main").attr("style", "display: none;");
+
             $("#forum_img").attr("src", "assets/img/events/Forum2025/schedule.png");
             $("#forum_date").text("Date: July 10th 2025");
             $("#forum_location").text("Location: 6.2.53");
-            //$("#forum_more").attr("href", "https://discord.gg/n53AfFnRSn");
+
             $("#more_form_text2").text("");
             $("#more_form_text2").attr("style", "display: none;");
 
@@ -151,10 +151,29 @@ function showForumInfo(forum = -1) {
             $("#forum_form").attr("f", "");
             $("#forum_form").attr("style", "display: none");
 
-            //$("#forum_form").text("REGISTER HERE");
-            //$("#forum_form").attr("href", "https://forms.gle/9WKXDsWH5eBYGVx18");
-            //$("#forum_form").attr("style", "border: solid 1px black;");
-    
+            $("#forum_tabs").html(``);
+            $("#forum_tabs").attr("style", "display: none;");
+            $("#forum_talks").html(``);
+            $("#forum_talks").attr("style", "display: none;");
+            break;
+
+        case 6:
+            $("#forum_banner").html(`<img width="100%" margin="0" src="assets/img/events/Forum2026/banner.png" alt="... " />`);
+            $("#forum_title").text("LASIGE Forum");
+            $("#forum_subtitle").text("6th Edition");
+            $("#forum_text").text("Expand your horizons with feedback from colleagues and experts beyond your field. \n Seize the opportunity to present your work to both university and external audiences.");
+
+            $("#forum_img").attr("src", "assets/img/events/Forum2026/schedule.png");
+            $("#forum_date").text("Date: July 1st 2026");
+            $("#forum_location").text("Location: The area located between C6 and TecLabs, by the lake.");
+
+            $("#more_form_text2").text("");
+            $("#more_form_text2").attr("style", "display: none;");
+
+            $("#forum_form").text("");
+            $("#forum_form").attr("f", "");
+            $("#forum_form").attr("style", "display: none");
+
             $("#forum_tabs").html(``);
             $("#forum_tabs").attr("style", "display: none;");
             $("#forum_talks").html(``);
@@ -176,7 +195,7 @@ function showForumImage(forum = -1) {
     switch (edition) {
         case '1':
             $("#forum_img").attr("src", "assets/img/events/Forum.png");
-        break;
+            break;
 
         case '2':
 
@@ -205,7 +224,7 @@ function showForumImage(forum = -1) {
                     <a href="" onclick="showForumTalk(3); return false; "> Pedro Pais - 15:45</a>
                     `);
                     break;
-        
+
                 case 4:
                     $("#forum_talks").html(``);
                     $("#forum_media").html(``);
@@ -228,7 +247,7 @@ function showForumImage(forum = -1) {
                     <a href="https://drive.google.com/drive/folders/1In50QFE11WYkMQ3yZOfgQtqMMHWoJLOL?usp=sharing " target="_blank ">Photos</a>
                     `);
                     break;
-        
+
                 default:
                     $("#forum_talks").html(``);
                     $("#forum_media").html(``);
@@ -253,7 +272,7 @@ function showForumImage(forum = -1) {
                     $("#forum_talks").html(``);
                     $("#forum_media").html(``);
                     $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2023/Panel.png" alt="... " />`);
-                    
+
 
                     break;
                 case 3:
@@ -263,7 +282,7 @@ function showForumImage(forum = -1) {
                     <a href="" onclick="showForumTalk(1); return false; "> Joel Samper - 16:25</a>
                     `);
                     break;
-        
+
                 default:
                     $("#forum_talks").html(``);
                     $("#forum_media").html(``);
@@ -271,7 +290,7 @@ function showForumImage(forum = -1) {
                     break;
             }
 
-        break;
+            break;
 
     }
 
@@ -299,13 +318,13 @@ function showForumTalk(forum = -1) {
                 case 3:
                     $("#forum_main").html(`<img class="img-fluid d-block mx-auto " src="assets/img/events/Forum2022/Pedro.png" alt="... " />`);
                     break;
-        
+
                 default:
-                    
+
                     break;
             }
 
-            case '3':
+        case '3':
 
             switch (forum) {
                 case 0:
@@ -314,13 +333,13 @@ function showForumTalk(forum = -1) {
                 case 1:
                     $("#forum_img").attr("src", "assets/img/events/Forum2023/Joel_Talk.png");
                     break;
-        
+
                 default:
-                    
+
                     break;
             }
 
-        break;
+            break;
 
     }
 
@@ -340,11 +359,11 @@ function showForumVideos(forum = -1) {
                     $("#forum_main").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/p_tu_a0Rgzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
                     break
                 default:
-                    
+
                     break;
             }
 
-        break;
+            break;
 
     }
 

@@ -2,7 +2,7 @@
 Templates Functions
  */
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     n_templates = 4;
     showTemplatesInfo(n_templates);
@@ -26,8 +26,8 @@ function showTemplatesInfo(templates = -1) {
                 <p><strong>File:</strong> <a href="https://cloud.lasige.di.fc.ul.pt/index.php/s/pN3F6SZNPCatDDm" target="_blank">LASIGE Presentation Template</a>
                 </li></p> 
 
-                `); 
-                $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/templates/Presentation_Template_25.png" alt="... " />`);
+                `);
+            $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/templates/Presentation_Template_25.png" alt="... " />`);
             break;
 
         case 2: // Posters Templates
@@ -72,11 +72,11 @@ function showTemplatesInfo(templates = -1) {
                     <li>The colour under the references and logos is required to be white.</li>
                     </ul>
 
-                `); 
-                $("#templates_picture").html(`<img width="70%" margin="0" src="assets/img/templates/poster_templates.png" alt="... " />`);
+                `);
+            $("#templates_picture").html(`<img width="70%" margin="0" src="assets/img/templates/poster_templates.png" alt="... " />`);
             break;
 
-            case 3: // Feedback form
+        case 3: // Feedback form
             $("#templates_title").text("Templates & Resources");
             $("#templates_subtitle").text("Feedback Channel");
             $("#templates_text").html(`
@@ -86,11 +86,11 @@ function showTemplatesInfo(templates = -1) {
                 <p><strong>Link:</strong> <a href="https://forms.gle/scUPUmYwxeR6Q8fp7" target="_blank">Feedback Form</a>
                 </li></p> 
 
-                `); 
+                `);
             $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/templates/feedback_form.png" alt="... " />`);
             break;
 
-            case 4: // Welcome to LASIGE
+        case 4: // Welcome to LASIGE
             $("#templates_title").text("Templates & Resources");
             $("#templates_subtitle").text("Welcome to LASIGE");
             $("#templates_text").html(`
@@ -102,7 +102,7 @@ function showTemplatesInfo(templates = -1) {
                 <p><strong>Link:</strong> <a href="https://tinyurl.com/welcome-to-lasige" target="_blank">Welcome to LASIGE document</a>
                 </li></p> 
 
-                `); 
+                `);
             $("#templates_picture").html(`<img width="50%" margin="0" src="assets/img/welcome-to-lasige.png" alt="... " />`);
             break;
 
