@@ -8,11 +8,11 @@ $(document).ready(function() {
     const storedMain = sessionStorage.getItem("wd_main")
 
     if (storedEdition == null) {
-        showWDInfo(2025); // default to 2025 only if no edition is set
+        showWDInfo(2026); // default to the latest edition if no edition is set
     } else {
         showWDInfo(parseInt(storedEdition)); // restore previously selected edition
         if (storedMain != null) {
-            showWDMain(storedMain); // restore selected main
+            showWDMain(parseInt(storedMain, 10)); // restore selected main
         } else {
             showWDMain(0); // restore selected main
         }
@@ -23,8 +23,24 @@ $(document).ready(function() {
 
 function showWDInfo(wd = -1) {
     sessionStorage.setItem("wd_edition", wd);
+    $("#wd_main").html(``);
 
     switch (wd) {
+        case 2026:
+            $("#wd_banner").html(`<img class="d-block mx-auto" style="width:65%;max-width:100%;height:auto;" src="assets/img/events/WD2026/WelcomeDay26_SaveTheDate.png" alt="LASIGE Welcome Day — save the date: 7 October 2026" />`);
+            $("#wd_title").text("");
+            $("#wd_subtitle").text("");
+            $("#wd_date").text("Date: October 7th 2026");
+            $("#wd_location").text("Location: C3.2.14");
+            $("#wd_form").html(``).attr("style", "display:none");
+            $("#wd_tabs").html(`
+                                <a href="" onclick="showWDMain(0); return false; ">Program</a>
+                                <a href="" onclick="showWDMain(1); return false; ">Dinner Menu</a>
+                                `);
+            $("#wd_media").html(``);
+            showWDMain(0);
+            break;
+
         case 2022:
             $("#wd_banner").html(``);
             $("#wd_title").text("Welcome Day");
@@ -125,6 +141,75 @@ function showWDMain(wd = -1) {
     sessionStorage.setItem("wd_main", wd);
 
     switch (edition) {
+
+        case '2026':
+            $("#wd_media").html(``);
+            if (wd === 1) {
+                $("#wd_main").html(`
+                    <h1 class="entry-title">Dinner</h1>
+                    <div class="entry-content">
+                    <img class="d-block mx-auto" style="width:100%;height:auto;" src="assets/img/events/WD2025/dinner.png" alt="Dinner table with food and a drink" />
+                    <p>There will be a dinner at Cobaia located at <a href="https://www.google.com/maps/search/?api=1&amp;query=Cobaia%20Rua%20Ac%C3%A1cio%20de%20Paiva%2019%20Lisboa" target="_blank" rel="noopener noreferrer">Rua Acácio de Paiva 19, 1700-006 Lisboa</a>. The dinner starts at 20h15 on October 7th, 2026.</p>
+
+                    <p><strong>Price and payment:</strong></p>
+                    <ul class="list-left">
+                        <li>LASIGE members who do not hold a PhD degree (i.e., students): 10€</li>
+                        <li>LASIGE members who hold a PhD: 20€</li>
+                    </ul>
+
+                    <br>
+                    <p><strong>To attend the dinner:</strong></p>
+                    <ul class="list-left">
+                        <li>All payments must be made to Alexandra or Carla in room 6.3.30, preferably between 10:00 and 16:00.</li>
+                        <li>A maximum of 80 dinner reservations are available, as such there will be a waiting list for people that do not secure a reservation. In the event that a seat becomes available due to non-payment or cancellation, we will offer it to participants on the waiting list.</li>
+                        <li>Both for Dinner and waiting list, your registration is only valid upon payment.</li>
+                    </ul>
+
+                    <br>
+                    <p><strong>Menu:</strong></p>
+                    <p>The dinner includes couvert &amp; starters, a main course, desserts, and drinks. If none of the dishes on the list respects your dietary restrictions, please inform the PhD Commission.</p>
+
+                    <p style="text-align:left;"><strong>Couvert &amp; Starters</strong></p>
+
+                    <p style="text-align:left;margin:0;"><strong>Main Course</strong></p>
+                    <ul class="list-left">
+                        <li><strong>Fish / Peixe:</strong> Octopus risotto with sautéed turnip greens, sun-dried tomatoes, and salsa verde<br><span class="fst-italic">Risotto de polvo com grelos salteados, tomate seco e salsa verde</span></li>
+                        <li><strong>Meat / Carne:</strong> Saucy rice with assorted Portuguese sausages, boneless chicken, and farinheira crumble<br><span class="fst-italic">Arroz malandrinho de enchidos, frango desossado e crumble de farinheira</span></li>
+                        <li><strong>Vegan:</strong> Breaded smoked tofu, broad bean and coriander purée, with sautéed asparagus<br><span class="fst-italic">Tofu fumado panado, puré de favas e coentros com espargos salteados</span></li>
+                    </ul>
+
+                    <p style="text-align:left;"><strong>Desserts</strong></p>
+
+                    <p style="text-align:left;margin:0;"><strong>Drinks</strong></p>
+                    <ul class="list-left">
+                        <li>Unlimited water and 1 soft drink / draft beer per person.</li>
+                        <li>Any other beverages are NOT included and therefore will have to be paid individually directly to the restaurant.</li>
+                    </ul>
+                    </div>
+                `);
+            } else {
+                $("#wd_main").html(`
+                    <h1 class="entry-title">Program</h1>
+                    <p>We have a day full of activities, come and join us!</p>
+
+                    <ul class="list-left">
+                        <li><strong>14:00</strong> Registration (Collect your badge!)</li>
+                        <li><strong>14:15</strong> Welcome to LASIGE by the Executive Commission</li>
+                        <li><strong>14:45</strong> PhD Individual Development Plan Initiative</li>
+                        <li><strong>15:15</strong> Keynote by Isabel Neto - What I Learned Moving from Industry to Academia</li>
+                        <li><strong>16:00</strong> LASIGE Photo</li>
+                        <li><strong>16:15</strong> Coffee Break and Poster Session</li>
+                        <li><strong>17:15</strong> Hi! from the PhD Student Commission</li>
+                        <li><strong>17:30</strong> Lightning Talks "Building a Future at LASIGE" and Panel Q&amp;A by Tommaso Tragno, Frederico Cerqueira, Filipa Rocha, and Joel Samper</li>
+                        <li><strong>18:10</strong> Closing and Summer of Research Awards</li>
+                        <li><strong>18:45</strong> Team Building</li>
+                        <li><strong>20:15</strong> Dinner at Cobaia - Rua Acácio de Paiva 19, 1700-006 Lisboa</li>
+                    </ul>
+
+                    <img class="img-fluid d-block mx-auto" src="assets/img/events/WD2026/poster_welcome_day_2026.png" alt="LASIGE Welcome Day 2026 program, October 7th, room 3.2.14" />
+                `);
+            }
+            break;
 
         case '2022':
 
