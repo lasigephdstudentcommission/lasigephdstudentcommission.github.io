@@ -169,16 +169,12 @@ function showWDMain(wd = -1) {
                     <p><strong>Menu:</strong></p>
                     <p>The dinner includes couvert &amp; starters, a main course, desserts, and drinks. If none of the dishes on the list respects your dietary restrictions, please inform the PhD Commission.</p>
 
-                    <p style="text-align:left;"><strong>Couvert &amp; Starters</strong></p>
-
                     <p style="text-align:left;margin:0;"><strong>Main Course</strong></p>
                     <ul class="list-left">
                         <li><strong>Fish / Peixe:</strong> Octopus risotto with sautéed turnip greens, sun-dried tomatoes, and salsa verde<br><span class="fst-italic">Risotto de polvo com grelos salteados, tomate seco e salsa verde</span></li>
                         <li><strong>Meat / Carne:</strong> Saucy rice with assorted Portuguese sausages, boneless chicken, and farinheira crumble<br><span class="fst-italic">Arroz malandrinho de enchidos, frango desossado e crumble de farinheira</span></li>
                         <li><strong>Vegan:</strong> Breaded smoked tofu, broad bean and coriander purée, with sautéed asparagus<br><span class="fst-italic">Tofu fumado panado, puré de favas e coentros com espargos salteados</span></li>
                     </ul>
-
-                    <p style="text-align:left;"><strong>Desserts</strong></p>
 
                     <p style="text-align:left;margin:0;"><strong>Drinks</strong></p>
                     <ul class="list-left">
