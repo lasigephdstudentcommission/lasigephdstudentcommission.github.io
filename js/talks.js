@@ -4,7 +4,7 @@ Talks Functions
 
 $(document).ready(function () {
 
-    n_talks = 28;
+    n_talks = 31;
     showTalksInfo(n_talks);
 
 });
@@ -237,6 +237,24 @@ function showTalksInfo(talks = -1) {
             $("#talks_form").attr("href", "");
             break;
 
+
+        case 29:
+        case 30:
+            $("#talks_title").text("LASIGE Talks");
+            $("#talks_subtitle").text(talks + "th Edition");
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_${talks}.png" alt="LASIGE Talks ${talks}th Edition poster" />`);
+            $("#talks_form").text("");
+            $("#talks_form").attr("href", "");
+            break;
+
+        case 31:
+            $("#talks_title").text("LASIGE Talks");
+            $("#talks_subtitle").text("31st Edition");
+            // Replace this placeholder with the 31st edition's poster when available.
+            $("#talks_poster").html('<p class="text-muted">Poster coming soon.</p>');
+            $("#talks_form").text("");
+            $("#talks_form").attr("href", "");
+            break;
 
         default:
             break;
