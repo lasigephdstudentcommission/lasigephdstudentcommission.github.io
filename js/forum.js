@@ -158,12 +158,14 @@ function showForumInfo(forum = -1) {
             break;
 
         case 6:
-            $("#forum_banner").html(`<img width="100%" margin="0" src="assets/img/events/Forum2026/banner.png" alt="... " />`);
+            $("#forum_banner").html(`<img width="100%" src="assets/img/events/Forum2026/banner.png" alt="6th LASIGE Forum" />`);
             $("#forum_title").text("LASIGE Forum");
             $("#forum_subtitle").text("6th Edition");
             $("#forum_text").text("Expand your horizons with feedback from colleagues and experts beyond your field. \n Seize the opportunity to present your work to both university and external audiences.");
 
-            $("#forum_img").attr("src", "assets/img/events/Forum2026/schedule.png");
+            $("#forum_main").html(`<img id="forum_img" class="img-fluid d-block mx-auto" src="assets/img/events/Forum2026/schedule.png" alt="6th LASIGE Forum programme, July 1st 2026" />`);
+            $("#forum_main").attr("style", "display: block;");
+            $("#forum_media").html(``);
             $("#forum_date").text("Date: July 1st 2026");
             $("#forum_location").text("Location: The area located between C6 and TecLabs, by the lake.");
 
@@ -193,6 +195,12 @@ function showForumImage(forum = -1) {
     sessionStorage.setItem("forum_main", forum);
 
     switch (edition) {
+        case '6':
+            $("#forum_talks").html(``);
+            $("#forum_media").html(``);
+            $("#forum_main").html(`<img id="forum_img" class="img-fluid d-block mx-auto" src="assets/img/events/Forum2026/schedule.png" alt="6th LASIGE Forum programme, July 1st 2026" />`);
+            break;
+
         case '1':
             $("#forum_img").attr("src", "assets/img/events/Forum.png");
             break;
