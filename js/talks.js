@@ -250,8 +250,7 @@ function showTalksInfo(talks = -1) {
         case 31:
             $("#talks_title").text("LASIGE Talks");
             $("#talks_subtitle").text("31st Edition");
-            // Replace this placeholder with the 31st edition's poster when available.
-            $("#talks_poster").html('<p class="text-muted">Poster coming soon.</p>');
+            $("#talks_poster").html(`<img width="100%" margin="0" src="assets/img/events/Talks/talks_${talks}.png" alt="LASIGE Talks ${talks}th Edition poster" />`);
             $("#talks_form").text("");
             $("#talks_form").attr("href", "");
             break;
