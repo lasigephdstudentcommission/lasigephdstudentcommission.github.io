@@ -1,0 +1,17 @@
+{
+  "name": "lasige-anonymous-feedback",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "start": "node --env-file=.env bot.mjs",
+    "register": "node --env-file=.env register.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "discord.js": "^14.22.1"
+  }
+}
